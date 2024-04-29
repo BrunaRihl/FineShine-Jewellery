@@ -16,9 +16,9 @@
                 Earrings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="earrings-link">
-                <a href="" class="dropdown-item">Silver Earrings</a>
-                <a href="" class="dropdown-item">Gold Earrings</a>
-                <a href="" class="dropdown-item">Full Earrings Collection</a>
+                <a href="{% url 'products' %}?category=silver_earrings" class="dropdown-item">Silver Earrings</a>
+                <a href="{% url 'products' %}?category=gold_earrings" class="dropdown-item">Gold Earrings</a>
+                <a href="{% url 'products' %}?category=gold_earrings,silver_earrings" class="dropdown-item" class="dropdown-item">Full Earrings Collection</a>
             </div>
         </li>
 
@@ -27,9 +27,9 @@
                 Bracelets
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="blacelets-link">
-                <a href="" class="dropdown-item">Silver Bracelets</a>
-                <a href="" class="dropdown-item">Gold Bracelets</a>
-                <a href="" class="dropdown-item">Full Bracelets Collection</a>
+                <a href="{% url 'products' %}?category=silver_bracelets" class="dropdown-item">Silver Bracelets</a>
+                <a href="{% url 'products' %}?category=gold_bracelets" class="dropdown-item">Gold Bracelets</a>
+                <a href="{% url 'products' %}?category=silver_bracelets,gold_bracelets" class="dropdown-item">Full Bracelets Collection</a>
             </div>
         </li>
 
@@ -38,9 +38,9 @@
                 Necklaces
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="neacklaces-link">
-                <a href="" class="dropdown-item">Silver Necklaces</a>
-                <a href="" class="dropdown-item">Gold Necklaces</a>
-                <a href="" class="dropdown-item">Full Necklaces Collection</a>
+                <a href="{% url 'products' %}?category=silver_necklaces" class="dropdown-item">Silver Necklaces</a>
+                <a href="{% url 'products' %}?category=gold_necklaces" class="dropdown-item">Gold Necklaces</a>
+                <a href="{% url 'products' %}?category=silver_necklaces,gold_necklaces" class="dropdown-item">Full Necklaces Collection</a>
             </div>
         </li>
 
@@ -49,9 +49,9 @@
                 Rings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="rings-link">
-                <a href="" class="dropdown-item">Silver Rings</a>
-                <a href="" class="dropdown-item">Gold Rings</a>
-                <a href="" class="dropdown-item">Full Rings Collection</a>
+                <a href="{% url 'products' %}?category=silver_rings" class="dropdown-item">Silver Rings</a>
+                <a href="{% url 'products' %}?category=gold_rings" class="dropdown-item">Gold Rings</a>
+                <a href="{% url 'products' %}?category=silver_rings,gold_rings" class="dropdown-item">Full Rings Collection</a>
             </div>
         </li>
 
@@ -60,12 +60,10 @@
                 Sets
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="sets-link">
-                <a href="" class="dropdown-item">Silver Sets</a>
-                <a href="" class="dropdown-item">Gold Sets</a>
-                <a href="" class="dropdown-item">Full Sets Collection</a>
+                <a href="{% url 'products' %}?category=silver_sets" class="dropdown-item">Silver Sets</a>
+                <a href="{% url 'products' %}?category=	gold_sets" class="dropdown-item">Gold Sets</a>
+                <a href="{% url 'products' %}?category=silver_sets,gold_sets" class="dropdown-item">Full Sets Collection</a>
             </div>
         </li>
-
-
     </ul>
 </div>
