@@ -1,0 +1,1 @@
+web: gunicorn fineshine_jewellery.wsgi:application
