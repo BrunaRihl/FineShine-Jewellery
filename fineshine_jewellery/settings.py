@@ -102,7 +102,6 @@ TEMPLATES = [
 
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
-site_name = 'FineShine Jewellery'
 
 
 AUTHENTICATION_BACKENDS = [
