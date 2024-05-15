@@ -121,24 +121,24 @@ The Admin Panel epic aims to create a interface for administrators to efficientl
 
 * As an admin, I can log in to the admin panel so that I can manage and oversee its operations.
 
-* As an administrator, I can introduce, edit, and delete new products, so that the catalog can be continually expanded, keeping the offerings current and relevant for our customers.
+* As an admin, I can introduce, edit, and delete new products, so that the catalog can be continually expanded, keeping the offerings current and relevant for our customers.
 
 
 #### EPIC 3: User Authentication
 
 The User Authentication epic deals with implementing a system for user registration, login, and logout on the website. This enables users to create accounts, log in to access exclusive features, and log out when they wish to exit.
 
-* As a user, I can to be able to log in to my account so that I can access personalized features and services and save my preferences.
+* As a registered user, I can to be able to log in to my account so that I can access personalized features and services and save my preferences.
 
 * As a user, I can register an account so that I can establish a profile, save my information, become a customer, and access stored data.
 
-* As a user, I can to be able to log out of my account so that I can securely end my session on the website.
+* As a logged-in user, I can to be able to log out of my account so that I can securely end my session on the website.
 
-* As a user, I can update my profile so that I can keep my personal information up to date.
+* As a logged-in user, I can update my profile so that I can keep my personal information up to date.
 
-* As a user, I can securely reset my password in case I forget it, so that I can regain access to my account.
+* As a registered user, I can securely reset my password in case I forget it, so that I can regain access to my account.
 
-* As a user, I can securely save my username and password so that I can easily access the website whenever necessary.
+* As a registered user, I can securely save my username and password so that I can easily access the website whenever necessary.
 
 
 #### EPIC 4: SEO
@@ -177,7 +177,7 @@ Product Discovery and Features focuses on enhancing the user's ability to explor
 
 * As a user, I can add products to the shopping cart directly from the product details page for a convenient shopping experience, so that I can proceed to checkout seamlessly.
 
-* As a user, I can leave my review on products I have purchased, so that I can share my feedback with other users.
+* As a logged-in user, I can leave my review on products I have purchased, so that I can share my feedback with other users.
 
 #### EPIC 7: Shopping bag and checkout
 
@@ -191,13 +191,13 @@ Shopping Bag and Checkout enables users to seamlessly manage their shopping expe
 
 * As a user, I can proceed to checkout from my shopping bag to complete my purchase, so that I can finalize my order.
 
-* As a user, I can enter my personal and delivery details during checkout to ensure delivery of my order, so that my items are shipped to the correct address.
+* As a logged-in user, I can enter my personal and delivery details during checkout to ensure delivery of my order, so that my items are shipped to the correct address.
 
 * As a user, I can securely enter my payment details to complete the transaction, so that my purchase is successfully processed.
 
 * As a user, I receive a confirmation email after successfully completing the checkout process, providing details of my order, so that I have a record of my purchase.
 
-* As a user, I can view my order history in my profile to review my past purchases, so that I can track my shopping activity and access details of previous orders.
+* As a logged-in user, I can view my order history in my profile to review my past purchases, so that I can track my shopping activity and access details of previous orders.
  
 
 #### Epic 8: Contact Management and Customer Support
@@ -214,9 +214,9 @@ Contact Management and Customer Support streamlines user interaction by offering
 
 The Epic 9 focuses on implementing Wishlist functionality, allowing customers to easily manage desired products by adding, removing, and viewing items to facilitate future purchases.
 
-* As a customer, I can add and remove products to my wishlist so that I can save items I wish to purchase in the future.
+* As a logged-in user, I can add and remove products to my wishlist so that I can save items I wish to purchase in the future.
 
-* As a customer, I can view all the products I've added to my wishlist so that I can review my choices and make informed purchasing decisions.
+* As a logged-in user, I can view all the products I've added to my wishlist so that I can review my choices and make informed purchasing decisions.
 
 #### Epic 10: Posts
 
