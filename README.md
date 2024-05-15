@@ -1,39 +1,66 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# FineShine Jewellery
 
-Welcome,
+FineShine is an online platform specializing in the sale of unique and elegant jewelry, featuring a wide collection of earrings, necklaces, bracelets, rings, and sets. All pieces are crafted in Ireland and available for shipping. This project was developed as my fifth endeavor in the Code Institute's Full Stack Developer Course, utilizing Django, HTML, CSS, JS, and Python for its creation.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+If you'd like to make a test purchase, feel free to use the following Stripe test card details:
 
-## Codeanywhere Reminders
+Success Card Number: 4242 4242 4242 4242
+Expiration Date: Any future date in the format MM/YY
+CVN: Any 3-digit number
+Postal Code: Any 5-digit combination
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Demo
+The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herokuapp.com/)!
 
-`python3 -m http.server`
+## Contents
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* [User Experience](#user-experience)
+  * [Website Overview](#website-overview)
+  * [User base](#user-base)
+  * [Website Goals](#website-goals)
+  * [Flowchart](#flowchart)
+  * [ERD](#erd)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+* [User Stories](#user-stories)
+  * [Epics and User Stories](#epics-and-user-stories)
+  * [Agile development](#agile-development)
 
-`http_server`
+* [Design](#design)
+  * [Color Palette](#color-palette)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+  * [Wireframes](#wireframes)
+    
+* [Features](#features)
+  * [General Features on Page](#features)
+  * [Features and resources to be added in the future](#features-and-resources-to-be-added-in-the-future)
+  * [Accessibility](#accessibility)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* [Testing](#testing)
+  * [User Story Test](#user-story-test)
+  * [Tested Browsers and Devices](#tested-browsers-and-devices)
+  * [Manual Testing](#manual-testing)
+  * [Validator Testing](#validator-testing)
+  * [Bugs](#bugs)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* [Deployment](#deployment)
 
-To log into the Heroku toolbelt CLI:
+* [Credits](#credits)
+  * [Code](#code)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## User Experience
 
----
+### Website overview 
 
-Happy coding!
+FineShine is a fictional platform I created to offer an online shopping experience for exclusive and elegant jewelry. It was developed with the intention of providing an engaging and informative experience for users interested in acquiring high-quality and stylish jewelry pieces. Every aspect of the site, from design to content, has been planned to ensure easy and intuitive navigation.
+
