@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Raleway';
 }
 
 /* from Bulma */
@@ -18,6 +18,11 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
+
+.icon-bag {
+    color: #32d8ae !important;
+}
+
 
 .logo-font {
     text-transform: uppercase;
@@ -280,6 +285,7 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 }
+
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
