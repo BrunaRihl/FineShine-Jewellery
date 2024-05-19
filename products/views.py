@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from reviews.models import Review
+
 from .models import Product, Category
 from .forms import ProductForm
 
@@ -64,9 +66,14 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
-    context = {
-        'product': product,
-    }
+    product_reviews_exists = Review.objects.filter(product=product).exists()
+    if product_reviews_exists:
+        product_reviews = Review.objects.filter(product=product)
+    else:
+        product_reviews = []
+
+    context = {"product": product, "product_reviews": product_reviews}
+
 
     return render(request, 'products/product_detail.html', context)
 
