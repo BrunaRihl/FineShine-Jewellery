@@ -15,7 +15,7 @@
 
     {% block corecss %}
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="{% static 'css/base.css' %}" />
     {% endblock %}
 
@@ -30,7 +30,6 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       <!-- Stripe -->
       <script src="https://js.stripe.com/v3/"></script>
-
     {% endblock %}
 
     {% block extra_js %}
@@ -39,6 +38,7 @@
 
     <title>
       FineShine Jewellery{% block extra_title %}
+
       {% endblock %}
     </title>
   </head>
@@ -72,7 +72,7 @@
               <div class="dropdown-menu border-0" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
                   {% if request.user.is_superuser %}
-                      <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                   {% endif %}
                   <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                   <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -83,11 +83,8 @@
               </div>
             </li>
             <li class="list-inline-item">
-              <a class="{% if grand_total %}
-
-                {% endif %} nav-link"
-                href="{% url 'view_bag' %}">
-                <div class="text-center  icon-bag">
+              <a class="{% if grand_total %}{% endif %} nav-link" href="{% url 'view_bag' %}">
+                <div class="text-center icon-bag">
                   <div>
                     <i class="fas fa-shopping-bag fa-lg"></i>
                   </div>
@@ -104,22 +101,37 @@
             <!-- WISHLIST -->
             <li class="list-inline-item">
               {% if request.user.is_authenticated %}
-              <a class="text-black nav-link" href="{% url 'view_wishlist' %}">
+                <a class="text-black nav-link" href="{% url 'view_wishlist' %}">
                   <div class="text-center">
-                      <div><i class="fas fa-heart fa-lg"></i></div>
-                      <p class="my-0">Wishlist</p>
+                    <div>
+                      <i class="fas fa-heart fa-lg"></i>
+                    </div>
+                    <p class="my-0">Wishlist</p>
                   </div>
-              </a>
+                </a>
               {% else %}
-              <a class="text-muted nav-link" href="/" onclick="return false;">
+                <a class="text-muted nav-link" href="/" onclick="return false;">
                   <div class="text-center">
-                      <div><i class="fas fa-heart fa-lg"></i></div>
-                      <p class="my-0">Wishlist</p>
+                    <div>
+                      <i class="fas fa-heart fa-lg"></i>
+                    </div>
+                    <p class="my-0">Wishlist</p>
                   </div>
-              </a>
+                </a>
               {% endif %}
-          </li>
-          
+            </li>
+
+            <!-- CONTACT -->
+            <li class="list-inline-item">
+              <a class="text-black nav-link" href="{% url 'contact' %}">
+                <div class="text-center">
+                  <div>
+                    <i class="fas fa-comment fa-lg"></i>
+                  </div>
+                  <p class="my-0">Contact</p>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
