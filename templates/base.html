@@ -66,7 +66,7 @@
               <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                   <div>
-                    <i class="fas fa-user fa-lg"></i>
+                    <i class="fas fa-user fa-lg icon-nav-color"></i>
                   </div>
                   <p class="my-0">My Account</p>
                 </div>
@@ -84,29 +84,13 @@
                 {% endif %}
               </div>
             </li>
-            <li class="list-inline-item">
-              <a class="{% if grand_total %}{% endif %} nav-link" href="{% url 'view_bag' %}">
-                <div class="text-center icon-bag">
-                  <div>
-                    <i class="fas fa-shopping-bag fa-lg"></i>
-                  </div>
-                  <p class="my-0">
-                    {% if grand_total %}
-                      €{{ grand_total|floatformat:2 }}
-                    {% else %}
-                      €0.00
-                    {% endif %}
-                  </p>
-                </div>
-              </a>
-            </li>
             <!-- WISHLIST -->
             <li class="list-inline-item">
               {% if request.user.is_authenticated %}
                 <a class="text-black nav-link" href="{% url 'view_wishlist' %}">
                   <div class="text-center">
                     <div>
-                      <i class="fas fa-heart fa-lg"></i>
+                      <i class="fas fa-heart fa-lg icon-nav-color"></i>
                     </div>
                     <p class="my-0">Wishlist</p>
                   </div>
@@ -128,9 +112,26 @@
               <a class="text-black nav-link" href="{% url 'contact' %}">
                 <div class="text-center">
                   <div>
-                    <i class="fas fa-comment fa-lg"></i>
+                    <i class="fas fa-comment fa-lg icon-nav-color"></i>
                   </div>
                   <p class="my-0">Contact</p>
+                </div>
+              </a>
+            </li>
+            <!--BAG-->
+            <li class="list-inline-item">
+              <a class="{% if grand_total %}{% endif %} nav-link" href="{% url 'view_bag' %}">
+                <div class="text-center">
+                  <div>
+                    <i class="fas fa-shopping-bag fa-lg icon-nav-color"></i>
+                  </div>
+                  <p class="my-0 text-dark">
+                    {% if grand_total %}
+                      €{{ grand_total|floatformat:2 }}
+                    {% else %}
+                      €0.00
+                    {% endif %}
+                  </p>
                 </div>
               </a>
             </li>
