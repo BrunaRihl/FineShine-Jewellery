@@ -23,7 +23,6 @@ body {
     color: #32d8ae !important;
 }
 
-
 .logo-font {
     text-transform: uppercase;
 }
@@ -43,9 +42,56 @@ body {
     color: white;
 }
 
+.bg-black {
+    background: #000 !important;
+  }
+  
+/* Class for the glitter effect */
+/* Classe para o efeito glitter */
+.glitter-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Partículas de glitter */
+  .glitter-particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    /* Cor dourada em RGB */
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 20%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    /* Animação das partículas */
+    animation: glitter-animation 2s infinite;
+    opacity: 0;
+  }
+  
+  /* Animação das partículas */
+  @keyframes glitter-animation {
+    0% {
+      opacity: 0;
+      transform: scale(1); 
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2); 
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1); 
+    }
+  }
+          
+/* Adjustment to ensure that the text remains above the glitter particles */
+.glitter-effect .text {
+    position: relative;
+    z-index: 1;
+    }
+    
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important; 
     border: 1px solid black;
 }
 
