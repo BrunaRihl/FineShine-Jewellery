@@ -24,6 +24,10 @@ body {
     height: auto;
 }
 
+.text-effect {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+}
+
 .hero-overlay {
     position: relative;
     background: no-repeat center center;
@@ -92,28 +96,24 @@ body {
     background: #000 !important;
   }
   
-/* Class for the glitter effect */
-/* Classe para o efeito glitter */
+/* glitter effect */
 .glitter-effect {
     position: relative;
     overflow: hidden;
   }
   
-  /* Partículas de glitter */
   .glitter-particle {
     position: absolute;
     width: 4px;
     height: 4px;
-    /* Cor dourada em RGB */
     background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 20%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
-    /* Animação das partículas */
     animation: glitter-animation 2s infinite;
     opacity: 0;
   }
   
-  /* Animação das partículas */
+  /* animation */
   @keyframes glitter-animation {
     0% {
       opacity: 0;
@@ -281,6 +281,7 @@ input[name='q']::placeholder {
   .container {
     max-width: 80%;
   }
+  
 }
 
 /* Allauth form formatting */
