@@ -23,6 +23,7 @@ body {
     color: #32d8ae !important;
 }
 
+
 .logo-font {
     text-transform: uppercase;
 }
@@ -31,15 +32,16 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
+.explore-now-button {
+    background: #D3AD6E;
+    border: 2px solid black; 
+    color: black;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: #D3AD6E;
+    color:  black;
 }
 
 .bg-black {
@@ -102,14 +104,14 @@ body {
     color: white !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.explore-now-button:hover,
+.explore-now-button:active,
+.explore-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white;
+    color: #D3AD6E;
 }
 
 .text-black {
