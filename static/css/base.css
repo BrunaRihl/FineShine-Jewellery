@@ -3,6 +3,7 @@
     --black: black;
     --white: white;
     --gold: #DFB674;
+    --lightgold: #dac49f;
     --green: #4A8D80;
  
   }
@@ -86,9 +87,9 @@ body {
 }
 
 .btn-black {
-    background: var(--black);
-    color:  var(--gold);
-    border: 1px solid var(--black); 
+    background: var(--gold);
+    color:  var(--black);
+    border: 1px solid var(--black);
 
 }
 
@@ -155,7 +156,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: var(--gold);
+    background: var(--lightgold);
     color: var(--black);
     border: 1px solid var(--black); 
 
@@ -272,6 +273,25 @@ input[name='q']::placeholder {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* wishlist */
+
+.wish-delete {
+    text-decoration: none !important;
+    color: rgba(255, 0, 0, 0.673);
+    opacity: 0.9 !important;
+    transition: 0.2s;
+}
+
+.wish-delete:hover {
+    color: rgba(255, 0, 0, 0.673);
+    text-decoration: none !important;
+    opacity: 0.5 !important;
+}
+
+.list-group-item:last-child {
+    border: 0;
 }
 
 

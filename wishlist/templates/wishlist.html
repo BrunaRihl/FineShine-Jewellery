@@ -16,15 +16,9 @@
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-6 col-lg-6">
                 <hr>
-                <h2 class="logo-font mb-4">Wishlist</h2>
-                <a href="{% url 'products' %}" class="btn btn-outline-black mt-5">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Add more jewellers</span>
-                </a>
+                <h2 class="logo-font mb-4 text-center">Wishlist <i class="fas fa-heart"></i></h2>
                 <hr>
-                
+                                
                 {% if wishlist_items %}
                 <ul class="list-group">
                     {% for item in wishlist_items %}
@@ -33,10 +27,10 @@
                             <div class="col-lg-2 col-sm-4">
                                 <a href="{% url 'product_detail' item.product.id %}">
                                     {% if item.product.image %}
-                                    <img class="w-100 wishlist-prod" src="{{ item.product.image.url }}"
+                                    <img class="w-100" src="{{ item.product.image.url }}"
                                         alt="{{ item.product.name }}">
                                     {% else %}
-                                    <img class="w-100 wishlist-prod"
+                                    <img class="w-100"
                                         src="{{ MEDIA_URL }}product_placeholder.png"
                                         alt="{{ item.product.name }}">
                                     {% endif %}
@@ -47,16 +41,22 @@
                             </div>
                             <div class="col-lg-4 col-sm-4">
                                 <a href="{% url 'remove_from_wishlist' item.product.id %}"
-                                    class="wishlist-delete">
-                                    <i class="fas fa-trash wishlist-icon"></i> Remove
+                                    class="wish-delete">
+                                    <i class="fas fa-trash wishlist-icon"></i> Remove Item
                                 </a>
                             </div>
                         </div>
                     </li>
                     {% endfor %}
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>    
                 </ul>
                 {% else %}
-                <p class="lead mb-5">Your wishlist is empty.</p>
+                <p class="lead mb-5">Looks like your wishlist is currently empty. Explore our collection of jewelry and start curating your wishlist today!</p>
                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
