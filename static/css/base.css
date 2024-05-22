@@ -274,6 +274,21 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+
+/* --------- review page*/
+
+/* Style for selected stars */
+.rating .fa-star.selected {
+    color: var(--gold); /* Gold fill */
+  }
+  
+  /* Style for when the mouse hovers over the stars */
+  .rating .fa-star:hover,
+  .rating .fa-star:hover ~ .fa-star {
+    color: var(--gold); /* Gold fill */
+  }
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
