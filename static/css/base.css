@@ -206,7 +206,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -228,7 +228,7 @@ input[name='q']::placeholder {
     width: 0; 
     height: 0; 
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -275,7 +275,7 @@ input[name='q']::placeholder {
 }
 
 
-/* --------- review page*/
+/* review page*/
 
 /* Style for selected stars */
 .rating .fa-star.selected {
@@ -289,7 +289,7 @@ input[name='q']::placeholder {
   }
 
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
