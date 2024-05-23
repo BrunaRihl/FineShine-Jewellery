@@ -295,6 +295,28 @@ input[name='q']::placeholder {
     border: 0;
 }
 
+.wishlist-link {
+    text-decoration: none;
+    color: #333; /* Cor do texto */
+    background-color: #fff; /* Cor de fundo */
+    padding: 8px 12px;
+    border: 2px solid #ccc; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    transition: all 0.3s ease; /* Transição suave */
+
+}
+
+.wishlist-link:hover {
+    text-decoration: none;
+    box-shadow: 0 2px 4px var(--green); /* Sombra suave no hover */
+    color: #333; /* Cor do texto */
+
+}
+
+.my-4 .wishlist-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /* review page*/
 
