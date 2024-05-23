@@ -1,35 +1,19 @@
 from django.shortcuts import render, redirect
-from .models import Contact
+from .forms import ContactForm
 
-
-# Create your views here.
 def index(request):
     """
     View to handle the submission of a contact form.
     """
     if request.method == "POST":
-        name = request.POST.get("name")
-        email = request.POST.get("email")
-        textarea = request.POST.get("textarea")
+        form = ContactForm(request.POST)  
+        if form.is_valid():  
+            form.save()  
+            return redirect("success")  
+    else:
+        form = ContactForm()  
 
-        # Verifica se todos os campos obrigatórios foram preenchidos
-        if name and email and textarea:
-            # Cria e salva o objeto Contact no banco de dados
-            contact = Contact.objects.create(
-                name=name, email=email, textarea=textarea
-            )
-            # Redireciona para a página de sucesso
-            return redirect("success")
-        else:
-            # Se algum campo estiver em branco, exibe uma mensagem de erro
-            return render(
-                request,
-                "contact.html",
-                {"error_message": "Please fill in all required fields."},
-            )
-
-    return render(request, "contact.html")
-
-
+    return render(request, "contact.html", {"form": form})  
 def success(request):
-    return render(request, "contact_success.html")
+    """ A view to return contact success page """
+    return render(request, 'contact_success.html')
