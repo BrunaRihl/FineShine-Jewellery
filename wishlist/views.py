@@ -8,11 +8,16 @@ from profiles.models import UserProfile
 from django.http import HttpResponse
 
 
-# Create your views here.
 @login_required
 def view_wishlist(request):
-    """A view that renders the wishlist contents page"""
+    """
+    Display the user's wishlist.
+    Args:
+        request (HttpRequest): The request object.
 
+    Returns:
+        HttpResponse: Rendered 'wishlist.html' template with wishlist items.
+    """
     user = UserProfile.objects.get(user=request.user)
     wishlist_items = Wishlist.objects.filter(user=user)
 
@@ -20,37 +25,35 @@ def view_wishlist(request):
 
 @login_required
 def add_to_wishlist(request, item_id):
-    """Add a quantity of the specified product to the shopping wishlist"""
-
+    """
+    Add a product to the user's wishlist.
+    Args:
+        request (HttpRequest): The request object.
+        item_id (int): ID of the product to add.
+    """
     product = get_object_or_404(Product, pk=item_id)
     user = UserProfile.objects.get(user=request.user)
 
-    product_exists = Wishlist.objects.filter(
-        user=user, product=product
-    ).exists()
-    if product_exists:
-        messages.warning(
-            request, f"{product.name} is already in your Wishlist."
-        )
+    if Wishlist.objects.filter(user=user, product=product).exists():
+        messages.warning(request, f"{product.name} is already included in your wishlist.")
     else:
-        # create a new wishlist item
-        wishlist_item = Wishlist.objects.create(user=user, product=product)
-        messages.success(
-            request,
-            f"{wishlist_item.product.name} added to Wishlist successfully!",
-        )
+        Wishlist.objects.create(user=user, product=product)
+        messages.success(request, f"Successfully added {product.name} to your wishlist!")
 
     return redirect(reverse("product_detail", args=[item_id]))
 
-
 @login_required
 def remove_from_wishlist(request, item_id):
-    """Remove the item from the shopping wishlist"""
-
+    """
+    Remove a product from the user's wishlist.
+    Args:
+        request (HttpRequest): The request object.
+        item_id (int): ID of the product to remove.
+    """
     product = get_object_or_404(Product, pk=item_id)
     user = UserProfile.objects.get(user=request.user)
     wishlist_item = Wishlist.objects.get(user=user, product=product)
 
     wishlist_item.delete()
-    messages.success(request, f"{product.name} has been successfully removed from wishlist.")
+    messages.success(request, f"{product.name} has been removed from wishlist.")
     return redirect(reverse("view_wishlist"))

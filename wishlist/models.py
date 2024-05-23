@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 from django.db import models
 from profiles.models import UserProfile
 from products.models import Product
@@ -8,7 +7,10 @@ from products.models import Product
 
 class Wishlist(models.Model):
     """
-    A Wishlist model for users to keep track of their favourite products
+    Represents a wishlist item linking a user to a desired product.
+    Attrs:
+        user (ForeignKey): A reference to the user profile associated with the wishlist.
+        product (ForeignKey): A reference to the product that the user wishes for.
     """
 
     user = models.ForeignKey(
