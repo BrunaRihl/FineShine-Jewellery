@@ -14,9 +14,6 @@ def view_wishlist(request):
     Display the user's wishlist.
     Args:
         request (HttpRequest): The request object.
-
-    Returns:
-        HttpResponse: Rendered 'wishlist.html' template with wishlist items.
     """
     user = UserProfile.objects.get(user=request.user)
     wishlist_items = Wishlist.objects.filter(user=user)

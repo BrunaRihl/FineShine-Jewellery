@@ -5,7 +5,8 @@
     --gold: #DFB674;
     --lightgold: #dac49f;
     --green: #4A8D80;
-    --lightgreen: #88CBBE;
+    --lightgreen2: #88CBBE;
+    --lightgreen:#b0c9c4;
  
   }
 
@@ -88,7 +89,7 @@ body {
 }
 
 .btn-black {
-    background: var(--gold);
+    background: var(--lightgreen);
     color:  var(--black);
     border: 1px solid var(--black);
 
@@ -157,10 +158,40 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: var(--lightgold);
+    background: var(--lightgreen2);
     color: var(--black);
     border: 1px solid var(--black); 
 
+}
+
+/** Products page**/
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+
+.product-link:hover .image-overlay {
+    opacity: 1; 
+}
+
+.card-img-top {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.product-link:hover .card-img-top {
+    transform: scale(1.1); 
 }
 
 .text-black {
@@ -300,7 +331,7 @@ input[name='q']::placeholder {
     color: #333; /* Cor do texto */
     background-color: #fff; /* Cor de fundo */
     padding: 8px 12px;
-    border: 2px solid #ccc; /* Borda */
+    border: 2px solid var(--lightgreen); /* Borda */
     border-radius: 5px; /* Borda arredondada */
     transition: all 0.3s ease; /* Transição suave */
 
