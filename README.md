@@ -175,13 +175,13 @@ Product Discovery and Features focuses on enhancing the user's ability to explor
 
 * As a user, I can view a comprehensive product details page, including description, price, images, and customer reviews, so that I can make informed purchasing decisions.
 
-* As a user, I can add products to the shopping cart directly from the product details page for a convenient shopping experience, so that I can proceed to checkout seamlessly.
+* As a user, I can add products to the shopping bag directly from the product details page for a convenient shopping experience, so that I can proceed to checkout seamlessly.
 
 * As a logged-in user, I can leave my review on products I have purchased, so that I can share my feedback with other users.
 
 #### EPIC 7: Shopping bag and checkout
 
-Shopping Bag and Checkout enables users to seamlessly manage their shopping experience from adding items to the cart to completing the checkout process.
+Shopping Bag and Checkout enables users to seamlessly manage their shopping experience from adding items to the bag to completing the checkout process.
 
 * As a user, I can add products to my shopping bag to keep track of items I intend to purchase and have a preview of how my bag looks on the current page, so that I can easily manage my shopping selections.
 
@@ -242,3 +242,24 @@ Throughout the project development, I adopted an agile methodology, utilizing Ka
 
 
 For more details on the project management process, you can access the link [here](https://github.com/users/BrunaRihl/projects/8).
+
+#### User Story Prioritization
+
+In my agile project, I prioritize user stories to ensure that I focus on delivering the most critical features first. I categorize my user stories into four main groups:
+
+* Must Have: These are essential for the project's success. Without these features, the project cannot be considered complete. They represent the core functionalities that need to be delivered in the first release.
+
+* Should Have: These are important but not critical. While the project can be launched without these features, they are high-priority items that add significant value and should be included if possible.
+
+* Could Have: These are desirable features that enhance the user experience but are not essential. They are lower in priority and can be included if time and resources allow.
+
+* Won't Have: These features will not be included in the current iteration or release. They may be considered for future development but are not a focus for the current project timeline.
+
+#### Distribution of User Stories
+
+I have a total of 40 user stories for this project. Here is how I have distributed them across the four categories:
+
+* Must Have: 26 user stories (65%)
+* Should Have: 8 user stories (20%)
+* Could Have: 4 user stories (10%)
+* Won't Have: 2 user stories (5%)
