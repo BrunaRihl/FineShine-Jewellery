@@ -263,3 +263,5 @@ I have a total of 40 user stories for this project. Here is how I have distribut
 * Should Have: 8 user stories (20%)
 * Could Have: 4 user stories (10%)
 * Won't Have: 2 user stories (5%)
+
+For more details on the categorization, distribution of user stories, and project prioritization, you can access the link [here](https://github.com/BrunaRihl/FineShine-Jewellery/issues).
