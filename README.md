@@ -265,3 +265,109 @@ I have a total of 40 user stories for this project. Here is how I have distribut
 * Won't Have: 2 user stories (5%)
 
 For more details on the categorization, distribution of user stories, and project prioritization, you can access the link [here](https://github.com/BrunaRihl/FineShine-Jewellery/issues).
+
+## Design
+
+### Color palette
+
+The website's color palette was inspired by the hero image on the homepage, featuring shades of aqua green, gold, black, and white. This choice not only reflects the sophistication of the jewelry but also creates an atmosphere of freshness and elegance for users. Additionally, the sharp contrast between black and white was carefully considered to ensure excellent readability and ease of navigation for visitors.
+
+![FineShine website color palette](/static/images/docs/palette.png)
+
+### Typography 
+
+Google Fonts were used to incorporate the selected font styles into the website. 
+
+I chose 'Raleway' for the body text due to its modern and elegant appearance, characterized by clean lines and versatility, making it suitable for a wide range of content types. This contributes to a cohesive and polished design aesthetic. Its legibility ensures a comfortable reading experience for users, while its balanced proportions and distinct letterforms add a touch of sophistication to the site, enhancing the overall user experience and reinforcing its brand identity.
+
+![FineShine fonts](/static/media/docs/fonts.jpg)  
+
+### Imagery 
+
+The images selected for the website were carefully chosen to showcase the variety of products available, including earrings, rings, necklaces, bracelets, and sets. High-resolution images that present the products clearly and attractively were prioritized. Each image was chosen to complement the overall design of the site, ensuring a visually cohesive experience for users. The goal was to provide an engaging and inspiring experience, inviting visitors to explore the diversity of products available in the e-commerce catalog.
+
+### Wireframes
+
+I developed a simple wireframe, aiming to ensure a consistent experience across mobile devices and computers.
+
+I made some adjustments in relation to what I had planned for positioning and added some buttons to enhance functionality and user experience, aiming to ensure the website is accessible and enjoyable on any platform.
+
+#### Desktop
+<details>
+  <summary>Home
+</summary>
+
+![FineShine wireframe](/static/images/docs/home-desk.webp)  
+
+</details>
+<details>
+  <summary>Products
+</summary>
+
+![FineShine wireframe](/static/images/docs/products-desk.webp)  
+
+</details>
+<details>
+  <summary>Products Details
+</summary>
+
+![FineShine wireframe](/static/images/docs/details-desk.webp)  
+
+</details>
+
+</details>
+<details>
+  <summary>Wishlist
+</summary>
+
+![FineShine wireframe](/static/images/docs/wish-desk.webp)  
+
+</details>
+<details>
+  <summary>Contact
+</summary>
+
+![FineShine wireframe](/static/images/docs/contact-desk.webp)  
+
+</details>
+
+
+#### Mobile
+<details>
+  <summary>Home
+</summary>
+
+![FineShine wireframe](/static/images/docs/home-mob.webp)  
+
+</details>
+<details>
+  <summary>Products
+</summary>
+
+![FineShine wireframe](/static/images/docs/products-mob.webp)  
+
+</details>
+<details>
+  <summary>Products Details
+</summary>
+
+![FineShine wireframe](/static/images/docs/details-mob.webp)  
+
+</details>
+
+</details>
+<details>
+  <summary>Wishlist
+</summary>
+
+![FineShine wireframe](/static/images/docs/wish-mob.webp)  
+
+</details>
+<details>
+  <summary>Contact
+</summary>
+
+![FineShine wireframe](/static/images/docs/contact-mob.webp)  
+
+</details>
+</details>
