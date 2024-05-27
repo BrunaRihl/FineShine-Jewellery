@@ -11,14 +11,14 @@
 
 {% block content %}
 <section>
+    
     <div class="overlay"></div>
-    <div class="container-fluid py-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-6 col-lg-6">
-                <hr>
-                <h2 class="logo-font mb-4 text-center">Wishlist <i class="fa-regular fa-heart"></i></h2>
-                <hr>
-                                
+    <div class="container-fluid margin-top-div">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+            <hr>
+            <h2 class="logo-font mb-4 text-center">Wishlist <i class="fa-regular fa-heart"></i></h2>
+            <hr>                                
                 {% if wishlist_items %}
                 <ul class="list-group">
                     {% for item in wishlist_items %}
