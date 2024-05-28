@@ -351,6 +351,36 @@ input[name='q']::placeholder {
 
 /* review page*/
 
+.review {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+  }
+  
+  .review h5 {
+    margin-top: 0;
+  }
+  
+  .rating .fa-star.selected {
+    color: var(--gold);
+  }
+  
+  .rating .fa-star {
+    cursor: pointer;
+  }
+  
+  .allauth-form-inner-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .allauth-form-inner-content form {
+    margin: 0;
+  }
+  
 /* Style for selected stars */
 .rating .fa-star.selected {
     color: var(--gold); /* Gold fill */
