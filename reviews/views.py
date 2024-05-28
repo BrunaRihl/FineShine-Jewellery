@@ -13,7 +13,12 @@ from .forms import ReviewForm
 @login_required
 def create_review(request, item_id):
     """
-    """ 
+    Allow authenticated users to create a review for a product. 
+    This view requires the user to be logged in.
+    Args:
+        request: HttpRequest object.
+        item_id: The ID of the product for which the review is being created.
+    """
     product = get_object_or_404(Product, pk=item_id)
     user = UserProfile.objects.get(user=request.user)
     orders = user.orders.all()
@@ -76,6 +81,11 @@ def create_review(request, item_id):
 @login_required
 def edit_review(request, review_id):
     """
+    Allow authenticated users to edit their own review.
+    This view requires the user to be logged in.
+    Args:
+        request: HttpRequest object.
+        review_id: The ID of the review being edited.
     """
     review = get_object_or_404(Review, id=review_id, user=request.user)
     product = review.product
@@ -111,6 +121,11 @@ def edit_review(request, review_id):
 @login_required
 def delete_review(request, review_id):
     """
+    Allow authenticated users to delete their own review.
+    This view requires the user to be logged in.
+    Args:
+        request: HttpRequest object.
+        review_id: The ID of the review being deleted.
     """
     review = get_object_or_404(Review, id=review_id, user=request.user)
     product = review.product

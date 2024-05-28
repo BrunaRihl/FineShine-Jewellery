@@ -9,6 +9,17 @@ from products.models import Product
 
 
 class Review(models.Model):
+    """
+    Represents a review for a product written by a user.
+    Attributes:
+        product (Product): The product being reviewed.
+        user (User): The user who wrote the review.
+        title (str): The title of the review.
+        text (str): The text content of the review.
+        rating (int): The rating given by the user (from 1 to 5).
+        created_at (datetime): The date and time when the review was created.
+        updated_at (datetime): The date and time when the review was last updated.
+    """
     product = models.ForeignKey(
         Product, null=False, blank=False, on_delete=models.CASCADE
     )
