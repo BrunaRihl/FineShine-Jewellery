@@ -371,3 +371,64 @@ I made some adjustments in relation to what I had planned for positioning and ad
 
 </details>
 </details>
+
+
+
+
+
+
+
+## Technologies Used
+### Languages
+
+* Python 3, Html, Css, JavaScript.
+
+### Frameworks, Libraries & Programs
+
+Visual Studio Code (VS Code): Utilized as a source code editor.
+
+[Django](https://www.djangoproject.com/): Used as a web framework for building the application.
+
+[Bootstrap](https://getbootstrap.com/): Utilized for responsive and mobile-first front-end web development.
+
+[ElephantSQL](https://www.elephantsql.com/): Utilized for managing PostgreSQL databases in the cloud.
+
+[Google Fonts](https://fonts.google.com/): Imported to integrate font styles into the website. 
+
+[Font Awesome](https://fontawesome.com/): Incorporated to easily add icons across the website.
+
+[Lucidchart](https://lucid.app/): employed in the planning phase for crafting flowcharts
+
+[Heroku Platform](https://dashboard.heroku.com/apps): for deploying the application in a live environment.
+
+[Stripe](https://stripe.com/): Integrated for handling payment processing within the Django application.
+
+[AWS](https://aws.amazon.com/):Utilized for cloud computing services, such as hosting and managing the application's database and storage.
+
+Google Dev Tools: Leveraged for debugging and testing features, as well as resolving issues related to responsiveness and styling. 
+
+[Pep8 online](https://pep8ci.herokuapp.com/): Used to identify issues in my Python code.
+
+[The W3C Markup Validation Service](https://validator.w3.org/): Used to validate the accuracy and validity of HTML code.
+
+[The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/): Employed to validate the correctness and compliance of CSS code.
+
+[GitHub](https://github.com/): Used to save and store the website files.
+
+
+#### Python Libraries and Modules
+
+* **os:** Used for interacting with the operating system, including file system operations and environment variables.
+
+* **sys:** Provides access to interpreter variables and functions for interacting with the Python interpreter.
+
+* **pathlib:** Allows for easy and platform-independent manipulation of file paths, representing files and directories in the file system.
+
+* **uuid**: Generates and manages universally unique identifiers (UUIDs) in Python.
+
+* **stripe**: used for integrating Stripe payment processing into Django applications.
+
+* **time**: used for handling time-related functionalities such as pausing program execution, calculating the duration of operations / scheduling actions to occur at specific times.
+
+* **datetime**: Used for date and time manipulation.
+
