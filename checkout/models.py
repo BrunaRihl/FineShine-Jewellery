@@ -11,6 +11,11 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """
+    Represents a customer's order, including details such as order number,
+    user profile, contact information, address, and order totals.
+    """
+
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='orders')
@@ -63,6 +68,10 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    Represents a single item within an order, including details such as
+    the product, quantity, and total price for that line item.
+    """
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     product_size = models.CharField(max_length=20, null=True, blank=True)
@@ -78,4 +87,8 @@ class OrderLineItem(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
+        """
+        String representation of the OrderLineItem instance, showing the
+        product SKU and order number.
+        """
         return f'SKU {self.product.sku} on order {self.order.order_number}'

@@ -34,6 +34,12 @@ def profile(request):
 
 
 def order_history(request, order_number):
+    """
+    Retrieve and display the order history.
+    Args:
+        request (HttpRequest): The request object sent by the client.
+        order_number (str): The order number used to retrieve the order.
+    """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (

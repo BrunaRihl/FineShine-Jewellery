@@ -11,7 +11,7 @@ from products.models import Product
 class Review(models.Model):
     """
     Represents a review for a product written by a user.
-    Attributes:
+    Attr:
         product (Product): The product being reviewed.
         user (User): The user who wrote the review.
         title (str): The title of the review.

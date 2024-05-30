@@ -3,14 +3,26 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+    Form for updating user profile information.
+    This form is used to update the user profile information, excluding the user field.
+    It customizes field attributes such as placeholders, classes, and autofocus on the first field.
+    Attr:
+        model (UserProfile): The UserProfile model used for the form.
+        exclude (tuple): Fields to exclude from the form.
+    """
+
     class Meta:
         model = UserProfile
         exclude = ('user',)
 
     def __init__(self, *args, **kwargs):
         """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
+        Initialize the form and customize field attributes.
+        This method sets placeholders, classes, and autofocus on the first field.
+        Args:
+            *args: Variable length argument list.
+            **kwargs: Arbitrary keyword arguments.
         """
         super().__init__(*args, **kwargs)
         placeholders = {

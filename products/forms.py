@@ -4,7 +4,11 @@ from .models import Product, Category
 
 
 class ProductForm(forms.ModelForm):
-
+    """
+    A form for creating and updating product instances.
+    Attr:
+        image (ImageField): An optional image of the product.
+    """
     class Meta:
         model = Product
         fields = '__all__'
@@ -12,6 +16,9 @@ class ProductForm(forms.ModelForm):
     image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
+        """
+        Initialize the form with category choices and additional styling.
+        """
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]

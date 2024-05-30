@@ -4,7 +4,10 @@ from django.shortcuts import get_object_or_404
 from products.models import Product
 
 def bag_contents(request):
-
+    """
+    Calculate the contents of the shopping bag, including the total cost, 
+    product count, and any applicable delivery charges.
+    """
     bag_items = []
     total = 0
     product_count = 0

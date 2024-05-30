@@ -4,7 +4,7 @@ from django import forms
 class ReviewForm(forms.Form):
     """
     Form for creating or editing a review.
-    Attributes:
+    Attr:
         title (CharField): The title of the review.
         rating (IntegerField): The rating given by the user (from 1 to 5).
         text (CharField): The text content of the review.
