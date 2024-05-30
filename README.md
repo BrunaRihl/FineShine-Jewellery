@@ -432,3 +432,322 @@ Google Dev Tools: Leveraged for debugging and testing features, as well as resol
 
 * **datetime**: Used for date and time manipulation.
 
+## Deployment
+
+<details>
+  <summary> Deploying Your Project on Heroku</summary>
+
+* To get your project up and running on Heroku, follow these steps:
+
+1. **Create a List of Dependencies:**
+   - In the terminal, run the command `pip3 freeze > requirements.txt` to generate a list of dependencies needed for Heroku deployment.
+
+2. **Heroku Account Setup:**
+   - Log in to your Heroku account or create a new one if needed.
+
+3. **Create a New App:**
+   - Click on "New" in the top-right corner of your Heroku Dashboard, and select "Create new app" from the dropdown menu.
+   - Enter a unique app name and choose a region (EU or USA) closest to you.
+   - Click on "Create App".
+
+4. **Config Var**:
+   - In your new app’s settings tab, ensure the Config Var DISABLE_COLLECTSTATIC key has a value of 1.
+
+5. **Update Your Code for Deployment**:
+   - Use pip3 to install gunicorn and freeze it to the requirements.txt file.
+   - In the Procfile, add a command using gunicorn and your project wsgi file to start the webserver.
+     ```bash
+     web: gunicorn <your project>.wsgi
+     ```
+   - In thensettings.py file, set the DEBUG constant to False and append the '.herokuapp.com' hostname to the ALLOWED_HOSTS list.
+     ```python
+     DEBUG = False
+     ALLOWED_HOSTS = ['.herokuapp.com']
+     ```
+
+6. **Connect to GitHub:**
+   - Go to the "Deploy" tab and select "GitHub" as the deployment method.
+   - Click "Connect to GitHub" and search for your repository name.
+   - Click "Connect" to link the repository to Heroku.
+  - In your new app’s resources tab delete any Postgres database Add-on.
+
+7. **Deploy the App:**
+   - Scroll down to "Manual deploy" and click "Deploy Branch". This allows you to view the build logs as the app is being constructed.
+   - After the initial deployment, you can enable "Enable Automatic Deploys" to keep the app up-to-date with your GitHub repository.
+
+8. **Finalize Deployment:**
+   - Wait for the app to build. Once ready, you will see the "App was successfully deployed" message and a 'View' button to take you to your deployed link.
+
+
+You can access the live project by clicking [here](https://starlight-consultations-2b1105ac431c.herokuapp.com/).
+
+</details>
+
+<details>
+  <summary>Setting up ElephantSQL PostgreSQL Database
+</summary>
+
+Steps to create an instance of a cloud-based PostgreSQL database using ElephantSQL and connect it to our Django project.
+
+**Steps**
+
+1. **Create PostgreSQL Instance:**
+   - Log into your ElephantSQL dashboard.
+   - Click on "Create New Instance".
+   - Set up your plan
+   - Select a data center near you.
+   - Click "Review".
+   - Verify your details and click "Create instance".
+
+2. **Copy Database URL:**
+   - Click on "DETAILS" and copy the URL.
+
+   
+3. **Create `env.py` File:**
+   - Create a file named `env.py` at the top level of your project.
+   - Add the following code to `env.py`, replacing `<your-database-URL>` with the URL copied from ElephantSQL:
+     ```python
+     import os
+
+     os.environ.setdefault(
+         "DATABASE_URL", "<your-database-URL>"
+     )
+     ```
+
+4. **Update `.gitignore` File:**
+   - Open `.gitignore` file and add `env.py` to prevent secret data from being pushed to GitHub.
+
+5. **Install Database Packages:**
+   - Install the required packages to connect to your PostgreSQL database:
+
+6. **Update `settings.py`:**
+   - Import required packages in `settings.py`:
+     ```python
+     import os
+     import dj_database_url
+
+     if os.path.isfile('env.py'):
+         import env
+     ```
+   - Connect to the environment variable `DATABASE_URL`:
+     ```python
+     DATABASES = {
+         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+     }
+     ```
+
+7. **Migrate Database Tables:**
+   - Run migrations to create database tables
+
+8. **Create Superuser:**
+    - Create a superuser for admin access to the database:
+      ```bash
+      python manage.py createsuperuser
+      ```
+    - Follow the prompts to choose a username, email, and password.
+
+9. **Deploy the Project:**
+    - Change DEBUG value to False in `settings.py`.
+    - Push your updated code to GitHub.
+    - Go to the Heroku dashboard and deploy your project.
+
+10. **Connect Heroku to PostgreSQL Database:**
+    - Go to the Heroku app's Settings tab and click "Reveal Config Vars".
+    - Add a new config var with a key of `DATABASE_URL` and the value of the ElephantSQL URL.
+
+</details>
+
+<details>
+  <summary>Setting up Amazon AWS</summary>
+
+To store media and static files online, this project leverages AWS, a cloud computing platform. Since Heroku does not retain this type of data, AWS provides a reliable solution.
+
+Here's a step-by-step guide to connect your project to AWS:
+
+## S3 Bucket
+
+**Steps:**
+
+1. Search for S3.
+2. Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
+3. Uncheck "Block all public access" and confirm that the bucket will be public (required for it to work on Heroku).
+4. From Properties, enable static website hosting, and enter index.html and error.html in their respective fields, then click Save.
+5. In the Permissions tab, paste the following CORS configuration:
+
+```json
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+6. Copy your ARN.
+7. In the Bucket Policy tab, select the Policy Generator link, and use the following steps:
+* Policy Type: S3 Bucket Policy
+* Effect: Allow
+* Principal: *
+* Actions: GetObject
+* Amazon Resource Name (ARN): paste-your-ARN-here
+* Click Add Statement
+* Click Generate Policy
+8. Copy the entire Policy and paste it into the * Bucket Policy Editor:
+```json
+{
+    "Id": "Policy1234567890",
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1234567890",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::your-bucket-name/*",
+            "Principal": "*"
+        }
+    ]
+}
+
+```
+
+9. Before clicking "Save", add "/*" to the end of the Resource key in the Bucket Policy Editor (like above).
+10. Click Save.
+11. In the Access Control List (ACL) section, click "Edit" and enable List for Everyone (public access), and accept the warning box.
+12. If the edit button is disabled, you need to change the Object Ownership section above to ACLs enabled (mentioned above).
+
+### AWS - IAM Setup
+
+To set up IAM (Identity and Access Management) in AWS, follow these simplified steps:
+
+Steps:
+
+1. Create a New Group: Navigate to the AWS Services Menu and create a new group, giving it a name relevant to your project, like 'group-project-name'.
+
+2. Assign Policies to the Group: Once the group is created, navigate to the Review Policy page. Under User Groups, select the newly named group. Then, move to the Permissions tab, click on Add Permissions, and select the policies you want to attach. Click on the Add Permissions button at the bottom to finish.
+
+3. Import Managed Policy: From the JSON tab, click on the Import Managed Policy link. Search for 'S3' and select the 'AmazonS3FullAccess' policy. Import it into your policy.
+* Copy ARN from S3 Bucket
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::bucket-name",
+        "arn:aws:s3:::bucket-name/*"
+      ]
+    }
+  ]
+}
+
+```
+
+4. Review and Create Policy: Review the policy settings, give it a name (e.g., 'policy-everneed'), enter a description, and create the policy.
+
+5. Attach Policy to User Groups: Search for the newly created policy and attach it to the desired user groups.
+
+6. Create a New User: Under User Groups, add a new user, providing a name like 'user-everneed'. For Select AWS Access Type, choose Programmatic Access. Add the group 'user-everneed' to this user.
+
+7. Review and Create User: Review the user settings and create the user.
+
+8. Download Access Credentials: After creating the user, find the Download.csv button to download the user's access credentials immediately. Save a copy of this file. It contains the user's Access Key ID and Secret Access Key, which you'll need for authentication.
+* AWS_ACCESS_KEY_ID = Access key ID
+* AWS_SECRET_ACCESS_KEY = Secret access key
+
+### Final AWS Setup
+
+1. If the Heroku Config Vars still includes DISABLE_COLLECTSTATIC, it can now be removed. This allows AWS to manage the static files.
+
+2. In the S3 dashboard, create a new folder named "media".
+
+3. Choose the media images you want to upload into this new folder.
+
+4. Grant public read access to these objects by selecting "Manage Public Permissions".
+
+5. Click "Upload" to complete the process. There are no further settings required.
+
+</details>
+
+</details>
+<details>
+  <summary>Stripe API</summary>
+Stripe Integration: This project uses Stripe to manage ecommerce payments. Follow these steps to integrate Stripe with your project:
+
+
+**Steps:**
+
+1. Go to your Stripe dashboard and locate "Get your test API keys". You'll find two keys:
+* STRIPE_PUBLIC_KEY: Publishable Key (starts with pk)
+* STRIPE_SECRET_KEY: Secret Key (starts with sk)
+2. Additionally, for backup purposes, set up Stripe Webhooks:
+* Navigate to Developers > Webhooks in your Stripe dashboard.
+Add an endpoint using the URL: https://your-website/checkout/wh/.
+3. Select "receive all events".
+4. Click "Add Endpoint" to complete the process.
+5. After setting up Webhooks, you'll receive a new key:
+* STRIPE_WH_SECRET: Signing Secret (Webhook) Key (starts with wh)
+
+</details>
+
+
+<details>
+  <summary>Gmail API</summary>
+Gmail Integration: This project uses Gmail to send emails for account verification and purchase order confirmations. 
+
+**Steps:**
+
+1. Click on the Account Settings (cog icon) in the top-right corner of Gmail and go to the Accounts and Import tab.
+2. Under "Change account settings", select Other Google Account settings.
+Choose Security from the left sidebar and turn on 2-Step Verification (verify your password and account).
+3. After verification, enable 2FA.
+4. Return to the Security page and find App passwords. Confirm your password and account again if prompted.
+5. Select Mail for the app type and choose Other (Custom name) for the device type.
+6. Use any custom name (e.g., "Django").
+7. You'll receive a 16-character password (API key). Save this securely, as it can't be accessed later!
+* EMAIL_HOST_PASS: User's 16-character API key
+* EMAIL_HOST_USER: User's personal Gmail email address
+
+</details>
+
+<details>
+  <summary>Forking the Repository</summary>
+Forking the repository allows you to create a copy of the original repository in your GitHub profile. This enables you to view and edit the code without affecting the original repository.
+
+**Steps:**
+
+1. In the "starlight-consultations" repository, click on "Fork" in the top right corner.
+2. Confirm the creation of the fork.
+
+</details>
+
+<details>
+  <summary>Cloning the Repository</summary>
+Cloning a repository means obtaining a local copy to work on in your own development environment.
+
+**Steps:**
+
+1. In the repository, click on "Code" above the file list.
+2. Copy the URL.
+3. Open Git Bash.
+4. Navigate to the directory where you want to clone the repository.
+5. Type `git clone` followed by the URL and press "enter".
+
+
+
+
+
+
+
+
+
