@@ -479,7 +479,7 @@ Google Dev Tools: Leveraged for debugging and testing features, as well as resol
    - Wait for the app to build. Once ready, you will see the "App was successfully deployed" message and a 'View' button to take you to your deployed link.
 
 
-You can access the live project by clicking [here](https://starlight-consultations-2b1105ac431c.herokuapp.com/).
+You can access the live project by clicking [here](https://fineshine-jewellery-07c9a5f5519c.herokuapp.com/).
 
 </details>
 
@@ -726,7 +726,7 @@ Forking the repository allows you to create a copy of the original repository in
 
 **Steps:**
 
-1. In the "starlight-consultations" repository, click on "Fork" in the top right corner.
+1. In the "fineshine-jewellery" repository, click on "Fork" in the top right corner.
 2. Confirm the creation of the fork.
 
 </details>
@@ -743,11 +743,4 @@ Cloning a repository means obtaining a local copy to work on in your own develop
 4. Navigate to the directory where you want to clone the repository.
 5. Type `git clone` followed by the URL and press "enter".
 
-
-
-
-
-
-
-
-
+</details>
