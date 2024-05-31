@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /bag/
+Disallow: /checkout/
+Disallow: /profiles/
+Sitemap: https://fineshine-jewellery-07c9a5f5519c.herokuapp.com/sitemap.xml
