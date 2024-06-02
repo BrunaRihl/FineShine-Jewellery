@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, Sum
 from django.db.models.functions import Lower
 
 from reviews.models import Review
@@ -72,8 +72,9 @@ def product_detail(request, product_id):
     else:
         product_reviews = []
 
-    context = {"product": product, "product_reviews": product_reviews}
+    aggregate = get_total_rating(product_id)
 
+    context = {"product": product, "product_reviews": product_reviews, "aggregate": aggregate}
 
     return render(request, 'products/product_detail.html', context)
 
@@ -144,3 +145,29 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def get_total_rating(product_id):
+    product = get_object_or_404(Product, pk=product_id)
+
+    product_reviews_exists = Review.objects.filter(product=product).exists()
+    if product_reviews_exists:
+        product_reviews_raw = Review.objects.filter(product=product)
+
+        # soma soma dos ratings
+        product_reviews_sum = product_reviews_raw.aggregate(Sum("rating"))["rating__sum"]      
+
+        # total de reviews
+        total_reviews = product_reviews_raw.count()
+
+        # media
+        rating = int(round(product_reviews_sum / total_reviews, 0))
+    else:
+        total_reviews = 0
+        rating = "No Rating"
+
+    print( {"total_reviews": total_reviews, "rating": rating})
+
+    return {"total_reviews": total_reviews, "rating": rating}
+    
+

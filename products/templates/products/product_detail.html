@@ -37,12 +37,16 @@
                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                         </a>
                     </p>
-                    {% endif %}
-                    {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    {% else %}
-                        <small class="text-muted">No Rating</small>
-                    {% endif %}
+                    {% endif %} 
+                    <small class="text-muted"> Rating: 
+                        {% for _ in "12345" %}
+                        {% if forloop.counter <= aggregate.rating %}
+                        <i class="fa fa-star fa-sm reviews_star"></i>
+                        {% endif %}
+                        {% endfor %}
+
+                        (based on {{aggregate.total_reviews}} reviews)
+                    </small>            
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
