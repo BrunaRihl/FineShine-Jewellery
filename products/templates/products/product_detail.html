@@ -38,15 +38,23 @@
                         </a>
                     </p>
                     {% endif %} 
-                    <small class="text-muted"> Rating: 
-                        {% for _ in "12345" %}
-                        {% if forloop.counter <= aggregate.rating %}
-                        <i class="fa fa-star fa-sm reviews_star"></i>
+                    <small class="text-muted">
+    
+                        {% if aggregate.total_reviews > 0 %}
+                        Rating: 
+                            {% for i in "12345" %}
+                                {% if forloop.counter <= aggregate.rating %}
+                                <i class="fa fa-star fa-sm reviews_star"></i>
+                                {% else %}
+                                <i class="fa fa-star-o fa-sm reviews_star"></i>
+                                {% endif %}
+                            {% endfor %}
+                            (based on {{ aggregate.total_reviews }} reviews)
+                        {% else %}
+                        <p class="text-muted">No Rating</p>
                         {% endif %}
-                        {% endfor %}
-
-                        (based on {{aggregate.total_reviews}} reviews)
-                    </small>            
+                    </small>
+                                                                                
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 

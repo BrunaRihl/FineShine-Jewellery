@@ -13,7 +13,6 @@ from .forms import ProductForm
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-
     products = Product.objects.all()
     query = None
     categories = None
@@ -44,12 +43,16 @@ def all_products(request):
             query = request.GET['q']
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
+                return redirect('products')
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
+
+    # Calcula o rating para cada produto
+    for product in products:
+        product.rating_data = get_total_rating(product.id)
 
     context = {
         'products': products,
@@ -59,6 +62,7 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
+
 
 
 def product_detail(request, product_id):
@@ -175,5 +179,3 @@ def get_total_rating(product_id):
         rating = "No Rating"
 
     return {"total_reviews": total_reviews, "rating": rating}
-    
-
