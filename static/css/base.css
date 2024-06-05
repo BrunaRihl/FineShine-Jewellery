@@ -484,7 +484,41 @@ input[name='q']::placeholder {
     border-color: #dc3545;
     border-radius: 0;
 }
+/* Footer */
 
+/*Mailchimp*/
+.mc-field-group input {
+    width: 400px;
+    resize: horizontal !important;
+ }
+
+ .mc-field-group, #mce-responses, #mc-embedded-subscribe {
+    padding: 5px;
+    margin: 5px;
+ }
+
+.indicates-required, .asterisk {
+    visibility: hidden;
+}
+
+#mc_embed_signup {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mc_embed_signup input{
+    height: 40px;
+    padding: 5px 10px;
+}
+
+#mc_embed_signup input[type="submit"]{
+    padding: 5px 10px;
+    height: 40px;
+    width: 100px;
+    color: var(--white);
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
