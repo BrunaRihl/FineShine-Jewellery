@@ -54,3 +54,24 @@ def remove_from_wishlist(request, item_id):
     wishlist_item.delete()
     messages.success(request, f"{product.name} has been removed from wishlist.")
     return redirect(reverse("view_wishlist"))
+
+@login_required
+def toggle_favorite(request, item_id):
+    """
+    Toggle the favorite status of a product in the user's wishlist.
+    Args:
+        request (HttpRequest): The request object.
+        item_id (int): ID of the wishlist item to toggle favorite status.
+    """
+    user = UserProfile.objects.get(user=request.user)
+    wishlist_item = get_object_or_404(Wishlist, id=item_id, user=user)
+
+    wishlist_item.is_favorite = not wishlist_item.is_favorite
+    wishlist_item.save()
+    
+    if wishlist_item.is_favorite:
+        messages.success(request, f"{wishlist_item.product.name} has been marked as favorite.")
+    else:
+        messages.success(request, f"{wishlist_item.product.name} has been removed from favorites.")
+
+    return redirect(reverse("view_wishlist"))

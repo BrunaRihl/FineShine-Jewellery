@@ -40,6 +40,16 @@
                                 <p class="my-0">{{ item.product.name }}</p>
                             </div>
                             <div class="col-lg-4 col-sm-4">
+                                <form method="post" action="{% url 'toggle_favorite' item.id %}">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn {% if item.is_favorite %}btn-warning{% else %}btn-outline-warning{% endif %} wishlist-icon">
+                                        {% if item.is_favorite %}
+                                            <i class="fas fa-star"></i> Favorite! 
+                                        {% else %}
+                                            <i class="far fa-star"></i> 
+                                        {% endif %}
+                                    </button>
+                                </form>
                                 <a href="{% url 'remove_from_wishlist' item.product.id %}"
                                     class="wish-delete">
                                     <i class="fas fa-trash wishlist-icon"></i> Remove Item
@@ -57,7 +67,7 @@
                 </ul>
                 {% else %}
                 <p class="lead mb-5">Looks like your wishlist is currently empty. Explore our collection of jewelry and start curating your wishlist today!</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg margin-bottom-div margin-top-div">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
