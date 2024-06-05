@@ -148,25 +148,31 @@ def delete_product(request, product_id):
 
 
 def get_total_rating(product_id):
+    """
+    Calculate and return the total number of reviews and the average rating for a given product.
+    Args:
+        product_id (int): The ID of the product for which the total rating is to be calculated.
+    Returns:
+        dict: A dictionary containing the total number of reviews and the average rating.
+              If no reviews exist, 'rating' will be "No Rating" and 'total_reviews' will be 0.
+    """
     product = get_object_or_404(Product, pk=product_id)
 
     product_reviews_exists = Review.objects.filter(product=product).exists()
     if product_reviews_exists:
         product_reviews_raw = Review.objects.filter(product=product)
 
-        # soma soma dos ratings
-        product_reviews_sum = product_reviews_raw.aggregate(Sum("rating"))["rating__sum"]      
+        # Sum of the ratings
+        product_reviews_sum = product_reviews_raw.aggregate(Sum("rating"))["rating__sum"]
 
-        # total de reviews
+        # Total number of reviews
         total_reviews = product_reviews_raw.count()
 
-        # media
+        # Average rating, rounded to the nearest integer
         rating = int(round(product_reviews_sum / total_reviews, 0))
     else:
         total_reviews = 0
         rating = "No Rating"
-
-    print( {"total_reviews": total_reviews, "rating": rating})
 
     return {"total_reviews": total_reviews, "rating": rating}
     
