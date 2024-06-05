@@ -488,38 +488,44 @@ input[name='q']::placeholder {
 /* Footer */
 
 /*Mailchimp*/
-.mc-field-group input {
-    width: 400px;
-    resize: horizontal !important;
- }
-
- .mc-field-group, #mce-responses, #mc-embedded-subscribe {
-    padding: 5px;
-    margin: 5px;
- }
-
-.indicates-required, .asterisk {
-    visibility: hidden;
-}
-
 #mc_embed_signup {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 100%;
+  }
+  
+  .quotes-container {
+    padding: 0 15px;
+  }
+  
+  .content-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .footer .container {
+    width: 100%;
+  }
+
+/* Add media queries for smaller screens */
+@media (max-width: 768px) {
+    #mc_embed_signup {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    #mc_embed_signup input[type="email"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer .container {
+        padding: 0 15px;
+    }
 }
 
-
-#mc_embed_signup input{
-    height: 40px;
-    padding: 5px 10px;
-}
-
-#mc_embed_signup input[type="submit"]{
-    padding: 5px 10px;
-    height: 40px;
-    width: 100px;
-    color: var(--white);
-}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
