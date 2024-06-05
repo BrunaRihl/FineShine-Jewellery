@@ -510,6 +510,10 @@ input[name='q']::placeholder {
 
 /* Add media queries for smaller screens */
 @media (max-width: 768px) {
+    .text-effect {
+        font-size: 200%; 
+    }
+
     #mc_embed_signup {
         width: 100%;
         padding: 15px;
@@ -546,6 +550,7 @@ input[name='q']::placeholder {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
+
     .header-container {
         padding-top: 166px;
     }

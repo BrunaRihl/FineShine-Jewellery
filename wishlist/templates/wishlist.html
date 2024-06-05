@@ -20,7 +20,7 @@
             <h2 class="logo-font mb-4 text-center">Wishlist <i class="fa-regular fa-heart"></i></h2>
             <hr>                                
                 {% if wishlist_items %}
-                <ul class="list-group">
+                <ul class="list-group margin-bottom-div">
                     {% for item in wishlist_items %}
                     <li class="list-group-item">
                         <div class="row align-items-center">
@@ -48,7 +48,7 @@
                         </div>
                     </li>
                     {% endfor %}
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg margin-bottom-div margin-top-div">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
