@@ -548,7 +548,51 @@ When a product is selected, users are directed to the details page, where they c
 
 ### Bag
 
+The bag page allows users to view and manage the products added to their shopping bag. When a product is added to the bag, a message is displayed with a preview of the bag. Users can see a summary of each product, including the name, image, price, quantity, and subtotal. They have the option to update the quantity of each item or remove items from the bag. The page also displays the total cost of the selected items.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+Users are informed of the amount needed to qualify for free delivery if they haven't met the minimum threshold. From this page, they can proceed to checkout or continue shopping using the "Keep Shopping" button. A toast message is displayed whenever a user adds, updates the quantity, or removes an item from the bag, providing instant feedback on their actions.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+
+### Checkout
+
+The checkout process at Fineshine is designed to be simple and efficient. When users proceed to checkout from the cart page, they go through the following steps:
+
+Shipping Information: Users enter their payment and shipping address details. If logged in and have previously saved their data, the form is automatically filled with this information.
+
+Payment Information: The payment form accepts user information and notifies if there is an attempt to use an invalid card. Integration with the Stripe API ensures all payment transactions are secure.
+
+Order Review: Before completing the purchase, users have the opportunity to review their cart one last time and make any necessary changes. The total cost of selected items and delivery charge (if applicable) is displayed.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+#### Checkout Success
+
+Upon confirming the order, users finalize their purchase. They are directed to a confirmation page displaying essential details such as the order number and a summary of their purchase. 
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+Simultaneously, an email confirmation with identical information is sent to the user's inbox.
+This confirmation email ensures that users have a record of their purchase and provides them with all the necessary details regarding their order, including the order number, items purchased, and billing/shipping information.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
 ### Contact
+
+Fineshine provides a convenient contact form for users to reach out with any questions or inquiries. The form is designed to collect essential information such as the user's name, email address, phone number (optional), and their message. If any fields are not filled out correctly, users will receive prompts and error messages to complete the form accurately.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+After submitting the form, users are directed to a thank you page, where they receive confirmation of their message submission.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+Messages sent through the contact form are directly accessible to the site administrator through their business email service, allowing them to promptly respond to customer queries and feedback.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
 
 ### Wishlist
 
@@ -573,7 +617,13 @@ When a product is selected, users are directed to the details page, where they c
 
 ![Fineshine logout](/static/images/docs/signout.webp)
 
+### Profile
 
+On the profile page, users have access to features to manage their account effectively. This page allows users to update their default shipping details using a form, ensuring they can easily keep their shipping information up to date.
+
+Additionally, users can view their previous order history directly on the profile page. Each order is listed with an order number, which users can click to view more detailed information about past orders. This provides users with easy access to track their order history and review details of their past purchases.
+
+![Fineshine logout](/static/images/docs/signout.webp)
 
 ### 404 Page:
 

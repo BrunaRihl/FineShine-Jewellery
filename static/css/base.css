@@ -329,19 +329,18 @@ input[name='q']::placeholder {
 
 .wishlist-link {
     text-decoration: none;
-    color: #333; /* Cor do texto */
-    background-color: #fff; /* Cor de fundo */
+    color: #333; 
+    background-color: #fff; 
     padding: 8px 12px;
-    border: 2px solid var(--lightgreen); /* Borda */
-    border-radius: 5px; /* Borda arredondada */
-    transition: all 0.3s ease; /* Transição suave */
-
+    border: 2px solid var(--lightgreen); 
+    border-radius: 5px;
+    transition: all 0.3s ease; 
 }
 
 .wishlist-link:hover {
     text-decoration: none;
-    box-shadow: 0 2px 4px var(--green); /* Sombra suave no hover */
-    color: #333; /* Cor do texto */
+    box-shadow: 0 2px 2px var(--green); 
+    color: #333; 
 
 }
 
