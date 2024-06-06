@@ -377,9 +377,6 @@ I made some adjustments in relation to what I had planned for positioning and ad
 </details>
 </details>
 
-
-
-
 ## Marketing and SEO
 ### Business Model - Ecommerce
 **Fineshine** is a Business to Customer (B2C) e-commerce platform, specializing in the production and sale of high-quality jewelry to individual customers.
@@ -461,6 +458,150 @@ Additionally, I utilized resources like Wordtracker.com to conduct keyword resea
 After the research, my selected keywords were:
 
 ![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+
+## Features
+
+### Header
+
+* All pages feature a responsive navigation bar at the top of the screen.
+
+**Logo and Company Name:** A custom logo was created for Fineshine, ensuring instant brand recognition.
+![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+
+- **Search Bar:** A search bar allows users to easily find specific products directly from the header.
+
+- **Quick Access Links:** On the right side of the header are quick access links, including "My Account," "Contact," and "Shopping Bag." The "Wishlist" link is visible only when the user is logged in.
+
+- **Main Navigation:** Below the header, the main navigation allows users to choose products by categories such as "All Products," "Earrings," "Necklaces," among others.
+
+- **Product Categories:** When clicking on a category such as "Earrings," users have additional options such as "Silver Earrings," "Gold Earrings," or "Full Collection."
+
+
+### Favicon
+
+A custom favicon has been added to the website's header. The favicon features a diamond with sparkling accents around it, matching the site's color palette of aqua green tones, providing a unique visual identity.
+
+![Fineshine - favicon](/static/images/docs/favicon-docs.webp)
+
+### Footer
+
+### Home Page 
+
+* The main image showcases golden jewelry arranged against a background of aqua green, which inspired the color palette of the site.
+* The overlaid message provides a brief introduction to the website's concept, while the high resolution and vibrant colors ensure an inviting presentation to visitors.
+* The "Shop Now" button below the main image provides a clear call-to-action, inviting users to explore and shop for jewelry.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+#### Why shop whit us section:
+
+Below the main image, users will find the "Why Shop for Jewellery with FineShine" section.
+
+This section highlights the reasons why customers should choose FineShine for their jewellery purchases. Each reason is presented concisely, providing an overview of the benefits of shopping with FineShine.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+### Products:
+
+Users can explore products by selecting different categories such as earrings, bracelets, necklaces, rings, and sets, available in silver, gold, or the complete collection. This allows for quick and easy navigation through the products of interest.
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+When hovering over the products, a zoom effect is applied, accompanied by a subtle shadow to enhance the item preview.
+
+Additionally, users can also sort the products by price, name, or category, offering even more control over the item view.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+Each product displays a representative image, price, category, and rating (if available).
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+#### Admin Features:
+
+Administrators have access to additional options such as adding new products or deleting existing ones.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+Admins also have the option to add products directly through the website by accessing "Product Management" in "My Account."
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+#### Product details page:
+
+When a product is selected, users are directed to the details page, where they can find comprehensive information about the product, including description, price, an option to add the item to the wishlist, and product reviews.
+
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+#### Reviews:
+
+* All users can view product reviews.
+* Each review includes a 5-star rating, the user's name, the date of the review, and the review text.
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+* Logged-in users have the option to add reviews.
+* Reviews are available only for products they have purchased.
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+* Users can edit or delete their own reviews.
+![Fineshine - hero image](/static/images/docs/hero-image.webp)
+
+
+### Bag
+
+### Contact
+
+### Wishlist
+
+### Sign Up Page
+
+- On the registration page, new users can start their journey on Fineshine by creating a personalized account. Here, users provide essential information such as username, email address and password to establish their identity in the system.
+- During the registration process, each user is prompted to choose a unique username and email ensuring uniqueness among all accounts. 
+- Upon registration, users receive a confirmation email to verify their email address and activate their account.
+
+![Fineshine sign up](/static/images/docs/signup-error.webp)
+
+
+### Login Page
+
+- On the login page, registered users can access their existing accounts on Fineshine. Using a simple form, users input their credentials, including username/email and password, to sign into the system. Once authenticated, users have immediate access to the site's personalized features, allowing them to explore and utilize the available functionalities.
+
+![Fineshine login](/static/images/docs/login.webp)
+
+### Logout Page
+
+- The logout page provides users with a convenient way to end their sessions on Fineshine. By clicking the "Logout" button, users are logged out of their accounts, ensuring the privacy and security of their information. Upon logout completion, users are redirected to a confirmation page and then to the homepage, providing a seamless and secure experience.
+
+![Fineshine logout](/static/images/docs/signout.webp)
+
+
+
+### 404 Page:
+
+A custom 404 error page was developed to properly handle situations where users accessed non-existent pages or encountered broken links. This page provides clear navigation options to assist users in returning to the main site after encountering broken links or non-existent pages.
+
+![Fineshine 404](/static/images/docs/404-page.webp)
+
+### Future Features and Resources to be Added
+
+#### Fashion Articles and Style Tips:
+   - Create fashion articles providing inspiration and style tips with your jewelry pieces.
+   - Share ideas on how to incorporate your jewelry into different looks for various occasions.
+
+#### Jewelry Customization:
+   - Implement customization option, allowing customers to create their own unique pieces.
+   - Offer choice of materials, gemstones, and custom engravings.
+
+#### Jewelry Blog:
+   - Start a blog section focused on jewelry trends, industry news, and behind-the-scenes stories.
+   - Share insights about the production process, new collections, and upcoming events.
+
+#### Loyalty Program:
+   - Implement a loyalty program to reward frequent customers with discounts, special offers, or early access to new collections.
+   - Encourage customer retention and foster long-term relationships.
+
+
+
+
 
 ## Technologies Used
 ### Languages
