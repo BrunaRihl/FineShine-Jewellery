@@ -38,6 +38,11 @@ The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herok
   * [Features and resources to be added in the future](#features-and-resources-to-be-added-in-the-future)
   * [Accessibility](#accessibility)
 
+* [Marketing and SEO](#marketing-and-seo)
+  * [Business Model - Ecommerce](#business-model---ecommerce)
+  * [Marketing](#marketing)
+  * [Search Engine Optimization](search-engine-optimization)
+
 * [Testing](#testing)
   * [User Story Test](#user-story-test)
   * [Tested Browsers and Devices](#tested-browsers-and-devices)
@@ -375,8 +380,87 @@ I made some adjustments in relation to what I had planned for positioning and ad
 
 
 
+## Marketing and SEO
+### Business Model - Ecommerce
+**Fineshine** is a Business to Customer (B2C) e-commerce platform, specializing in the production and sale of high-quality jewelry to individual customers.
 
+### Competitive Advantages:
+- **Superior Quality:** Producing and offering high-quality jewelry made with precious materials and unique designs.
+- **Ease of Purchase:** Providing an easy and convenient purchasing experience through the online platform.
+- **Social Engagement:** Building a community of loyal customers through engagement on social media and loyalty programs.
 
+### Customer Segments:
+- **Jewelry Enthusiasts:** Individuals seeking high-quality and exclusive design jewelry.
+- **Gift Buyers:** People purchasing jewelry for special occasions like birthdays and weddings.
+
+### Key Assets:
+- **Jewelry Inventory:** Diverse inventory of internally produced jewelry to meet customer demand.
+- **E-commerce Platform:** Robust and user-friendly website for sales and transactions.
+- **Social Media Engagement:** Active presence on social media to attract and engage customers.
+- **Newsletter System:** Utilization of MailChimp for regular communications with customers.
+
+### Channels:
+- **E-commerce Website:** Primary platform for displaying products, processing orders, and facilitating transactions.
+- **Social Media:** Utilization of platforms like Facebook for marketing and customer interaction.
+- **Newsletter (MailChimp):** Sending updates, promotions, and regular announcements to subscribers via email.
+
+### Customer Relationships:
+- **Personalized Support:** Customer support for inquiries and issue resolution.
+- **Wishlist:** Tool for customers to save favorite products for future purchases, enhancing personalized experience.
+- **Product Reviews:** Option for customers to leave reviews, aiding other buyers in making informed decisions.
+- **Facebook Presence:** Using Facebook to interact with customers, answer queries, and build a sense of community.
+
+### Strategic Collaborations:
+- **Material Suppliers:** Partnerships with suppliers of precious materials for jewelry production.
+- **Delivery Services:** Collaboration with shipping services to ensure efficient order delivery.
+- **Fashion Influencers:** Partnerships with fashion influencers to promote products and reach new audiences.
+- **Designer Collaborations:** Collaborations with renowned jewelry designers for exclusive collections.
+
+### Seasonal Marketing Campaigns:
+- **Festive Promotions:** Creating special promotions for holidays like Christmas, Valentine's Day, and Black Friday.
+- **Online Events:** Hosting online events such as collection launches and webinars on jewelry care.
+
+### Competition Analysis:
+- **Competitive Analysis:** Studying key competitors in the online jewelry market to identify opportunities and threats.
+- **Benchmarking:** Comparing products, prices, and marketing strategies with major competitors.
+
+### Data Analysis and Feedback:
+- **Data Analysis:** Using data analytics to understand customer behavior and optimize marketing and sales strategies.
+- **Feedback Collection:** Implementing systems to collect and analyze customer feedback for continuous improvement.
+
+## Marketing
+
+A Facebook page was created to promote the jewelry e-commerce due to the platform's wide visibility and engagement potential. Facebook allows for reaching a diverse audience, increasing brand visibility, and attracting new consumers.
+To personalize the page, the store's logo was added as the profile picture, and a welcome message with a direct link to the online store was written, making it easy for visitors to access.
+
+![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+
+Additionally, a post was created featuring an exclusive jewelry set as the highlight of the week, including a photo of the product and a link for purchase.
+
+![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+
+This strategy aims to increase engagement, drive traffic to the website, and boost sales, strengthening the brand's presence on social media.
+
+## Search Engine Optimization
+### Keyword Strategy to Increase Online Visibility
+
+To ensure that my website was easily discoverable through online searches, I developed a keyword strategy. This strategy encompassed two main types of keywords:
+
+- **Short-Tail Keywords (Primary Terms):** These were brief and comprehensive terms that captured the essence of my website's offerings in general.
+
+- **Long-Tail Keywords:** These were more specific and detailed phrases that directly aligned with the products and services offered on my site.
+
+To further enhance my keyword strategy, I turned to suggestions provided by Google during searches. I utilized features like "People also search for" and the auto-suggestions provided by Google while typing a keyword. These tools helped me identify popular search trends and related terms actively sought by users.
+
+![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+
+Additionally, I utilized resources like Wordtracker.com to conduct keyword research and identify relevant terms that aligned with the content and purpose of my site.
+
+![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+
+After the research, my selected keywords were:
+
+![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
 
 ## Technologies Used
 ### Languages
