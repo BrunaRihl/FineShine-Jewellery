@@ -255,9 +255,9 @@ In my agile project, I prioritize user stories to ensure that I focus on deliver
 
 #### Distribution of User Stories
 
-I have a total of 40 user stories for this project. Here is how I have distributed them across the four categories:
+I have a total of 41 user stories for this project. Here is how I have distributed them across the four categories:
 
-* Must Have: 26 user stories (65%)
+* Must Have: 27 user stories (65%)
 * Should Have: 8 user stories (20%)
 * Could Have: 4 user stories (10%)
 * Won't Have: 2 user stories (5%)
@@ -659,32 +659,61 @@ A custom 404 error page was developed to properly handle situations where users 
 
 ### User Story Test: 
 
-| User Story | Test Scenario | Test Steps | Expected Result | Actual Result |
-|------------|---------------|------------|-----------------|---------------|
+| User Story | Expected Result | Actual Result |
+|------------|-----------------|---------------|
 **`EPIC 1`**
-| Early deployment | Verify the deployment process | 1. Deploy the initial version of the application on Heroku. 2. Access the deployed application. | The application is successfully deployed and accessible on Heroku. | Pass |
-| Setting Up Initial Django Project Structure | Ensure the correct setup of Django project structure | 1. Create a new Django project with proper structure. 2. Verify the project structure. | The Django project is properly configured with the required structure. | Pass |
-| Database Integration | Test database connectivity and media storage | 1. Perform database operations (e.g., CRUD) and file uploads. 2. Check if data is stored correctly in the database and files are uploaded and accessible. | Data is successfully stored in the database, and files are uploaded and accessible. | Pass |
+| Early deployment | The application is successfully deployed and accessible on Heroku. | Pass |
+| Setting Up Initial Django Project Structure | The Django project is properly configured with the required structure. | Pass |
+| Database Integration | Data is successfully stored in the database, and files are uploaded and accessible. | Pass |
 **`EPIC 2`**
-| Website Administration Control | Manage users, content, and settings | 1. Log in as an administrator. 2. Access the administrative interface. 3. Perform user management, content moderation, and configuration tasks. | Administrators can efficiently manage users, content, and settings. | Pass |
-| Administrative Interface | Test the usability of the administrative interface | 1. Navigate through the administrative interface. 2. Perform common tasks such as user management and content editing. | The administrative interface is intuitive and efficient to use. | Pass |
+| Admin Login Functionality | Log in to the admin panel successfully and be able to manage its operations. | Pass |
+| Product Management Functionality | Introduce, edit, and delete new products successfully. | Pass |
 **`EPIC 3`**
-| View About Page | Access the "About" page | 1. Navigate to the "About" page. 2. Check if relevant information is displayed. | The "About" page displays relevant information about the company, team, services. | Pass |
-| Manage About Page Content | Edit and update the content of the "About" page | 1. Log in as an administrator. 2. Access the administrative interface. 3. Edit the content of the "About" page. | The content of the "About" page is successfully edited and updated. | Pass |
+| Register Account | A new user account is successfully created. | Pass |
+| User Login | The user is successfully logged in to their account. | Pass |
+| User Logout | The user is successfully logged out of their account. | Pass |
+| Profile Update | My profile information is successfully updated. | Pass |
+| Secure Password Reset | Receive an email with the password reset link and successfully reset the password. | Pass |
+| Secure Credential Storage | User's username and password are securely saved and accessible for easy website access. | Pass |
 **`EPIC 4`**
-| Make Online Booking | Make a booking for a service offered on the website | 1. Navigate to the booking section of the website. 2. Select a service and schedule a consultation. | The booking is successfully made for the selected service. 3. Manage bookings (view, edit, delete)| Pass |
-| Manage Bookings | Access the admin dashboard to manage bookings | 1. Log in as an administrator. 2. Access the admin dashboard. | Administrators can efficiently manage bookings from the admin dashboard. | Pass |
+| SEO Configuration | As configurações de SEO são configuradas com sucesso para garantir que os usuários possam acessar facilmente o conteúdo desejado. | Pass |
+| Newsletter System | Successful utilization of MailChimp for regular communications with customers. | Pass |
+| Facebook Marketing Page | Successful creation of a Facebook marketing page. | Pass |
 **`EPIC 5`**
-| Register Account | Create a new user account | 1. Navigate to the registration page. 2. Fill out the registration form and submit. | A new user account is successfully created. | Pass |
-| User Login | Log in to the user account | 1. Navigate to the login page. 2. Enter valid credentials and log in. | The user is successfully logged in to their account. | Pass |
-| User Logout | Log out of the user account | 1. Click on the logout button. | The user is successfully logged out of their account. | Pass |
+| Website Accessibility | Users can navigate the website with ease and access all content, ensuring an inclusive browsing experience and effective access to information. | Pass |
+| Intuitive Navigation | Users can navigate through the website/application easily and efficiently, finding what they need without confusion. | Pass |
+| Responsive Design | The design adapts seamlessly to different devices (desktop, tablet, mobile), providing a consistent and smooth user experience. | Pass |
+| Interaction Messaging | Users receive clear feedback about their actions, helping them understand what is happening and allowing confident navigation and interaction with the product. | Pass |
 **`EPIC 6`**
-| Website Accessibility | Ensure accessibility features are implemented |1. Utilize Google DevTools to analyze the website's accessibility. 2. Navigate through the website to confirm usability and accessibility for users. | The website is accessible and usable for users. | Pass |
-| Accessible Features | Test the implementation of accessible features | 1. Verify the implementation of accessible features (e.g., alt text for images, contrast colors..). | Accessible features are implemented correctly and enhance user experience. | Pass |
+| Intuitive Category Navigation | Users can browse through different product categories intuitively and easily find products that match their preferences. | Pass |
+| Product Search by Keywords | Users can search for products by keywords and quickly find what they're looking for. | Pass |
+| Search Sorting | Users can sort the search results by price and other options to refine their selection.| Pass |
+| Product Details | Users can view a comprehensive product details page including description, price, images, and customer reviews, allowing them to make informed purchasing decisions. | Pass |
+| Product Review | Users can leave their review on products they have purchased. | Pass |
 **`EPIC 7`**
-| README Documentation | Check the README.md file | 1. Read the README.md file. 2. Verify if it contains comprehensive information about the project. | The README.md file provides detailed information about the project's purpose, functionality, and usage. | Pass |
+| Bag Addition | Users can add products to the shopping bag directly from the product details page for a convenient shopping experience. | Pass |
+| Product Bag Management | Users can add products to their shopping bag to keep track of items they intend to purchase and have a preview of how their bag looks on the current page. | Pass |
+| Bag Item Management | Users can delete and adjust the quantity of items in their shopping bag before proceeding to checkout. | Pass |
+| Shopping Bag Overview | Users can view the contents of their shopping bag to review the items added and the total cost, including shipping fees. | Pass |
+| Checkout Process | Users can proceed to checkout from their shopping bag to complete their purchase, allowing them to finalize their order. | Pass |
+| Checkout Details Entry | Users can enter their personal and delivery details during checkout to ensure delivery of their order. | Pass |
+| Secure Payment Processing | Users can securely enter payment details to complete the transaction, with integration with the Stripe API. | Pass |
+| Order History | Can view order history in my profile to review past purchases. | Pass |
+| Order Confirmation Email | Receive a confirmation email after successfully completing the checkout process, providing details of my order. | Pass |
 **`EPIC 8`**
-| Testing Procedures | Verify testing procedures | 1. Follow the documented testing procedures. 2. Perform backend and frontend tests. 3. Gather user feedback for UI improvements. | Testing procedures are thorough and ensure the quality and usability of the software. | Pass |
+| Contact Option Accessibility | Easily locate the contact option on the website to efficiently reach out to the company for assistance or inquiries. | Pass |
+| Contact Form Submission | Fill out a contact form with personal information and message to send an inquiry to the team. Receive a confirmation upon submitting the contact form. | Pass |
+| Contact Form Management | Website admin can check whenever a contact form is submitted, enabling prompt responses to visitor inquiries and efficient customer service. | Pass |
+**`EPIC 9`**
+| Wishlist Management | Customers can add and remove products to/from their wishlist to save items they wish to purchase in the future. | Pass |
+| Wishlist Display | Customers can view all the products they've added to their wishlist, allowing them to review their choices and make informed purchasing decisions. | Pass |
+**`EPIC 10`**
+| User Engagement - Blog | - | Future Features |
+| Content Management - Blog | - | Future Features |
+**`EPIC 11`**
+| README Documentation | The README.md file provides detailed information about the project's purpose, functionality, and usage. | Pass |
+| Testing Procedures | Testing procedures are thorough and ensure the quality and usability of the software. | Pass |
+
 
 ### Tested Browsers and Devices: 
 
@@ -720,6 +749,94 @@ A custom 404 error page was developed to properly handle situations where users 
   * Macbook Air, 13-inch screen;
 
   * Asus TUF F15, 15.6-inch screen. 
+
+### Manual Testing
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| **`Navbar`** |
+| StarLight Logo | When clicked the user will be redirected to the home page. | Clicked Logo | Redirected to the home page. | Pass |
+| Menu-hover | When hovering over the menu items, the text should appear in bold to indicate action.| Hover over menu | text appear in bold. | Pass |
+| Navbar links | When clicked the user will be redirected to the correct page.| Clicked link | Redirected to the correct page. | Pass |
+| Smaller Screens | The navbar should be displayed in hamburger style on smaller screens to conserve space. | Resized the screen to check the navbar behavior on smaller sizes. | The navbar switched to hamburger style when the screen was resized to a smaller size. | Pass |
+| User is Logged In | When the user is logged in, a new menu for booking and the logout option should appear, while the register and login options should disappear. | Logged in with a user account and observed the changes in the navbar. | The booking menu and logout option appeared, and the register and login options disappeared after logging in. | Pass |
+| Fixed navbar | The navbar should remain fixed at the top of the page while scrolling through the site content. | Scrolled through the site content and observed the navbar behavior. | The navbar remained fixed at the top of the page while scrolling. | Pass |
+| Authentication Status Display | The website displays a message below the navigation bar indicating whether the user is logged in or not. | Verified the message display below the navigation bar while logged in and logged out. | Message displayed correctly indicating the authentication status. | Pass |
+| **`Register`** |
+| User Registration | After submitting valid data for registration, the user should be prompted to confirm their password, ensuring accuracy. The username must be unique and not already in use, and the optional email field must be in a valid format. | Entered valid registration data and verified the password confirmation request, uniqueness of the username, and valid email format. | The password confirmation request appeared, the unique username was accepted, and the valid email format was enforced. | Pass |
+| Registration Redirection | Upon successful registration, the user should be redirected to the home page and receive a notification confirming that they are logged in. | Successfully registered a new account and observed redirection to the home page with a logged-in notification. | Redirected to the home page and received a logged-in notification after successful registration. | Pass |
+| Registration with Invalid Data | If the user attempts to register an account with invalid data, such as duplicate information or an incorrect password, the registration will not be completed, and an error message will be displayed in the form. | Attempted registration with duplicate data or incorrect password. | Received error message in the form. | Pass |
+| **`Login`** |
+| User Login | After entering valid credentials and submitting the login form, the user should be redirected to the homepage and receive a confirmation message indicating successful login. | Entered valid credentials and submitted the login form. | Redirected to the homepage and received confirmation message indicating successful login. | Pass |
+| Authenticated User Menus | When logged in, exclusive menus for authenticated users should appear, and the option to schedule an appointment becomes available. | Logged in with valid credentials and observed the appearance of exclusive menus. | Exclusive menus appeared, and appointment scheduling option became available. | Pass |
+| **`Log Out`** |
+| User Logout | After clicking on the logout, the user should be redirected to a confirmation page. | Clicked on the logout. | Redirected to the confirmation page. | Pass |
+| User Logout Redirect | After confirming the logout, the user should be redirected to the home page. | Confirmed logout. | Redirected to the home page after logout confirmation. | Pass |
+| **`Booking`** |
+| User able to select the service | User should be able to select the desired service when booking a consultation | Selected the desired service on the booking page | Service selected successfully | Pass |
+| Select the date | User should be able to choose the desired date for the consultation | Selected a date on the booking page | Date was successfully selected | Pass |
+| Select the time | User should be able to choose the preferred time for the consultation | Chose a time slot on the booking page | Time was successfully selected | Pass |
+| Book consultation | User should be able to schedule a consultation by selecting a date and time | Attempted to book a consultation on the booking page | Consultation was successfully scheduled | Pass |
+| User cannot book in a past date | User should receive an alert when attempting to schedule an appointment for a past date | Tried to book a consultation for a past date on the booking page | Alert message appeared indicating that booking for past dates is not allowed | Pass |
+| Unavailable booking slot | When attempting to book a consultation on a date and time that is already booked, the user should receive an alert indicating that the consultant is not available for that date or time. | Attempted to book a consultation on a date and time that is already booked | Alert displayed indicating that the consultant is not available for that date or time | Pass |
+| Edit booking | User should have the option to edit their existing bookings | Accessed the edit option for a booked consultation | Booking details were successfully edited | Pass |
+| Delete booking | User should be able to remove their bookings if needed | Attempted to delete a booked consultation | Booking was successfully deleted | Pass |
+| Save booking in booking page | User's bookings should be saved and displayed on the booking page | Scheduled a consultation and checked if it appeared on the booking page | Booking was saved and appeared on the booking page | Pass |
+| **`Home`** |
+| Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Login First" Button | Redirected to the login page. | Pass |
+| Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass |
+| Button: hover | When the mouse hovers over the button, it should change color to indicate action. | Hovered over the button and observed the color change. | The button changed color when hovered over, indicating action. | Pass |
+| **`About`** |
+| Text Loading  | The text on the "About" page should match the content entered in the admin panel. | Compared displayed text with admin panel content. | Text matched admin panel content. | Pass |
+| Image Upload             | The administrator can successfully upload the image through the administration panel.                 | Verification of the image upload process in the administration panel.     | The correct image is displayed on the website.    | Pass |
+| Updated Date    | Creation date of the text displayed at the bottom of the page. | Checked if the displayed date matches the creation date of the text. | Date displayed matched the creation date of the text. | Pass |
+| Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Login First" Button | Redirected to the login page. | Pass |
+| Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass | 
+| Button: hover | When the mouse hovers over the button, it should change color to indicate action. | Hovered over the button and observed the color change. | The button changed color when hovered over, indicating action. | Pass |
+| **`Admin`** |
+| Login to Django Panel | The admin should be able to log in to the Django panel using the provided credentials. | Logged in to the Django panel using admin credentials | Successfully accessed the Django panel | Pass |
+| Add, Edit, and Delete Services | The admin should be able to add, edit, and delete services from the website. | Added, edited, and deleted services from the admin panel | Successfully managed services | Pass |
+| Edit and Delete Bookings | The admin should be able to edit and delete bookings from the admin panel. | Edited and deleted bookings from the admin panel | Successfully managed bookings | Pass |
+| Add, Edit, and Delete Content of About Page | The admin should be able to add, edit, and delete content on the About page from the admin panel. | Added, edited, and deleted content on the About page from the admin panel | Successfully managed About page content | Pass |
+| New Menu in Navbar| When logged in as an admin, a new menu should appear in the navbar allowing direct access to the admin control panel, redirecting the admin to the panel. | Logged in as an admin and observed the appearance of a new menu in the navbar | New menu appeared in the navbar, providing access to the admin control panel | Pass |
+| **`Notification messages`** |
+| Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting bookings. | Perform registration, login, logout, adding, editing, or deleting bookings. Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass      |
+| **`Footer`** |
+| Icon-clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks.| Clicked social networks Icons | Opens the pages in a new window. | Pass |
+
+
+### Validator Testing  
+
+  * Python
+
+To ensure compliance with coding best practices, I installed Flake8 in my development environment. Flake8 assisted me in identifying and rectifying style and formatting issues throughout the project's source code.
+
+Additionally, I utilized the PEP8 validator to identify and correct any remaining issues in my code. The identified errors were primarily related to improper use of whitespace and exceeding line length. All of these issues were addressed comprehensively, ensuring adherence to coding best practices.
+
+![Pep8 - Python](/static/images/docs/python-check.webp)
+
+  * CSS:  
+
+No errors were found during the validation process using the official Jigsaw validator.
+
+
+![Jigsaw validator - Css](/static/images/docs/jigsaw-valid.webp)
+
+
+  * HTML:  
+
+To ensure the validity and compliance of my web pages with web standards, I used the W3C validator. This tool helped me identify and correct any errors highlighted in my pages.
+
+![W3C validator - html](/static/images/docs/html-check.webp)
+
+
+The corrections were implemented in accordance with the validator's suggestions.
+
+#### Unit Test 
+
+I used unit tests to ensure the proper functioning of different parts of the application. The unit tests were implemented using Python's unittest module.
+
+![unittest - python](/static/images/docs/unittest.png)
 
 
 ### Bugs
