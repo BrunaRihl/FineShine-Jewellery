@@ -754,8 +754,6 @@ A custom 404 error page was developed to properly handle situations where users 
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
 | **`Navbar`** |
 | FineShine Logo | When clicked the user will be redirected to the home page. | Clicked Logo | Redirected to the home page. | Pass |
 | Navbar links | When clicked the user will be redirected to the correct page. | Clicked link | Redirected to the correct page. | Pass |
@@ -773,8 +771,6 @@ A custom 404 error page was developed to properly handle situations where users 
 | **`Profile`** |
 | Update Shipping Details | Users can update their default shipping information using a form. | Updated the shipping details on the profile page. | Shipping information updated successfully. | Pass |
 | View Order History | Users can view their previous orders, each listed with an order number. | Checked the order history section in the profile. | Previous orders displayed with clickable order numbers for detailed view. | Pass |
-| **`404 Page`** |
-| Custom 404 Page | A custom 404 page appears when users access non-existent pages, offering clear navigation back to the main site. | Accessed a non-existent page to trigger the 404 error. | Custom 404 page displayed with navigation options. | Pass |
 | **`Header`** |
 | Responsive Navigation Bar | Navigation bar adjusts on all devices. | Checked on different devices. | Navigation bar adjusts correctly on all devices. | Pass |
 | Logo and Company Name | Custom logo displayed, website responsive. | Verified logo and website on various devices. | Custom logo displayed correctly, website responsive on different devices. | Pass |
@@ -822,6 +818,8 @@ A custom 404 error page was developed to properly handle situations where users 
 | Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting bookings. | Perform registration, login, logout, adding, editing, or deleting... Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass |
 | **`Footer`** |
 | Icon-clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks.| Clicked social networks Icons | Opens the pages in a new window. | Pass |
+| **`404 Page`** |
+| Custom 404 Page | A custom 404 page appears when users access non-existent pages, offering clear navigation back to the main site. | Accessed a non-existent page to trigger the 404 error. | Custom 404 page displayed with navigation options. | Pass |
 
 
 ### Validator Testing  
@@ -919,7 +917,9 @@ Visual Studio Code (VS Code): Utilized as a source code editor.
 
 [AWS](https://aws.amazon.com/):Utilized for cloud computing services, such as hosting and managing the application's database and storage.
 
-Google Dev Tools: Leveraged for debugging and testing features, as well as resolving issues related to responsiveness and styling. 
+Google Dev Tools: Leveraged for debugging and testing features, as well as resolving issues related to responsiveness and styling.
+
+[Wordtracker](https://www.wordtracker.com/): Used to conduct keyword research.
 
 [Pep8 online](https://pep8ci.herokuapp.com/): Used to identify issues in my Python code.
 
@@ -1258,3 +1258,67 @@ Cloning a repository means obtaining a local copy to work on in your own develop
 5. Type `git clone` followed by the URL and press "enter".
 
 </details>
+
+## Credits
+
+### Code
+
+During the development of my Django project, there were a few times when I needed to explore topics beyond the course material or conduct in-depth reviews. Below are some of the links to the sources I consulted:
+
+* [Scrum & Kanban - Theme, Epic, Story, Task](https://scrumandkanban.co.uk/theme-epic-story-task/)
+
+* [Django-allauth - Quickstart](https://docs.allauth.org/en/latest/installation/quickstart.html)
+
+* [Bootstrap - Introduction](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+* [Djangoproject - Aggregation](https://docs.djangoproject.com/en/5.0/topics/db/aggregation/)
+
+* [Djangoproject - Making queries](https://docs.djangoproject.com/en/5.0/topics/db/queries/)
+
+* [Bootstrap - Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/#margin-and-padding)
+
+* [w3schools - HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
+
+* [Fontawesome - Accessibility](https://fontawesome.com/docs/web/dig-deeper/accessibility)
+
+* [README Example](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md): To write the README file, I followed the structure and table format (testing section) from the readme-examples repository by Kera Cudmore.
+
+* The foundation of the project was established using the CI I Think Therefore I Blog project example as a starting point.
+
+### Content
+
+I created  the content for my application.
+
+ChatGPT: used to assist in write the product descriptions.
+
+### Media
+
+[Favicon.io](https://favicon.io/favicon-converter/): utilized to convert the image from the logo into a favicon.
+
+[CloudConvert](https://cloudconvert.com/png-to-webp): utilized for image format conversion.
+
+[Adobe Express](https://www.adobe.com/br/express/feature/image/resize): utilized for image manipulation and resizing.
+
+MS Paint: used to edit the images. 
+
+[Balsamiq](https://balsamiq.com/): utilized for wireframing purposes.
+
+[Coolors](https://coolors.co/f08080-f4978e-f8ad9d-fbc4ab-ffdab9): utilized to create the color palette. 
+
+[Unsplash](https://unsplash.com/) and [Freepik](https://br.freepik.com/): used to source images for the website. 
+
+[Am I Responsive?](https://ui.dev/amiresponsive) and [Morckup Generator](https://techsini.com/multi-mockup/index.php): utilized to view the website's appearance and responsiveness across a range of devices.
+
+### Acknowledgments
+
+I would like to extend my sincere gratitude to the individuals who offered their assistance and support throughout the entirety of this project:
+
+Jubril Akolade, my mentor, for his guidance and constructive feedback.
+
+Laura Mayock, the Cohort Facilitator at Code Institute, for consistently steering our studies in the most effective direction.
+
+My husband Jasser, for always believing in my abilities, for continuously motivating me, and for his unwavering support.
+
+My family and friends for standing by my side throughout this journey. All the support meant a lot to me, and I couldn't have done it without them.
+
+My friends Ivan Frezza and Bruna Andelieri, providing valuable insights and clarifying uncertainties about my code. Thank you for always supporting me.
