@@ -4,13 +4,6 @@ FineShine is an online platform specializing in the sale of unique and elegant j
 
 ![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
 
-If you'd like to make a test purchase, feel free to use the following Stripe test card details:
-
-Success Card Number: 4242 4242 4242 4242
-Expiration Date: Any future date in the format MM/YY
-CVN: Any 3-digit number
-Postal Code: Any 5-digit combination
-
 ## Demo
 The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herokuapp.com/)!
 
@@ -459,6 +452,12 @@ After the research, my selected keywords were:
 
 ![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
 
+
+Sitemap: A sitemap.xml file has been created to help search engines index the website more effectively.
+
+Robots.txt: A robots.txt file has been implemented to guide search engine crawlers on which pages to index or avoid, ensuring efficient and controlled crawling of the site.
+
+
 ## Features
 
 ### Header
@@ -565,6 +564,13 @@ Shipping Information: Users enter their payment and shipping address details. If
 
 Payment Information: The payment form accepts user information and notifies if there is an attempt to use an invalid card. Integration with the Stripe API ensures all payment transactions are secure.
 
+To make a test purchase, use the following Stripe test card details:
+
+* Success Card Number: 4242 4242 4242 4242
+* Expiration Date: Any future date in the format MM/YY
+* CVN: Any 3-digit number
+* Postal Code: Any 5-digit combination
+
 Order Review: Before completing the purchase, users have the opportunity to review their cart one last time and make any necessary changes. The total cost of selected items and delivery charge (if applicable) is displayed.
 
 ![Fineshine - hero image](/static/images/docs/hero-image.webp)
@@ -649,9 +655,106 @@ A custom 404 error page was developed to properly handle situations where users 
    - Implement a loyalty program to reward frequent customers with discounts, special offers, or early access to new collections.
    - Encourage customer retention and foster long-term relationships.
 
+## Testing 
+
+### User Story Test: 
+
+| User Story | Test Scenario | Test Steps | Expected Result | Actual Result |
+|------------|---------------|------------|-----------------|---------------|
+**`EPIC 1`**
+| Early deployment | Verify the deployment process | 1. Deploy the initial version of the application on Heroku. 2. Access the deployed application. | The application is successfully deployed and accessible on Heroku. | Pass |
+| Setting Up Initial Django Project Structure | Ensure the correct setup of Django project structure | 1. Create a new Django project with proper structure. 2. Verify the project structure. | The Django project is properly configured with the required structure. | Pass |
+| Database Integration | Test database connectivity and media storage | 1. Perform database operations (e.g., CRUD) and file uploads. 2. Check if data is stored correctly in the database and files are uploaded and accessible. | Data is successfully stored in the database, and files are uploaded and accessible. | Pass |
+**`EPIC 2`**
+| Website Administration Control | Manage users, content, and settings | 1. Log in as an administrator. 2. Access the administrative interface. 3. Perform user management, content moderation, and configuration tasks. | Administrators can efficiently manage users, content, and settings. | Pass |
+| Administrative Interface | Test the usability of the administrative interface | 1. Navigate through the administrative interface. 2. Perform common tasks such as user management and content editing. | The administrative interface is intuitive and efficient to use. | Pass |
+**`EPIC 3`**
+| View About Page | Access the "About" page | 1. Navigate to the "About" page. 2. Check if relevant information is displayed. | The "About" page displays relevant information about the company, team, services. | Pass |
+| Manage About Page Content | Edit and update the content of the "About" page | 1. Log in as an administrator. 2. Access the administrative interface. 3. Edit the content of the "About" page. | The content of the "About" page is successfully edited and updated. | Pass |
+**`EPIC 4`**
+| Make Online Booking | Make a booking for a service offered on the website | 1. Navigate to the booking section of the website. 2. Select a service and schedule a consultation. | The booking is successfully made for the selected service. 3. Manage bookings (view, edit, delete)| Pass |
+| Manage Bookings | Access the admin dashboard to manage bookings | 1. Log in as an administrator. 2. Access the admin dashboard. | Administrators can efficiently manage bookings from the admin dashboard. | Pass |
+**`EPIC 5`**
+| Register Account | Create a new user account | 1. Navigate to the registration page. 2. Fill out the registration form and submit. | A new user account is successfully created. | Pass |
+| User Login | Log in to the user account | 1. Navigate to the login page. 2. Enter valid credentials and log in. | The user is successfully logged in to their account. | Pass |
+| User Logout | Log out of the user account | 1. Click on the logout button. | The user is successfully logged out of their account. | Pass |
+**`EPIC 6`**
+| Website Accessibility | Ensure accessibility features are implemented |1. Utilize Google DevTools to analyze the website's accessibility. 2. Navigate through the website to confirm usability and accessibility for users. | The website is accessible and usable for users. | Pass |
+| Accessible Features | Test the implementation of accessible features | 1. Verify the implementation of accessible features (e.g., alt text for images, contrast colors..). | Accessible features are implemented correctly and enhance user experience. | Pass |
+**`EPIC 7`**
+| README Documentation | Check the README.md file | 1. Read the README.md file. 2. Verify if it contains comprehensive information about the project. | The README.md file provides detailed information about the project's purpose, functionality, and usage. | Pass |
+**`EPIC 8`**
+| Testing Procedures | Verify testing procedures | 1. Follow the documented testing procedures. 2. Perform backend and frontend tests. 3. Gather user feedback for UI improvements. | Testing procedures are thorough and ensure the quality and usability of the software. | Pass |
+
+### Tested Browsers and Devices: 
+
+* Web Browsers: 
+
+  * Google Chrome;
+
+  * Microsoft Edge; 
+ 
+  * Safari; 
+
+  * Mozilla Firefox.
+
+
+* Mobile Devices: 
+
+  * iPhone Xr;
+
+  * iPhone 12 Pro; (Google Chrome Inspector) 
+
+  * Samsung Galaxy S20 Ultra. (Google Chrome Inspector) 
+
+
+* Tablet: 
+
+  * Ipad Air 4, 10.9-inch screen;
+
+  * Nest Hub. (Google Chrome Inspector) 
+
+ 
+* Laptop: 
+
+  * Macbook Air, 13-inch screen;
+
+  * Asus TUF F15, 15.6-inch screen. 
+
+
+### Bugs
+
+#### Solved Bugs
+#### Variable Naming Conflict 
+
+  * Bug Description: 
+
+There was an issue in the review rating calculation due to a variable naming conflict. Specifically, the incorrect use of aggregate.total_reviews instead of aggregate.rating in the template caused the calculation for the number of stars to be incorrect. This naming conflict interfered with another existing variable, preventing the correct calculation of the average rating (total stars/number of reviews).
+![bug - 1](/static/images/docs/bug3-2.png)
+
+  * Action Taken:
+
+To resolve this issue, the template code was corrected to use the appropriate variable name, aggregate.rating, ensuring that the review ratings are calculated correctly without conflicts.
+
+![bug - 1 solved](/static/images/docs/bug3-2.png)
 
 
 
+
+#### Replace Date Mask with Current Date on Booking
+
+  * Bug Description: 
+
+There was an issue with the contact form where submitting the form without filling in a required field would simply refresh the page without providing any validation error messages to the user. This made it difficult for users to understand why their submission was not processed.
+
+  * Action Taken:
+
+To address this issue, a forms.py file was created to handle the form logic and validation. The new form ensures that all required fields are validated, and appropriate error messages are displayed if any required fields are left empty.
+This solution ensures that users are properly informed if they miss any required fields when submitting the contact form, enhancing the overall user experience and ensuring that messages are correctly sent to the admin.
+
+#### Unsolved Bugs
+
+No unfixed bugs.
 
 ## Technologies Used
 ### Languages
