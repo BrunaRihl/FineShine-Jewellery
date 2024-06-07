@@ -754,53 +754,72 @@ A custom 404 error page was developed to properly handle situations where users 
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
 | **`Navbar`** |
-| StarLight Logo | When clicked the user will be redirected to the home page. | Clicked Logo | Redirected to the home page. | Pass |
-| Menu-hover | When hovering over the menu items, the text should appear in bold to indicate action.| Hover over menu | text appear in bold. | Pass |
-| Navbar links | When clicked the user will be redirected to the correct page.| Clicked link | Redirected to the correct page. | Pass |
+| FineShine Logo | When clicked the user will be redirected to the home page. | Clicked Logo | Redirected to the home page. | Pass |
+| Navbar links | When clicked the user will be redirected to the correct page. | Clicked link | Redirected to the correct page. | Pass |
 | Smaller Screens | The navbar should be displayed in hamburger style on smaller screens to conserve space. | Resized the screen to check the navbar behavior on smaller sizes. | The navbar switched to hamburger style when the screen was resized to a smaller size. | Pass |
-| User is Logged In | When the user is logged in, a new menu for booking and the logout option should appear, while the register and login options should disappear. | Logged in with a user account and observed the changes in the navbar. | The booking menu and logout option appeared, and the register and login options disappeared after logging in. | Pass |
+| User is Logged In | Wishlist icon becomes clickable for logged-in users and disabled for non-logged-in users. | Logged in and checked navbar changes. | Pass |
 | Fixed navbar | The navbar should remain fixed at the top of the page while scrolling through the site content. | Scrolled through the site content and observed the navbar behavior. | The navbar remained fixed at the top of the page while scrolling. | Pass |
-| Authentication Status Display | The website displays a message below the navigation bar indicating whether the user is logged in or not. | Verified the message display below the navigation bar while logged in and logged out. | Message displayed correctly indicating the authentication status. | Pass |
 | **`Register`** |
-| User Registration | After submitting valid data for registration, the user should be prompted to confirm their password, ensuring accuracy. The username must be unique and not already in use, and the optional email field must be in a valid format. | Entered valid registration data and verified the password confirmation request, uniqueness of the username, and valid email format. | The password confirmation request appeared, the unique username was accepted, and the valid email format was enforced. | Pass |
-| Registration Redirection | Upon successful registration, the user should be redirected to the home page and receive a notification confirming that they are logged in. | Successfully registered a new account and observed redirection to the home page with a logged-in notification. | Redirected to the home page and received a logged-in notification after successful registration. | Pass |
-| Registration with Invalid Data | If the user attempts to register an account with invalid data, such as duplicate information or an incorrect password, the registration will not be completed, and an error message will be displayed in the form. | Attempted registration with duplicate data or incorrect password. | Received error message in the form. | Pass |
+| User Registration | User should be able to register by providing valid data. User receives a confirmation email after registration. | Entered valid registration data and submitted the form. Verified email confirmation process. | Registration and email confirmation process successful. | Pass |
+| Registration with Invalid Data | If the user attempts to register an account with invalid data, such as duplicate information, an incorrect password, or an existing email/username, the registration will not be completed, and an error message will be displayed in the form. | Attempted registration with duplicate data, incorrect password, or existing email/username. | Received error message in the form. | Pass |
 | **`Login`** |
 | User Login | After entering valid credentials and submitting the login form, the user should be redirected to the homepage and receive a confirmation message indicating successful login. | Entered valid credentials and submitted the login form. | Redirected to the homepage and received confirmation message indicating successful login. | Pass |
-| Authenticated User Menus | When logged in, exclusive menus for authenticated users should appear, and the option to schedule an appointment becomes available. | Logged in with valid credentials and observed the appearance of exclusive menus. | Exclusive menus appeared, and appointment scheduling option became available. | Pass |
 | **`Log Out`** |
 | User Logout | After clicking on the logout, the user should be redirected to a confirmation page. | Clicked on the logout. | Redirected to the confirmation page. | Pass |
 | User Logout Redirect | After confirming the logout, the user should be redirected to the home page. | Confirmed logout. | Redirected to the home page after logout confirmation. | Pass |
-| **`Booking`** |
-| User able to select the service | User should be able to select the desired service when booking a consultation | Selected the desired service on the booking page | Service selected successfully | Pass |
-| Select the date | User should be able to choose the desired date for the consultation | Selected a date on the booking page | Date was successfully selected | Pass |
-| Select the time | User should be able to choose the preferred time for the consultation | Chose a time slot on the booking page | Time was successfully selected | Pass |
-| Book consultation | User should be able to schedule a consultation by selecting a date and time | Attempted to book a consultation on the booking page | Consultation was successfully scheduled | Pass |
-| User cannot book in a past date | User should receive an alert when attempting to schedule an appointment for a past date | Tried to book a consultation for a past date on the booking page | Alert message appeared indicating that booking for past dates is not allowed | Pass |
-| Unavailable booking slot | When attempting to book a consultation on a date and time that is already booked, the user should receive an alert indicating that the consultant is not available for that date or time. | Attempted to book a consultation on a date and time that is already booked | Alert displayed indicating that the consultant is not available for that date or time | Pass |
-| Edit booking | User should have the option to edit their existing bookings | Accessed the edit option for a booked consultation | Booking details were successfully edited | Pass |
-| Delete booking | User should be able to remove their bookings if needed | Attempted to delete a booked consultation | Booking was successfully deleted | Pass |
-| Save booking in booking page | User's bookings should be saved and displayed on the booking page | Scheduled a consultation and checked if it appeared on the booking page | Booking was saved and appeared on the booking page | Pass |
-| **`Home`** |
-| Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Login First" Button | Redirected to the login page. | Pass |
-| Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass |
-| Button: hover | When the mouse hovers over the button, it should change color to indicate action. | Hovered over the button and observed the color change. | The button changed color when hovered over, indicating action. | Pass |
-| **`About`** |
-| Text Loading  | The text on the "About" page should match the content entered in the admin panel. | Compared displayed text with admin panel content. | Text matched admin panel content. | Pass |
-| Image Upload             | The administrator can successfully upload the image through the administration panel.                 | Verification of the image upload process in the administration panel.     | The correct image is displayed on the website.    | Pass |
-| Updated Date    | Creation date of the text displayed at the bottom of the page. | Checked if the displayed date matches the creation date of the text. | Date displayed matched the creation date of the text. | Pass |
-| Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Login First" Button | Redirected to the login page. | Pass |
-| Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass | 
-| Button: hover | When the mouse hovers over the button, it should change color to indicate action. | Hovered over the button and observed the color change. | The button changed color when hovered over, indicating action. | Pass |
+| **`Profile`** |
+| Update Shipping Details | Users can update their default shipping information using a form. | Updated the shipping details on the profile page. | Shipping information updated successfully. | Pass |
+| View Order History | Users can view their previous orders, each listed with an order number. | Checked the order history section in the profile. | Previous orders displayed with clickable order numbers for detailed view. | Pass |
+| **`404 Page`** |
+| Custom 404 Page | A custom 404 page appears when users access non-existent pages, offering clear navigation back to the main site. | Accessed a non-existent page to trigger the 404 error. | Custom 404 page displayed with navigation options. | Pass |
+| **`Header`** |
+| Responsive Navigation Bar | Navigation bar adjusts on all devices. | Checked on different devices. | Navigation bar adjusts correctly on all devices. | Pass |
+| Logo and Company Name | Custom logo displayed, website responsive. | Verified logo and website on various devices. | Custom logo displayed correctly, website responsive on different devices. | Pass |
+| Search Bar | Search functionality for finding products. | Tested search by entering keywords. | Search functionality works as expected. | Pass |
+| Quick Access Links | Quick links visible, Wishlist for logged-in users. | Checked visibility and functionality. | Links visible and functional, Wishlist link appears only for logged-in users. | Pass |
+| Main Navigation | Navigation links functional for categories. | Verified navigation to correct categories. | Navigation links direct to correct categories. | Pass |
+| Product Categories | Additional options under each category. | Checked available options. | Additional options displayed under each category. | Pass |
+| Favicon | Custom favicon displayed in browser tab. | Verified presence in browser tab. | Custom favicon displayed in browser tab. | Pass |
+| **`Products`** |
+| Product Categories | Users can explore products by category (earrings, bracelets, etc.). | Checked category navigation. | Navigation by category functional. | Pass |
+| Product Hover Effect | Products show zoom effect and shadow on hover. | Tested hover effect on products. | Hover effect applied correctly. | Pass |
+| Product Sorting | Users can sort products by price, name, or category. | Tested sorting functionality. | Sorting works as expected. | Pass |
+| Product Information | Each product displays image, price, category, and rating. | Reviewed product display. | Product information displayed correctly. | Pass |
+| **`Products Details`** |
+| Product Details Page | Users find comprehensive product information: description, price, add to wishlist option, and product reviews. | Checked details page layout and information. | Product details page shows all expected information. | Pass |
+| Product Reviews | All users can view reviews with 5-star rating, user's name, review date, and text. | Reviewed display of reviews. | Reviews displayed with all required information. | Pass |
+| Adding Reviews | Logged-in users can add reviews for products they have purchased. | Tested adding reviews as logged-in user. | Adding reviews functional for logged-in users. | Pass |
+| Editing/Deleting Reviews | Users can edit or delete their own reviews. | Tested editing/deleting reviews. | Editing/deleting reviews functional. | Pass |
 | **`Admin`** |
 | Login to Django Panel | The admin should be able to log in to the Django panel using the provided credentials. | Logged in to the Django panel using admin credentials | Successfully accessed the Django panel | Pass |
-| Add, Edit, and Delete Services | The admin should be able to add, edit, and delete services from the website. | Added, edited, and deleted services from the admin panel | Successfully managed services | Pass |
-| Edit and Delete Bookings | The admin should be able to edit and delete bookings from the admin panel. | Edited and deleted bookings from the admin panel | Successfully managed bookings | Pass |
-| Add, Edit, and Delete Content of About Page | The admin should be able to add, edit, and delete content on the About page from the admin panel. | Added, edited, and deleted content on the About page from the admin panel | Successfully managed About page content | Pass |
-| New Menu in Navbar| When logged in as an admin, a new menu should appear in the navbar allowing direct access to the admin control panel, redirecting the admin to the panel. | Logged in as an admin and observed the appearance of a new menu in the navbar | New menu appeared in the navbar, providing access to the admin control panel | Pass |
+| Add, Edit, and Delete Products | The admin should be able to add, edit, and delete products both from the admin panel and through the website. | Added, edited, and deleted products from both admin panel and website interface | Products were successfully managed | Pass |
+| **`Bag`** |
+| View Bag | Users can view and manage products in their shopping bag, including name, image, price, quantity, and subtotal. | Added products to the bag and viewed bag contents. | All product details are correctly displayed. | Pass |
+| Update Quantity | Users can update the quantity of each item in the bag. | Updated product quantities in the bag. | Quantities updated successfully. | Pass |
+| Remove Items | Users can remove items from the bag. | Removed items from the bag. | Items removed successfully. | Pass |
+| Total Cost Display | The total cost of selected items is displayed. | Verified total cost calculation. | Total cost is displayed correctly. | Pass |
+| Free Delivery Info | Users are informed about the amount needed to qualify for free delivery. | Checked free delivery message with different total amounts. | Free delivery message displayed correctly. | Pass |
+| Proceed to Checkout | Users can proceed to checkout from the bag page. | Clicked "Proceed to Checkout" button. | Redirected to checkout page successfully. | Pass |
+| Continue Shopping | Users can continue shopping using the "Keep Shopping" button. | Clicked "Keep Shopping" button. | Redirected back to shopping page successfully. | Pass |
+| Toast Messages | Toast messages are displayed when adding, updating, or removing items from the bag. | Added, updated, and removed items to observe toast messages. | Toast messages displayed correctly for each action. | Pass |
+| **`Checkout`** |
+| Shipping Information | Users enter payment and shipping address details; form pre-filled if logged in and data saved. | Entered shipping information, logged in and verified pre-filled data. | Form correctly pre-filled and accepted shipping details. | Pass |
+| Payment Information | The payment form accepts valid card details, notifies invalid card attempts, and integrates with Stripe for secure transactions. | Tested with Stripe test card 4242 4242 4242 4242, checked for invalid card notification. | Payment processed securely, invalid card notification displayed. | Pass |
+| Order Review | Users can review and edit their cart before finalizing the purchase, with total cost and delivery charges displayed. | Reviewed and edited cart before finalizing. | Cart review and edits functioned correctly, total cost displayed accurately. | Pass |
+| Checkout Success | Users are directed to a confirmation page with order number and summary; confirmation email sent with order details. | Completed checkout, observed confirmation page, and checked email. | Confirmation page displayed correctly, email received with correct order details. | Pass |
+| **`Wishlist`** |
+| Add to Wishlist Button | When clicked, the product should be added to the user's wishlist. | Clicked "Add to Wishlist" button for a product. | Product was successfully added to the wishlist. | Pass |
+| View Wishlist | Users should be able to view all products added to their wishlist. | Navigated to the wishlist page. | All products in the wishlist were displayed correctly. | Pass |
+| Remove from Wishlist | Users should be able to remove products from their wishlist. | Clicked "Remove" button for a product in the wishlist. | Product was successfully removed from the wishlist. | Pass |
+| **`Contact`** |
+| Contact Form Submission | Users can submit their name, email, phone number (optional), and message; prompts and errors for incorrect fields. | Filled out and submitted the contact form with valid and invalid data. | Form submission successful with valid data; error messages displayed for incorrect fields. | Pass |
+| Thank You Page | After form submission, users are directed to a thank you page confirming submission. | Submitted the contact form and observed the redirection. | Thank you page displayed confirming submission. | Pass |
+| Admin Access to Messages | Messages are sent to the site admin's business email for prompt response. | Submitted a message and checked the admin email. | Message received in admin's email. | Pass |
 | **`Notification messages`** |
-| Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting bookings. | Perform registration, login, logout, adding, editing, or deleting bookings. Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass      |
+| Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting bookings. | Perform registration, login, logout, adding, editing, or deleting... Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass |
 | **`Footer`** |
 | Icon-clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks.| Clicked social networks Icons | Opens the pages in a new window. | Pass |
 
