@@ -875,7 +875,7 @@ To resolve this issue, the template code was corrected to use the appropriate va
 
 
 
-#### Replace Date Mask with Current Date on Booking
+#### Missing Validation Feedback
 
   * Bug Description: 
 
