@@ -3,7 +3,15 @@ from django.db import models
 
 from profiles.models import UserProfile
 from products.models import Product
+import pytz
+from django.conf import settings
 
+
+
+def get_default_reminder_date():
+    timezone = pytz.timezone(settings.TIME_ZONE)
+    now = datetime.datetime.now(timezone)
+    return now + datetime.timedelta(days=5)
 
 class Wishlist(models.Model):
     """
@@ -30,7 +38,7 @@ class Wishlist(models.Model):
     is_favorite = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     reminder_date = models.DateTimeField(
-        default=datetime.datetime.now() + datetime.timedelta(days=5)
+        default=get_default_reminder_date
     )
 
     class Meta:
