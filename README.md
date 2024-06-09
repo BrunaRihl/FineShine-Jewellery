@@ -886,6 +886,19 @@ Used mark_safe to mark the message as safe before passing it to messages.info(),
 
 ![bug - 1 solved](/static/images/docs/bug3-2.png)
 
+#### Newsletter signup form layout issue.
+
+  * Bug Description: 
+
+The newsletter signup form was displaying incorrectly, cutting off some information and making it difficult to input email on mobile devices.
+
+  * Action Taken:
+
+ Removed the width: 600px; property from the form container style (div#mc_embed_signup), allowing the form to dynamically adjust to the screen size, thereby fixing the issue of information cutoff and email input box.
+
+
+![bug - 1 solved](/static/images/docs/bug3-2.png)
+
 #### Missing Validation Feedback
 
   * Bug Description: 
