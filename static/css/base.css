@@ -369,7 +369,7 @@ input[name='q']::placeholder {
     color: var(--green);
 }
 
-.remove-item {
+.remove-item-fav {
     position: absolute;
     bottom: 10px;
     right: 10px;
