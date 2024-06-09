@@ -556,6 +556,9 @@ a.wishlistt-link:hover {
 }
 /* Footer */
 
+.small-heading {
+    font-size: 1.25rem; /* Ajuste o tamanho conforme necessário */
+}
 
 #mc_embed_signup {
     background: #fff;
