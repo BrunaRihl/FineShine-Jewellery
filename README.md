@@ -873,7 +873,18 @@ To resolve this issue, the template code was corrected to use the appropriate va
 ![bug - 1 solved](/static/images/docs/bug3-2.png)
 
 
+#### HTML escaping in messages.info not rendering HTML correctly
 
+  * Bug Description: 
+
+HTML inside the messages.info was not being rendered correctly in the template, appearing as plain text.
+
+  * Action Taken:
+
+Used mark_safe to mark the message as safe before passing it to messages.info(), allowing the HTML inside the message to be rendered correctly in the template.
+
+
+![bug - 1 solved](/static/images/docs/bug3-2.png)
 
 #### Missing Validation Feedback
 
@@ -942,9 +953,12 @@ Google Dev Tools: Leveraged for debugging and testing features, as well as resol
 
 * **stripe**: used for integrating Stripe payment processing into Django applications.
 
+* **pytz**: Used for accurate and cross-platform timezone calculations. It helps in converting and working with different timezones.
+
 * **time**: used for handling time-related functionalities such as pausing program execution, calculating the duration of operations / scheduling actions to occur at specific times.
 
 * **datetime**: Used for date and time manipulation.
+
 
 ## Deployment
 

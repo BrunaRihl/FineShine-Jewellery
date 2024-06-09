@@ -1,5 +1,6 @@
 from django.shortcuts import render
-
+from django.urls import reverse
+from django.utils.safestring import mark_safe
 from django.contrib import messages
 from wishlist.models import Wishlist
 from profiles.models import UserProfile
@@ -22,6 +23,12 @@ def index(request):
         product_names = ", ".join([wishlist_item.product.name for wishlist_item in wishlist_items])
 
         if product_names:
-            messages.info(request, f"{product_names} is included in your wishlist. Buy now!!! Buy, buy, buy. Botini's top-notch deal!")
+            # Customize the message with a link to the wishlist
+            wishlist_url = reverse('view_wishlist')  # Get the URL of the wishlist
+            message = mark_safe(
+                f"Still interested in {product_names}? It's waiting for you on your wishlist! "
+                f"<a href='{wishlist_url}' class='wishlistt-link'>Go to Wishlist</a>"
+            )
+            messages.info(request, message)
 
     return render(request, 'home/index.html')

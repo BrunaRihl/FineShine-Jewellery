@@ -16,7 +16,7 @@ def view_wishlist(request):
         request (HttpRequest): The request object.
     """
     user = UserProfile.objects.get(user=request.user)
-    wishlist_items = Wishlist.objects.filter(user=user)
+    wishlist_items = Wishlist.objects.filter(user=user).order_by("-is_favorite")
 
     return render(request, "wishlist.html", {"wishlist_items": wishlist_items})
 
