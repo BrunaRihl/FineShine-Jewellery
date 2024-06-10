@@ -14,7 +14,7 @@
     <div class="overlay"></div>
     <div class="container-fluid margin-top-div">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-6 col-lg-8">
+            <div class="col-12 col-md-6 col-lg-6">
                 <hr>
                 <h2 class="logo-font mb-4 text-center">Wishlist <i class="fa-regular fa-heart"></i></h2>
                 <hr>
@@ -33,7 +33,7 @@
                                 </a>
                                 Added on: {{ item.created_at|date:"F j, Y" }}
                             </div>
-                            <div class="col-lg-6 col-sm-4 text-left">
+                            <div class="col-lg-4 col-sm-4 text-left">
                                 <p class="my-0">{{ item.product.name }}</p>
                             </div>
                         </div>
@@ -42,10 +42,10 @@
                             <button type="submit" class="btn p-0 border-0 bg-transparent">
                                 {% if item.is_favorite %}
                                 <span>Favorite</span>
-                                <i class="fas fa-bookmark bookmark-icon text-green"></i> <!-- Alterado aqui -->
+                                <i class="fas fa-bookmark bookmark-icon text-green"></i> 
                                 {% else %}
                                 <span>Is it your favorite?</span>
-                                <i class="far fa-bookmark bookmark-icon text-green"></i> <!-- Alterado aqui -->
+                                <i class="far fa-bookmark bookmark-icon text-green"></i> 
                                 {% endif %}
                             </button>
                         </form>
