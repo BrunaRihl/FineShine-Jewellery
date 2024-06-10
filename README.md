@@ -696,6 +696,16 @@ A custom 404 error page was developed to properly handle situations where users 
    - Implement a loyalty program to reward frequent customers with discounts, special offers, or early access to new collections.
    - Encourage customer retention and foster long-term relationships.
 
+### Accessibility
+
+From the project's inception, the website's design has been planned with a focus on accessibility. Special attention has been given to ensuring good color contrast, an easily understandable structure, and intuitive navigation, establishing a solid foundation for the user experience.
+
+### LightHouse 
+
+The accessibility, performance, best practices, and SEO (Search Engine Optimization) of the website were analyzed using the LightHouse tool available in Google Chrome's DevTools. Additionally, I ensured that all pages achieved 100% accessibility.
+
+![Fineshine Lighthouse](/media/docs/lighthouse1.jpg)
+
 ## Testing 
 
 ### User Story Test: 
@@ -878,14 +888,14 @@ Additionally, I utilized the PEP8 validator to identify and correct any remainin
 No errors were found during the validation process using the official Jigsaw validator.
 
 
-![Jigsaw validator - Css](/static/images/docs/jigsaw-valid.webp)
+![Jigsaw validator - Css](/media/docs/css-check.jpg)  
 
 
   * HTML:  
 
 To ensure the validity and compliance of my web pages with web standards, I used the W3C validator. This tool helped me identify and correct any errors highlighted in my pages.
 
-![W3C validator - html](/static/images/docs/html-check.webp)
+![W3C validator - html](/media/docs/html-check.jpg)  
 
 
 The corrections were implemented in accordance with the validator's suggestions.
