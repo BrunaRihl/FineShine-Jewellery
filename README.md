@@ -2,7 +2,7 @@
 
 FineShine is an online platform specializing in the sale of unique and elegant jewelry, featuring a wide collection of earrings, necklaces, bracelets, rings, and sets. All pieces are crafted in Ireland and available for shipping. This project was developed as my fifth endeavor in the Code Institute's Full Stack Developer Course, utilizing Django, HTML, CSS, JS, and Python for its creation.
 
-![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+![FineShine website shown on a range of devices](/media/docs/responsive.jpg)  
 
 ## Demo
 The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herokuapp.com/)!
@@ -85,20 +85,11 @@ Administrators:
 * Implement effective customer support channels to respond to inquiries, feedback, and newsletter subscriptions.
 * Regularly update site content to inform users about the available products from the brand.
 
-
-### Flowchart
-
-In the planning stage, I drafted a basic structure that depicted the desired functionality and interaction for the project.
-
-As development progressed, I identified elements that needed to be included and others that required a different order of operation. These changes were gradually incorporated into the initial outline. The outline was conceived using the Lucidchart tool.
-
-![FineShine Flowchart](/static/images/docs/flow.png)
-
 ### ERD
 
 In order to provide a clear visual representation of the database structure, an Entity-Relationship Diagram (ERD) was developed using a Database Designer tool.
 
-![FineShine ERD](/static/images/docs/erd.jpg)
+![FineShine ERD](/media/docs/erd.jpg)  
 
 
 ## User Stories
@@ -234,9 +225,9 @@ This epic focuses on both comprehensive testing procedures and creating detailed
 
 ### Agile development
 
-Throughout the project development, I adopted an agile methodology, utilizing Kanban to manage my activities and projects. Kanban provided a clear view of the workflow, allowing me to track task progress visually and in real time. I organized my project on GitHub, using a Kanban board to divide tasks into columns such as "To Do," "In Progress," and "Done."
+Throughout the project development, I adopted an agile methodology, utilizing Kanban to manage my activities and projects. Kanban provided a clear view of the workflow, allowing me to track task progress visually and in real time. I organized my project on GitHub, using a Kanban board to divide tasks into columns such as "To Do", "In Progress", "Done" and "Future Features"
 
-![FineShine Agile development](/static/images/docs/agile.png)
+![FineShine Agile development](/media/docs/project.jpg)
 
 
 For more details on the project management process, you can access the link [here](https://github.com/users/BrunaRihl/projects/8).
@@ -270,7 +261,7 @@ For more details on the categorization, distribution of user stories, and projec
 
 The website's color palette was inspired by the hero image on the homepage, featuring shades of aqua green, gold, black, and white. This choice not only reflects the sophistication of the jewelry but also creates an atmosphere of freshness and elegance for users. Additionally, the sharp contrast between black and white was carefully considered to ensure excellent readability and ease of navigation for visitors.
 
-![FineShine website color palette](/static/images/docs/palette.png)
+![FineShine website color palette](/media/docs/palette.png)
 
 ### Typography 
 
@@ -295,21 +286,21 @@ I made some adjustments in relation to what I had planned for positioning and ad
   <summary>Home
 </summary>
 
-![FineShine wireframe](/static/images/docs/home-desk.webp)  
+![FineShine wireframe](/media/docs/home-desktop.png)
 
 </details>
 <details>
   <summary>Products
 </summary>
 
-![FineShine wireframe](/static/images/docs/products-desk.webp)  
+![FineShine wireframe](/media/docs/wishlist-desktop.png)
 
 </details>
 <details>
   <summary>Products Details
 </summary>
 
-![FineShine wireframe](/static/images/docs/details-desk.webp)  
+![FineShine wireframe](/media/docs/products-d-desktop.png)
 
 </details>
 
@@ -318,14 +309,14 @@ I made some adjustments in relation to what I had planned for positioning and ad
   <summary>Wishlist
 </summary>
 
-![FineShine wireframe](/static/images/docs/wish-desk.webp)  
+![FineShine wireframe](/media/docs/wishlist-desktop.png)
 
 </details>
 <details>
   <summary>Contact
 </summary>
 
-![FineShine wireframe](/static/images/docs/contact-desk.webp)  
+![FineShine wireframe](/media/docs/contact-desktop.png)
 
 </details>
 
@@ -335,21 +326,21 @@ I made some adjustments in relation to what I had planned for positioning and ad
   <summary>Home
 </summary>
 
-![FineShine wireframe](/static/images/docs/home-mob.webp)  
+![FineShine wireframe](/media/docs/Home-mobile.png)
 
 </details>
 <details>
   <summary>Products
 </summary>
 
-![FineShine wireframe](/static/images/docs/products-mob.webp)  
+![FineShine wireframe](/media/docs/products-mobile.png)
 
 </details>
 <details>
   <summary>Products Details
 </summary>
 
-![FineShine wireframe](/static/images/docs/details-mob.webp)  
+![FineShine wireframe](/media/docs/products-d-mobile%20.png)
 
 </details>
 
@@ -358,14 +349,14 @@ I made some adjustments in relation to what I had planned for positioning and ad
   <summary>Wishlist
 </summary>
 
-![FineShine wireframe](/static/images/docs/wish-mob.webp)  
+![FineShine wireframe](/media/docs/wishlist-mobile%20.png)
 
 </details>
 <details>
   <summary>Contact
 </summary>
 
-![FineShine wireframe](/static/images/docs/contact-mob.webp)  
+![FineShine wireframe](/media/docs/contact-mobile.png)
 
 </details>
 </details>
@@ -423,11 +414,11 @@ I made some adjustments in relation to what I had planned for positioning and ad
 A Facebook page was created to promote the jewelry e-commerce due to the platform's wide visibility and engagement potential. Facebook allows for reaching a diverse audience, increasing brand visibility, and attracting new consumers.
 To personalize the page, the store's logo was added as the profile picture, and a welcome message with a direct link to the online store was written, making it easy for visitors to access.
 
-![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+![FineShine Facebook](/media/docs/facebook.jpg)
 
 Additionally, a post was created featuring an exclusive jewelry set as the highlight of the week, including a photo of the product and a link for purchase.
 
-![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+![FineShine facebook](/media/docs/facebook2.jpg)
 
 This strategy aims to increase engagement, drive traffic to the website, and boost sales, strengthening the brand's presence on social media.
 
@@ -442,16 +433,18 @@ To ensure that my website was easily discoverable through online searches, I dev
 
 To further enhance my keyword strategy, I turned to suggestions provided by Google during searches. I utilized features like "People also search for" and the auto-suggestions provided by Google while typing a keyword. These tools helped me identify popular search trends and related terms actively sought by users.
 
-![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+![FineShine keywords](/media/docs/keys1.jpg)
+![FineShine keywords](/media/docs/keys2.jpg)
+![FineShine keywords](/media/docs/keys3.jpg)
+
 
 Additionally, I utilized resources like Wordtracker.com to conduct keyword research and identify relevant terms that aligned with the content and purpose of my site.
 
-![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+![FineShine wordtracker](/media/docs/keys4.jpg)
 
 After the research, my selected keywords were:
 
-![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
-
+![FineShine keywords meta](/media/docs/keywords.jpg)
 
 Sitemap: A sitemap.xml file has been created to help search engines index the website more effectively.
 
@@ -464,8 +457,11 @@ Robots.txt: A robots.txt file has been implemented to guide search engine crawle
 
 * All pages feature a responsive navigation bar at the top of the screen.
 
+![FineShine navbar](/media/docs/nav.jpg)
+
 **Logo and Company Name:** A custom logo was created for Fineshine, ensuring instant brand recognition.
-![FineShine website shown on a range of devices](/static/images/docs/responsive.png)  
+
+![FineShine logo](/media/docs/logofs.jpg)
 
 - **Search Bar:** A search bar allows users to easily find specific products directly from the header.
 
@@ -475,12 +471,14 @@ Robots.txt: A robots.txt file has been implemented to guide search engine crawle
 
 - **Product Categories:** When clicking on a category such as "Earrings," users have additional options such as "Silver Earrings," "Gold Earrings," or "Full Collection."
 
+- **Highlighting Free Delivery:** A highlighted line emphasizes free delivery for purchases over €200, using a gold glitter effect to match the website theme and draw attention.
 
+Destaque para Entrega Gratuita e Efeito Visual
 ### Favicon
 
 A custom favicon has been added to the website's header. The favicon features a diamond with sparkling accents around it, matching the site's color palette of aqua green tones, providing a unique visual identity.
 
-![Fineshine - favicon](/static/images/docs/favicon-docs.webp)
+![Fineshine - favicon](/media/docs/fav.jpg)
 
 ### Footer
 
@@ -490,7 +488,7 @@ A custom favicon has been added to the website's header. The favicon features a 
 * The overlaid message provides a brief introduction to the website's concept, while the high resolution and vibrant colors ensure an inviting presentation to visitors.
 * The "Shop Now" button below the main image provides a clear call-to-action, inviting users to explore and shop for jewelry.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - home](/media/docs/homepage.jpg)
 
 #### Why shop whit us section:
 
@@ -498,62 +496,63 @@ Below the main image, users will find the "Why Shop for Jewellery with FineShine
 
 This section highlights the reasons why customers should choose FineShine for their jewellery purchases. Each reason is presented concisely, providing an overview of the benefits of shopping with FineShine.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - Why shop whit us](/media/docs/why-shop.jpg)
 
 ### Products:
 
 Users can explore products by selecting different categories such as earrings, bracelets, necklaces, rings, and sets, available in silver, gold, or the complete collection. This allows for quick and easy navigation through the products of interest.
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - products page](/media/docs/products.jpg)
 
 When hovering over the products, a zoom effect is applied, accompanied by a subtle shadow to enhance the item preview.
 
 Additionally, users can also sort the products by price, name, or category, offering even more control over the item view.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
-
 Each product displays a representative image, price, category, and rating (if available).
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - products](/media/docs/products2.jpg)
 
 #### Admin Features:
 
 Administrators have access to additional options such as adding new products or deleting existing ones.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - admin](/media/docs/admin1.jpg)
 
 Admins also have the option to add products directly through the website by accessing "Product Management" in "My Account."
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - admin](/media/docs/admin2.jpg)
 
 #### Product details page:
 
 When a product is selected, users are directed to the details page, where they can find comprehensive information about the product, including description, price, an option to add the item to the wishlist, and product reviews.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - hero image](/media/docs/product-d.jpg)
 
 #### Reviews:
 
 * All users can view product reviews.
 * Each review includes a 5-star rating, the user's name, the date of the review, and the review text.
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - reviews](/media/docs/reviews.jpg)
 
 * Logged-in users have the option to add reviews.
+![Fineshine - add review](/media/docs/review-add.jpg)
+
 * Reviews are available only for products they have purchased.
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - error](/media/docs/review-error.jpg)
 
 * Users can edit or delete their own reviews.
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - edit/delete review](/media/docs/review-edits.jpg)
+![Fineshine - edit/delete review](/media/docs/reviews-manage.jpg)
 
 
 ### Bag
 
 The bag page allows users to view and manage the products added to their shopping bag. When a product is added to the bag, a message is displayed with a preview of the bag. Users can see a summary of each product, including the name, image, price, quantity, and subtotal. They have the option to update the quantity of each item or remove items from the bag. The page also displays the total cost of the selected items.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - hero image](/media/docs/bag.jpg)
 
 Users are informed of the amount needed to qualify for free delivery if they haven't met the minimum threshold. From this page, they can proceed to checkout or continue shopping using the "Keep Shopping" button. A toast message is displayed whenever a user adds, updates the quantity, or removes an item from the bag, providing instant feedback on their actions.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - hero image](/media/docs/bag-toast.jpg)
 
 
 ### Checkout
@@ -573,55 +572,58 @@ To make a test purchase, use the following Stripe test card details:
 
 Order Review: Before completing the purchase, users have the opportunity to review their cart one last time and make any necessary changes. The total cost of selected items and delivery charge (if applicable) is displayed.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - checkout](/media/docs/checkout.jpg)
 
 #### Checkout Success
 
 Upon confirming the order, users finalize their purchase. They are directed to a confirmation page displaying essential details such as the order number and a summary of their purchase. 
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine -checkout success](/media/docs/checkout-s.jpg)
 
 Simultaneously, an email confirmation with identical information is sent to the user's inbox.
 This confirmation email ensures that users have a record of their purchase and provides them with all the necessary details regarding their order, including the order number, items purchased, and billing/shipping information.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - hero image](/media/docs/check-email.jpg)
 
 ### Contact
 
 Fineshine provides a convenient contact form for users to reach out with any questions or inquiries. The form is designed to collect essential information such as the user's name, email address, phone number (optional), and their message. If any fields are not filled out correctly, users will receive prompts and error messages to complete the form accurately.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - contact](/media/docs/contact.jpg)
 
 After submitting the form, users are directed to a thank you page, where they receive confirmation of their message submission.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - contact-thankyou page](/media/docs/contact-s.jpg)
 
 Messages sent through the contact form are directly accessible to the site administrator through their business email service, allowing them to promptly respond to customer queries and feedback.
 
-![Fineshine - hero image](/static/images/docs/hero-image.webp)
+![Fineshine - contact email](/media/docs/contact-email.jpg)
 
 ### Wishlist
 
 ### Sign Up Page
 
 - On the registration page, new users can start their journey on Fineshine by creating a personalized account. Here, users provide essential information such as username, email address and password to establish their identity in the system.
-- During the registration process, each user is prompted to choose a unique username and email ensuring uniqueness among all accounts. 
+- During the registration process, each user is prompted to choose a unique username and email ensuring uniqueness among all accounts.
+
+![Fineshine sign up](/media/docs/resgister.jpg)
+
 - Upon registration, users receive a confirmation email to verify their email address and activate their account.
 
-![Fineshine sign up](/static/images/docs/signup-error.webp)
+![Fineshine sign up](/media/docs/register-email.jpg)
 
 
 ### Login Page
 
 - On the login page, registered users can access their existing accounts on Fineshine. Using a simple form, users input their credentials, including username/email and password, to sign into the system. Once authenticated, users have immediate access to the site's personalized features, allowing them to explore and utilize the available functionalities.
 
-![Fineshine login](/static/images/docs/login.webp)
+![Fineshine login](/media/docs/signin.jpg)
 
 ### Logout Page
 
 - The logout page provides users with a convenient way to end their sessions on Fineshine. By clicking the "Logout" button, users are logged out of their accounts, ensuring the privacy and security of their information. Upon logout completion, users are redirected to a confirmation page and then to the homepage, providing a seamless and secure experience.
 
-![Fineshine logout](/static/images/docs/signout.webp)
+![Fineshine logout](/media/docs/signout.jpg)
 
 ### Profile
 
@@ -629,13 +631,13 @@ On the profile page, users have access to features to manage their account effec
 
 Additionally, users can view their previous order history directly on the profile page. Each order is listed with an order number, which users can click to view more detailed information about past orders. This provides users with easy access to track their order history and review details of their past purchases.
 
-![Fineshine logout](/static/images/docs/signout.webp)
+![Fineshine logout](/media/docs/profile.jpg)
 
 ### 404 Page:
 
 A custom 404 error page was developed to properly handle situations where users accessed non-existent pages or encountered broken links. This page provides clear navigation options to assist users in returning to the main site after encountering broken links or non-existent pages.
 
-![Fineshine 404](/static/images/docs/404-page.webp)
+![Fineshine 404](/media/docs/404.jpg)
 
 ### Future Features and Resources to be Added
 
