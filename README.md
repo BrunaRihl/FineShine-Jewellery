@@ -411,6 +411,7 @@ I made some adjustments in relation to what I had planned for positioning and ad
 
 ## Marketing
 
+### Facebook Page
 A Facebook page was created to promote the jewelry e-commerce due to the platform's wide visibility and engagement potential. Facebook allows for reaching a diverse audience, increasing brand visibility, and attracting new consumers.
 To personalize the page, the store's logo was added as the profile picture, and a welcome message with a direct link to the online store was written, making it easy for visitors to access.
 
@@ -421,6 +422,12 @@ Additionally, a post was created featuring an exclusive jewelry set as the highl
 ![FineShine facebook](/media/docs/facebook2.jpg)
 
 This strategy aims to increase engagement, drive traffic to the website, and boost sales, strengthening the brand's presence on social media.
+
+### Newsletter Signup
+
+The website features a Mailchimp newsletter signup form, designed to collect email addresses for marketing and promotional purposes. This allows customers to stay informed about the latest products, special offers, and updates. The newsletter form is accessible and can be found below:
+
+![FineShine newsletter](/media/docs/news.jpg)
 
 ## Search Engine Optimization
 ### Keyword Strategy to Increase Online Visibility
@@ -474,15 +481,20 @@ Robots.txt: A robots.txt file has been implemented to guide search engine crawle
 - **Highlighting Free Delivery:** A highlighted line emphasizes free delivery for purchases over €200, using a gold glitter effect to match the website theme and draw attention.
 
 Destaque para Entrega Gratuita e Efeito Visual
+
 ### Favicon
 
 A custom favicon has been added to the website's header. The favicon features a diamond with sparkling accents around it, matching the site's color palette of aqua green tones, providing a unique visual identity.
 
 ![Fineshine - favicon](/media/docs/fav.jpg)
 
-### Footer
+## Footer
 
-### Home Page 
+The footer of the website is structured into three main sections. The first section features a Mailchimp newsletter signup form, which collects email addresses for marketing purposes. The second section includes store information, useful links, and contact details. The third section, "Follow Us," contains icons and links to the store's social media profiles, including Facebook, Instagram, and YouTube.
+
+![Fineshine - favicon](/media/docs/footer.jpg)
+
+## Home Page 
 
 * The main image showcases golden jewelry arranged against a background of aqua green, which inspired the color palette of the site.
 * The overlaid message provides a brief introduction to the website's concept, while the high resolution and vibrant colors ensure an inviting presentation to visitors.
@@ -490,7 +502,7 @@ A custom favicon has been added to the website's header. The favicon features a 
 
 ![Fineshine - home](/media/docs/homepage.jpg)
 
-#### Why shop whit us section:
+### Why shop whit us section:
 
 Below the main image, users will find the "Why Shop for Jewellery with FineShine" section.
 
@@ -498,7 +510,7 @@ This section highlights the reasons why customers should choose FineShine for th
 
 ![Fineshine - Why shop whit us](/media/docs/why-shop.jpg)
 
-### Products:
+## Products:
 
 Users can explore products by selecting different categories such as earrings, bracelets, necklaces, rings, and sets, available in silver, gold, or the complete collection. This allows for quick and easy navigation through the products of interest.
 ![Fineshine - products page](/media/docs/products.jpg)
@@ -511,7 +523,7 @@ Each product displays a representative image, price, category, and rating (if av
 
 ![Fineshine - products](/media/docs/products2.jpg)
 
-#### Admin Features:
+### Admin Features:
 
 Administrators have access to additional options such as adding new products or deleting existing ones.
 
@@ -521,13 +533,13 @@ Admins also have the option to add products directly through the website by acce
 
 ![Fineshine - admin](/media/docs/admin2.jpg)
 
-#### Product details page:
+## Product details page:
 
 When a product is selected, users are directed to the details page, where they can find comprehensive information about the product, including description, price, an option to add the item to the wishlist, and product reviews.
 
 ![Fineshine - hero image](/media/docs/product-d.jpg)
 
-#### Reviews:
+## Reviews:
 
 * All users can view product reviews.
 * Each review includes a 5-star rating, the user's name, the date of the review, and the review text.
@@ -544,7 +556,7 @@ When a product is selected, users are directed to the details page, where they c
 ![Fineshine - edit/delete review](/media/docs/reviews-manage.jpg)
 
 
-### Bag
+## Bag
 
 The bag page allows users to view and manage the products added to their shopping bag. When a product is added to the bag, a message is displayed with a preview of the bag. Users can see a summary of each product, including the name, image, price, quantity, and subtotal. They have the option to update the quantity of each item or remove items from the bag. The page also displays the total cost of the selected items.
 
@@ -555,7 +567,7 @@ Users are informed of the amount needed to qualify for free delivery if they hav
 ![Fineshine - hero image](/media/docs/bag-toast.jpg)
 
 
-### Checkout
+## Checkout
 
 The checkout process at Fineshine is designed to be simple and efficient. When users proceed to checkout from the cart page, they go through the following steps:
 
@@ -574,7 +586,7 @@ Order Review: Before completing the purchase, users have the opportunity to revi
 
 ![Fineshine - checkout](/media/docs/checkout.jpg)
 
-#### Checkout Success
+### Checkout Success
 
 Upon confirming the order, users finalize their purchase. They are directed to a confirmation page displaying essential details such as the order number and a summary of their purchase. 
 
@@ -585,7 +597,7 @@ This confirmation email ensures that users have a record of their purchase and p
 
 ![Fineshine - hero image](/media/docs/check-email.jpg)
 
-### Contact
+## Contact
 
 Fineshine provides a convenient contact form for users to reach out with any questions or inquiries. The form is designed to collect essential information such as the user's name, email address, phone number (optional), and their message. If any fields are not filled out correctly, users will receive prompts and error messages to complete the form accurately.
 
@@ -599,7 +611,34 @@ Messages sent through the contact form are directly accessible to the site admin
 
 ![Fineshine - contact email](/media/docs/contact-email.jpg)
 
-### Wishlist
+## Wishlist
+
+The Wishlist page allows users to view and manage the products they wish to purchase in the future. When a product is added to the wishlist, users can see a summary of each product, including the name, image, price, and the date it was added.
+
+![Fineshine sign up](/media/docs/wishlist.jpg)
+
+### Features and Functionalities:
+
+**Product Summary:**
+Name: Displays the name of the product in the wishlist.
+Image: Shows an image of the product.
+Price: Displays the price of the product.
+Date Added: Shows the date when the product was added to the wishlist.
+
+**Manage Wishlist:**
+
+Users can remove items from the wishlist when they are no longer interested in them.
+
+**Favorite Items:**
+Users can mark items as favorites. Favorited items are moved to the top of the wishlist for easy access.
+
+![Fineshine sign up](/media/docs/wishlist-fav.jpg)
+
+**Notifications:**
+
+If a product remains in the wishlist for more than five days, the user receives a notification upon logging in, reminding them that the product is still in their wishlist with a link to the wishlist page.
+
+![Fineshine sign up](/media/docs/wishlist-alert.jpg)
 
 ### Sign Up Page
 
@@ -851,12 +890,6 @@ To ensure the validity and compliance of my web pages with web standards, I used
 
 The corrections were implemented in accordance with the validator's suggestions.
 
-#### Unit Test 
-
-I used unit tests to ensure the proper functioning of different parts of the application. The unit tests were implemented using Python's unittest module.
-
-![unittest - python](/static/images/docs/unittest.png)
-
 
 ### Bugs
 
@@ -866,13 +899,15 @@ I used unit tests to ensure the proper functioning of different parts of the app
   * Bug Description: 
 
 There was an issue in the review rating calculation due to a variable naming conflict. Specifically, the incorrect use of aggregate.total_reviews instead of aggregate.rating in the template caused the calculation for the number of stars to be incorrect. This naming conflict interfered with another existing variable, preventing the correct calculation of the average rating (total stars/number of reviews).
-![bug - 1](/static/images/docs/bug3-2.png)
+
+![bug - 1](/media/docs/bug1.jpg)
+
 
   * Action Taken:
 
 To resolve this issue, the template code was corrected to use the appropriate variable name, aggregate.rating, ensuring that the review ratings are calculated correctly without conflicts.
 
-![bug - 1 solved](/static/images/docs/bug3-2.png)
+![bug - 1 solved](/media/docs/bug1-solved.jpg)
 
 
 #### HTML escaping in messages.info not rendering HTML correctly
@@ -881,12 +916,15 @@ To resolve this issue, the template code was corrected to use the appropriate va
 
 HTML inside the messages.info was not being rendered correctly in the template, appearing as plain text.
 
+![bug - 2 ](/media/docs/bug4.png)
+
   * Action Taken:
 
 Used mark_safe to mark the message as safe before passing it to messages.info(), allowing the HTML inside the message to be rendered correctly in the template.
 
+![bug - 2 solved](/media/docs/bug4.solved.jpg)
 
-![bug - 1 solved](/static/images/docs/bug3-2.png)
+![bug - 2 solved](/media/docs/bug4-solves.png)
 
 #### Newsletter signup form layout issue.
 
@@ -894,12 +932,14 @@ Used mark_safe to mark the message as safe before passing it to messages.info(),
 
 The newsletter signup form was displaying incorrectly, cutting off some information and making it difficult to input email on mobile devices.
 
+![bug - 3](/media/docs/bug5.png)
+
   * Action Taken:
 
  Removed the width: 600px; property from the form container style (div#mc_embed_signup), allowing the form to dynamically adjust to the screen size, thereby fixing the issue of information cutoff and email input box.
 
+![bug - 3 solved](/media/docs/bug5-solved.jpg)
 
-![bug - 1 solved](/static/images/docs/bug3-2.png)
 
 #### Missing Validation Feedback
 
@@ -911,6 +951,8 @@ There was an issue with the contact form where submitting the form without filli
 
 To address this issue, a forms.py file was created to handle the form logic and validation. The new form ensures that all required fields are validated, and appropriate error messages are displayed if any required fields are left empty.
 This solution ensures that users are properly informed if they miss any required fields when submitting the contact form, enhancing the overall user experience and ensuring that messages are correctly sent to the admin.
+
+![bug - 3 solved](/media/docs/bug6.jpg)
 
 #### Unsolved Bugs
 
