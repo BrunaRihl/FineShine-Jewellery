@@ -7,8 +7,7 @@
     --green: #4A8D80;
     --lightgreen2: #88CBBE;
     --lightgreen:#b0c9c4;
- 
-  }
+}
 
 html {
     height: 100%;
@@ -63,7 +62,6 @@ body {
     margin-bottom: 50px !important;
 }
 
-/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -75,8 +73,6 @@ body {
 .icon-color {
     color: #559C8F!important;
 }
-
-
 
 .main-logo-link {
     width: fit-content;
@@ -138,7 +134,9 @@ body {
     z-index: 1;
     }
 
-    
+
+/* btn */
+
 .btn-outline-black {
     background: white;
     color: black !important; 
@@ -376,47 +374,12 @@ input[name='q']::placeholder {
 }
 
 a.wishlistt-link {
-    color: var(--green); /* Define a cor verde do seu root */
-    text-decoration: none; /* Remove o sublinhado */
+    color: var(--green);
+    text-decoration: none; 
 }
 
 a.wishlistt-link:hover {
-    font-weight: bold; /* Torna o texto em negrito ao passar o mouse */
-}
-
-/* Estilos para telas menores */
-@media (max-width: 768px) {
-    .margin-top-div {
-        margin-top: 20px;
-    }
-
-    .list-group-item {
-        padding: 15px; 
-    }
-
-    .list-group-item .col-sm-4 {
-        flex: 0 0 33.333333%; 
-        max-width: 33.333333%; 
-    }
-
-    .list-group-item .col-sm-4.text-left {
-        flex: 0 0 66.666666%; 
-        max-width: 66.666666%; 
-    }
-
-    .remove-item-fav {
-        display: block;
-        margin-top: 10px; 
-    }
-
-    /* Ajuste de tamanho para telas menores */
-    .bookmark-icon {
-        font-size: 16px; 
-    }
-
-    .added-on-date {
-        font-size: 12px; 
-    }
+    font-weight: bold; 
 }
 
 /* review page*/
@@ -461,17 +424,6 @@ a.wishlistt-link:hover {
   .rating .fa-star:hover ~ .fa-star {
     color: var(--gold); /* Gold fill */
   }
-
-
-/* Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-  
-}
 
 /* Allauth form formatting */
 
@@ -554,6 +506,7 @@ a.wishlistt-link:hover {
     border-color: #dc3545;
     border-radius: 0;
 }
+
 /* Footer */
 
 .small-heading {
@@ -580,6 +533,50 @@ a.wishlistt-link:hover {
     width: 100%;
   }
 
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .margin-top-div {
+        margin-top: 20px;
+    }
+
+    .list-group-item {
+        padding: 15px; 
+    }
+
+    .list-group-item .col-sm-4 {
+        flex: 0 0 33.333333%; 
+        max-width: 33.333333%; 
+    }
+
+    .list-group-item .col-sm-4.text-left {
+        flex: 0 0 66.666666%; 
+        max-width: 66.666666%; 
+    }
+
+    .remove-item-fav {
+        display: block;
+        margin-top: 10px; 
+    }
+
+    /* Ajuste de tamanho para telas menores */
+    .bookmark-icon {
+        font-size: 16px; 
+    }
+
+    .added-on-date {
+        font-size: 12px; 
+    }
+}
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+    
+  }
+  
 /* Add media queries for smaller screens */
 @media (max-width: 768px) {
     .text-effect {
@@ -602,7 +599,6 @@ a.wishlistt-link:hover {
     }
 }
 
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
 
@@ -618,7 +614,6 @@ a.wishlistt-link:hover {
         padding-top: 164px;
     }
 }
-
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
