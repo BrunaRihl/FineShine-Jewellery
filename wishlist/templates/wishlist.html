@@ -31,7 +31,7 @@
                                     <img class="w-100" src="{{ MEDIA_URL }}product_placeholder.png" alt="{{ item.product.name }}">
                                     {% endif %}
                                 </a>
-                                Added on: {{ item.created_at|date:"F j, Y" }}
+                                Added on:<br>{{ item.created_at|date:"F j, Y" }}
                             </div>
                             <div class="col-lg-4 col-sm-4 text-left">
                                 <p class="my-0">{{ item.product.name }}</p>

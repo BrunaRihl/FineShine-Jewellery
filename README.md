@@ -422,6 +422,7 @@ Additionally, a post was created featuring an exclusive jewelry set as the highl
 ![FineShine facebook](/media/docs/facebook2.jpg)
 
 This strategy aims to increase engagement, drive traffic to the website, and boost sales, strengthening the brand's presence on social media.
+Click [here](https://www.facebook.com/profile.php?id=61560858680361) to visit the FineShine Facebook Business Page.
 
 ### Newsletter Signup
 
@@ -901,10 +902,10 @@ To ensure the validity and compliance of my web pages with web standards, I used
 The corrections were implemented in accordance with the validator's suggestions.
 
 
-### Bugs
+## Bugs
 
-#### Solved Bugs
-#### Variable Naming Conflict 
+### Solved Bugs
+### Variable Naming Conflict 
 
   * Bug Description: 
 
@@ -920,7 +921,7 @@ To resolve this issue, the template code was corrected to use the appropriate va
 ![bug - 1 solved](/media/docs/bug1-solved.jpg)
 
 
-#### HTML escaping in messages.info not rendering HTML correctly
+### HTML escaping in messages.info not rendering HTML correctly
 
   * Bug Description: 
 
@@ -936,7 +937,7 @@ Used mark_safe to mark the message as safe before passing it to messages.info(),
 
 ![bug - 2 solved](/media/docs/bug4-solves.png)
 
-#### Newsletter signup form layout issue.
+### Newsletter signup form layout issue.
 
   * Bug Description: 
 
@@ -951,7 +952,7 @@ The newsletter signup form was displaying incorrectly, cutting off some informat
 ![bug - 3 solved](/media/docs/bug5-solved.jpg)
 
 
-#### Missing Validation Feedback
+### Missing Validation Feedback
 
   * Bug Description: 
 
@@ -964,7 +965,7 @@ This solution ensures that users are properly informed if they miss any required
 
 ![bug - 3 solved](/media/docs/bug6.jpg)
 
-#### Unsolved Bugs
+### Unsolved Bugs
 
 No unfixed bugs.
 
