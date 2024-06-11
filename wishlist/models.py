@@ -29,7 +29,6 @@ class Wishlist(models.Model):
         reminder_date (DateTimeField): The date set for reminding the user about the wishlist item.
     """
 
-
     user = models.ForeignKey(
         UserProfile,
         on_delete=models.CASCADE,
@@ -44,9 +43,7 @@ class Wishlist(models.Model):
 
     is_favorite = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    reminder_date = models.DateTimeField(
-        default=get_default_reminder_date
-    )
+    reminder_date = models.DateTimeField(default=get_default_reminder_date)
 
     class Meta:
         unique_together = ("user", "product")
@@ -54,4 +51,6 @@ class Wishlist(models.Model):
         verbose_name_plural = "Wishlist Items"
 
     def __str__(self):
-        return f"Wishlist item of {self.user.user.username}: {self.product.name}"
+        return (
+            f"Wishlist item of {self.user.user.username}: {self.product.name}"
+        )

@@ -9,6 +9,7 @@ class ReviewForm(forms.Form):
         rating (IntegerField): The rating given by the user (from 1 to 5).
         text (CharField): The text content of the review.
     """
+
     title = forms.CharField(max_length=200)
     rating = forms.IntegerField(min_value=1, max_value=5)
     text = forms.CharField(widget=forms.Textarea)

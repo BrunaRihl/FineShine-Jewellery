@@ -6,21 +6,21 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0001_initial'),
+        ("products", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='category',
-            options={'verbose_name_plural': 'Categories'},
+            name="category",
+            options={"verbose_name_plural": "Categories"},
         ),
         migrations.RemoveField(
-            model_name='product',
-            name='image_url',
+            model_name="product",
+            name="image_url",
         ),
         migrations.AddField(
-            model_name='product',
-            name='has_sizes',
+            model_name="product",
+            name="has_sizes",
             field=models.BooleanField(blank=True, default=False, null=True),
         ),
     ]

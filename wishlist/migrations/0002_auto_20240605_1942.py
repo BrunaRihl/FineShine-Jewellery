@@ -6,23 +6,26 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('profiles', '0001_initial'),
-        ('products', '0004_remove_product_image_url'),
-        ('wishlist', '0001_initial'),
+        ("profiles", "0001_initial"),
+        ("products", "0004_remove_product_image_url"),
+        ("wishlist", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='wishlist',
-            options={'verbose_name': 'Wishlist Item', 'verbose_name_plural': 'Wishlist Items'},
+            name="wishlist",
+            options={
+                "verbose_name": "Wishlist Item",
+                "verbose_name_plural": "Wishlist Items",
+            },
         ),
         migrations.AddField(
-            model_name='wishlist',
-            name='is_favorite',
+            model_name="wishlist",
+            name="is_favorite",
             field=models.BooleanField(default=False),
         ),
         migrations.AlterUniqueTogether(
-            name='wishlist',
-            unique_together={('user', 'product')},
+            name="wishlist",
+            unique_together={("user", "product")},
         ),
     ]

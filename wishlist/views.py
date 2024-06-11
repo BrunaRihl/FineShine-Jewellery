@@ -16,9 +16,12 @@ def view_wishlist(request):
         request (HttpRequest): The request object.
     """
     user = UserProfile.objects.get(user=request.user)
-    wishlist_items = Wishlist.objects.filter(user=user).order_by("-is_favorite")
+    wishlist_items = Wishlist.objects.filter(user=user).order_by(
+        "-is_favorite"
+    )
 
     return render(request, "wishlist.html", {"wishlist_items": wishlist_items})
+
 
 @login_required
 def add_to_wishlist(request, item_id):
@@ -32,12 +35,17 @@ def add_to_wishlist(request, item_id):
     user = UserProfile.objects.get(user=request.user)
 
     if Wishlist.objects.filter(user=user, product=product).exists():
-        messages.warning(request, f"{product.name} is already included in your wishlist.")
+        messages.warning(
+            request, f"{product.name} is already included in your wishlist."
+        )
     else:
         Wishlist.objects.create(user=user, product=product)
-        messages.success(request, f"Successfully added {product.name} to your wishlist!")
+        messages.success(
+            request, f"Successfully added {product.name} to your wishlist!"
+        )
 
     return redirect(reverse("product_detail", args=[item_id]))
+
 
 @login_required
 def remove_from_wishlist(request, item_id):
@@ -52,8 +60,11 @@ def remove_from_wishlist(request, item_id):
     wishlist_item = Wishlist.objects.get(user=user, product=product)
 
     wishlist_item.delete()
-    messages.success(request, f"{product.name} has been removed from wishlist.")
+    messages.success(
+        request, f"{product.name} has been removed from wishlist."
+    )
     return redirect(reverse("view_wishlist"))
+
 
 @login_required
 def toggle_favorite(request, item_id):
@@ -68,10 +79,16 @@ def toggle_favorite(request, item_id):
 
     wishlist_item.is_favorite = not wishlist_item.is_favorite
     wishlist_item.save()
-    
+
     if wishlist_item.is_favorite:
-        messages.success(request, f"{wishlist_item.product.name} has been marked as favorite.")
+        messages.success(
+            request,
+            f"{wishlist_item.product.name} has been marked as favorite.",
+        )
     else:
-        messages.success(request, f"{wishlist_item.product.name} has been removed from favorites.")
+        messages.success(
+            request,
+            f"{wishlist_item.product.name} has been removed from favorites.",
+        )
 
     return redirect(reverse("view_wishlist"))

@@ -8,8 +8,9 @@ from datetime import datetime
 import pytz
 from django.conf import settings
 
+
 def index(request):
-    """ A view to return the index page """
+    """A view to return the index page"""
 
     if request.user.is_authenticated:
         user = UserProfile.objects.get(user=request.user)
@@ -18,17 +19,23 @@ def index(request):
 
         # Get the current datetime and make it "aware"
         now = datetime.now(timezone)
-        wishlist_items = Wishlist.objects.filter(user=user, reminder_date__lte=now)
+        wishlist_items = Wishlist.objects.filter(
+            user=user, reminder_date__lte=now
+        )
 
-        product_names = ", ".join([wishlist_item.product.name for wishlist_item in wishlist_items])
+        product_names = ", ".join(
+            [wishlist_item.product.name for wishlist_item in wishlist_items]
+        )
 
         if product_names:
             # Customize the message with a link to the wishlist
-            wishlist_url = reverse('view_wishlist')  # Get the URL of the wishlist
+            wishlist_url = reverse(
+                "view_wishlist"
+            )  # Get the URL of the wishlist
             message = mark_safe(
                 f"Still interested in {product_names}? It's waiting for you on your wishlist! "
                 f"<a href='{wishlist_url}' class='wishlistt-link'>Go to Wishlist</a>"
             )
             messages.info(request, message)
 
-    return render(request, 'home/index.html')
+    return render(request, "home/index.html")

@@ -3,6 +3,7 @@ from .models import Product, Category
 
 # Register your models here.
 
+
 class ProductAdmin(admin.ModelAdmin):
     """
     Administration interface customization for Product model.
@@ -11,14 +12,15 @@ class ProductAdmin(admin.ModelAdmin):
     """
 
     list_display = (
-        'sku',
-        'name',
-        'category',
-        'price',
-        'image',
+        "sku",
+        "name",
+        "category",
+        "price",
+        "image",
     )
 
-    ordering = ('sku',)
+    ordering = ("sku",)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     """
@@ -26,10 +28,12 @@ class CategoryAdmin(admin.ModelAdmin):
     This class customizes the administration interface for Category model,
     specifying the list display fields.
     """
+
     list_display = (
-        'friendly_name',
-        'name',
+        "friendly_name",
+        "name",
     )
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)

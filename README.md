@@ -1,6 +1,6 @@
 # FineShine Jewellery
 
-FineShine is an online platform specializing in the sale of unique and elegant jewellery, featuring a wide collection of earrings, necklaces, bracelets, rings, and sets. All pieces are crafted in Ireland and available for shipping. This project was developed as my fifth endeavor in the Code Institute's Full Stack Developer Course, utilizing Django, HTML, CSS, JS, and Python for its creation.
+FineShine is an online platform specializing in the sale of unique and elegant jewelry, featuring a wide collection of earrings, necklaces, bracelets, rings, and sets. All pieces are crafted in Ireland and available for shipping. This project was developed as my fifth project in the Code Institute's Full Stack Developer Course, using Django, HTML, CSS, JS, and Python for its creation.
 
 ![FineShine website shown on a range of devices](/media/docs/responsive.jpg)  
 
@@ -55,7 +55,7 @@ The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herok
 
 ### Website overview 
 
-FineShine is a fictional platform I created to offer an online shopping experience for exclusive and elegant jewellery. It was developed with the intention of providing an engaging and informative experience for users interested in acquiring high-quality and stylish jewellery pieces. Every aspect of the site, from design to content, has been planned to ensure easy and intuitive navigation.
+FineShine is a fictional platform I created to offer an online shopping experience for exclusive and elegant jewellery. It was developed with the intention of providing an engaging and informative experience for users interested in acquiring high-quality and stylish jewellery pieces. Every aspect of the website, from design to content, has been planned to ensure easy and intuitive navigation.
 
 ### User base
 
@@ -66,19 +66,23 @@ FineShine caters to individuals interested in acquiring exclusive and elegant je
 The primary goal of the FineShine platform is to provide a seamless and enjoyable shopping experience for jewellery enthusiasts. The website aims to achieve the following objectives:
 
 
-Users:
+**Users:**
 
-* Provide intuitive navigation to explore our wide range of jewellery offerings, including earrings, necklaces, bracelets, rings, and sets.
-* Facilitate navigation and offer filtering options to find the perfect pieces based on individual preferences, such as product type, material, and price range.
-* Present detailed product descriptions and high-quality images to assist in informed purchasing decisions.
-* Ensure a secure and convenient checkout process, with payment options and efficient shipping services for a smooth transaction experience.
+- Provide intuitive navigation to explore the wide range of jewelry offerings, including earrings, necklaces, bracelets, rings, and sets.
+- Facilitate navigation and offer filtering options to find the perfect pieces based on individual preferences.
+- Present detailed product descriptions and high-quality images to assist in informed purchasing decisions.
+- Ensure a secure and convenient checkout process, with payment options and efficient shipping services for a smooth transaction experience.
+- Offer an engaging and responsive user experience on all devices, from desktops to mobile devices.
+- Provide clear and accessible contact channels for users to ask questions or get additional support.
 
-Administrators:
+**Administrators:**
 
-* Maintain an efficient and updated categorization system to organize products clearly and accessibly for users.
-* Ensure the security of user data by implementing robust protection and privacy measures.
-* Implement effective customer support channels to respond to inquiries, feedback, and newsletter subscriptions.
-* Regularly update site content to inform users about the available products from the brand.
+- Maintain an efficient and updated categorization system to organize products clearly and accessibly for users.
+- Ensure the security of user data by implementing robust protection and privacy measures.
+- Implement effective customer support channels to respond to questions, feedback, and newsletter subscriptions.
+- Regularly update site content to inform users about the available products from the brand.
+- Facilitate the user registration and login process, ensuring security and ease of use.
+
 
 ### ERD
 
@@ -1162,7 +1166,7 @@ During the development of my Django project, there were a few times when I neede
 
 * [Visual Studio Code - Formatting Python in VS Code](https://code.visualstudio.com/docs/python/formatting)
 
-* [AskPython - Python pytz Module: Mastering Timezones in Python ](hhttps://www.askpython.com/python-modules/python-pytz-module)
+* [AskPython - Python pytz Module: Mastering Timezones in Python](https://www.askpython.com/python-modules/python-pytz-module)
 
 * [Fontawesome - Accessibility](https://fontawesome.com/docs/web/dig-deeper/accessibility)
 

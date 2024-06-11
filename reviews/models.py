@@ -20,6 +20,7 @@ class Review(models.Model):
         created_at (datetime): The date and time when the review was created.
         updated_at (datetime): The date and time when the review was last updated.
     """
+
     product = models.ForeignKey(
         Product, null=False, blank=False, on_delete=models.CASCADE
     )

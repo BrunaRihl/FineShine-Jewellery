@@ -10,6 +10,6 @@ class ProfilesConfig(AppConfig):
         default_auto_field (str): The name of the default auto field for models.
         name (str): The name of the app.
     """
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'profiles'
 
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "profiles"

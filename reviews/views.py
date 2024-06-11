@@ -13,7 +13,7 @@ from .forms import ReviewForm
 @login_required
 def create_review(request, item_id):
     """
-    Allow authenticated users to create a review for a product. 
+    Allow authenticated users to create a review for a product.
     This view requires the user to be logged in.
     Args:
         request: HttpRequest object.
