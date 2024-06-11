@@ -1,6 +1,6 @@
 # FineShine Jewellery
 
-FineShine is an online platform specializing in the sale of unique and elegant jewelry, featuring a wide collection of earrings, necklaces, bracelets, rings, and sets. All pieces are crafted in Ireland and available for shipping. This project was developed as my fifth endeavor in the Code Institute's Full Stack Developer Course, utilizing Django, HTML, CSS, JS, and Python for its creation.
+FineShine is an online platform specializing in the sale of unique and elegant jewellery, featuring a wide collection of earrings, necklaces, bracelets, rings, and sets. All pieces are crafted in Ireland and available for shipping. This project was developed as my fifth endeavor in the Code Institute's Full Stack Developer Course, utilizing Django, HTML, CSS, JS, and Python for its creation.
 
 ![FineShine website shown on a range of devices](/media/docs/responsive.jpg)  
 
@@ -29,7 +29,6 @@ The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herok
 * [Features](#features)
   * [General Features on Page](#features)
   * [Features and resources to be added in the future](#features-and-resources-to-be-added-in-the-future)
-  * [Accessibility](#accessibility)
 
 * [Marketing and SEO](#marketing-and-seo)
   * [Business Model - Ecommerce](#business-model---ecommerce)
@@ -37,10 +36,6 @@ The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herok
   * [Search Engine Optimization](search-engine-optimization)
 
 * [Testing](#testing)
-  * [User Story Test](#user-story-test)
-  * [Tested Browsers and Devices](#tested-browsers-and-devices)
-  * [Manual Testing](#manual-testing)
-  * [Validator Testing](#validator-testing)
   * [Bugs](#bugs)
 
 * [Technologies Used](#technologies-used)
@@ -60,20 +55,20 @@ The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herok
 
 ### Website overview 
 
-FineShine is a fictional platform I created to offer an online shopping experience for exclusive and elegant jewelry. It was developed with the intention of providing an engaging and informative experience for users interested in acquiring high-quality and stylish jewelry pieces. Every aspect of the site, from design to content, has been planned to ensure easy and intuitive navigation.
+FineShine is a fictional platform I created to offer an online shopping experience for exclusive and elegant jewellery. It was developed with the intention of providing an engaging and informative experience for users interested in acquiring high-quality and stylish jewellery pieces. Every aspect of the site, from design to content, has been planned to ensure easy and intuitive navigation.
 
 ### User base
 
-FineShine caters to individuals interested in acquiring exclusive and elegant jewelry pieces, seeking to enhance their personal style and adorn themselves with distinction. Our user base consists of those who value high-quality craftsmanship, appreciate unique designs, and seek exceptional beauty in their jewelry choices. Whether for special occasions or daily wear, FineShine offers a curated collection to satisfy the diverse tastes and preferences of jewelry enthusiasts.
+FineShine caters to individuals interested in acquiring exclusive and elegant jewellery pieces, seeking to enhance their personal style and adorn themselves with distinction. Our user base consists of those who value high-quality craftsmanship, appreciate unique designs, and seek exceptional beauty in their jewellery choices. Whether for special occasions or daily wear, FineShine offers a curated collection to satisfy the diverse tastes and preferences of jewellery enthusiasts.
 
 ### Website Goals  
 
-The primary goal of the FineShine platform is to provide a seamless and enjoyable shopping experience for jewelry enthusiasts. The website aims to achieve the following objectives:
+The primary goal of the FineShine platform is to provide a seamless and enjoyable shopping experience for jewellery enthusiasts. The website aims to achieve the following objectives:
 
 
 Users:
 
-* Provide intuitive navigation to explore our wide range of jewelry offerings, including earrings, necklaces, bracelets, rings, and sets.
+* Provide intuitive navigation to explore our wide range of jewellery offerings, including earrings, necklaces, bracelets, rings, and sets.
 * Facilitate navigation and offer filtering options to find the perfect pieces based on individual preferences, such as product type, material, and price range.
 * Present detailed product descriptions and high-quality images to assist in informed purchasing decisions.
 * Ensure a secure and convenient checkout process, with payment options and efficient shipping services for a smooth transaction experience.
@@ -209,9 +204,9 @@ The Epic 9 focuses on implementing Wishlist functionality, allowing customers to
 
 #### Epic 10: Posts
 
-The Epic 10 focuses on post management, allowing users to access and interact with updated content on topics such as fashion trends and jewelry.
+The Epic 10 focuses on post management, allowing users to access and interact with updated content on topics such as fashion trends and jewellery.
 
-* As a user, I can access a "Posts" section to read about the latest trends, style tips, and information about the materials used in jewelry, so that I stay updated and inspired.
+* As a user, I can access a "Posts" section to read about the latest trends, style tips, and information about the materials used in jewellery, so that I stay updated and inspired.
 
 * As a site administrator, I can manage articles directly from the frontend, including deleting, editing, and creating them using a form, so that I have full control over the content displayed on the site and can share relevant and timely information with users.
 
@@ -228,7 +223,6 @@ This epic focuses on both comprehensive testing procedures and creating detailed
 Throughout the project development, I adopted an agile methodology, utilizing Kanban to manage my activities and projects. Kanban provided a clear view of the workflow, allowing me to track task progress visually and in real time. I organized my project on GitHub, using a Kanban board to divide tasks into columns such as "To Do", "In Progress", "Done" and "Future Features"
 
 ![FineShine Agile development](/media/docs/project.jpg)
-
 
 For more details on the project management process, you can access the link [here](https://github.com/users/BrunaRihl/projects/8).
 
@@ -259,7 +253,7 @@ For more details on the categorization, distribution of user stories, and projec
 
 ### Color palette
 
-The website's color palette was inspired by the hero image on the homepage, featuring shades of aqua green, gold, black, and white. This choice not only reflects the sophistication of the jewelry but also creates an atmosphere of freshness and elegance for users. Additionally, the sharp contrast between black and white was carefully considered to ensure excellent readability and ease of navigation for visitors.
+The website's color palette was inspired by the hero image on the homepage, featuring shades of aqua green, gold, black, and white. This choice not only reflects the sophistication of the jewellery but also creates an atmosphere of freshness and elegance for users. Additionally, the sharp contrast between black and white was carefully considered to ensure excellent readability and ease of navigation for visitors.
 
 ![FineShine website color palette](/media/docs/palette.png)
 
@@ -363,19 +357,19 @@ I made some adjustments in relation to what I had planned for positioning and ad
 
 ## Marketing and SEO
 ### Business Model - Ecommerce
-**Fineshine** is a Business to Customer (B2C) e-commerce platform, specializing in the production and sale of high-quality jewelry to individual customers.
+**Fineshine** is a Business to Customer (B2C) e-commerce platform, specializing in the production and sale of high-quality jewellery to individual customers.
 
 ### Competitive Advantages:
-- **Superior Quality:** Producing and offering high-quality jewelry made with precious materials and unique designs.
+- **Superior Quality:** Producing and offering high-quality jewellery made with precious materials and unique designs.
 - **Ease of Purchase:** Providing an easy and convenient purchasing experience through the online platform.
 - **Social Engagement:** Building a community of loyal customers through engagement on social media and loyalty programs.
 
 ### Customer Segments:
-- **Jewelry Enthusiasts:** Individuals seeking high-quality and exclusive design jewelry.
-- **Gift Buyers:** People purchasing jewelry for special occasions like birthdays and weddings.
+- **Jewellery Enthusiasts:** Individuals seeking high-quality and exclusive design jewellery.
+- **Gift Buyers:** People purchasing jewellery for special occasions like birthdays and weddings.
 
 ### Key Assets:
-- **Jewelry Inventory:** Diverse inventory of internally produced jewelry to meet customer demand.
+- **Jewellery Inventory:** Diverse inventory of internally produced jewellery to meet customer demand.
 - **E-commerce Platform:** Robust and user-friendly website for sales and transactions.
 - **Social Media Engagement:** Active presence on social media to attract and engage customers.
 - **Newsletter System:** Utilization of MailChimp for regular communications with customers.
@@ -392,17 +386,17 @@ I made some adjustments in relation to what I had planned for positioning and ad
 - **Facebook Presence:** Using Facebook to interact with customers, answer queries, and build a sense of community.
 
 ### Strategic Collaborations:
-- **Material Suppliers:** Partnerships with suppliers of precious materials for jewelry production.
+- **Material Suppliers:** Partnerships with suppliers of precious materials for jewellery production.
 - **Delivery Services:** Collaboration with shipping services to ensure efficient order delivery.
 - **Fashion Influencers:** Partnerships with fashion influencers to promote products and reach new audiences.
-- **Designer Collaborations:** Collaborations with renowned jewelry designers for exclusive collections.
+- **Designer Collaborations:** Collaborations with renowned jewellery designers for exclusive collections.
 
 ### Seasonal Marketing Campaigns:
 - **Festive Promotions:** Creating special promotions for holidays like Christmas, Valentine's Day, and Black Friday.
-- **Online Events:** Hosting online events such as collection launches and webinars on jewelry care.
+- **Online Events:** Hosting online events such as collection launches and webinars on jewellery care.
 
 ### Competition Analysis:
-- **Competitive Analysis:** Studying key competitors in the online jewelry market to identify opportunities and threats.
+- **Competitive Analysis:** Studying key competitors in the online jewellery market to identify opportunities and threats.
 - **Benchmarking:** Comparing products, prices, and marketing strategies with major competitors.
 
 ### Data Analysis and Feedback:
@@ -412,12 +406,12 @@ I made some adjustments in relation to what I had planned for positioning and ad
 ## Marketing
 
 ### Facebook Page
-A Facebook page was created to promote the jewelry e-commerce due to the platform's wide visibility and engagement potential. Facebook allows for reaching a diverse audience, increasing brand visibility, and attracting new consumers.
+A Facebook page was created to promote the jewellery e-commerce due to the platform's wide visibility and engagement potential. Facebook allows for reaching a diverse audience, increasing brand visibility, and attracting new consumers.
 To personalize the page, the store's logo was added as the profile picture, and a welcome message with a direct link to the online store was written, making it easy for visitors to access.
 
 ![FineShine Facebook](/media/docs/facebook.jpg)
 
-Additionally, a post was created featuring an exclusive jewelry set as the highlight of the week, including a photo of the product and a link for purchase.
+Additionally, a post was created featuring an exclusive jewellery set as the highlight of the week, including a photo of the product and a link for purchase.
 
 ![FineShine facebook](/media/docs/facebook2.jpg)
 
@@ -497,9 +491,9 @@ The footer of the website is structured into three main sections. The first sect
 
 ## Home Page 
 
-* The main image showcases golden jewelry arranged against a background of aqua green, which inspired the color palette of the site.
+* The main image showcases golden jewellery arranged against a background of aqua green, which inspired the color palette of the site.
 * The overlaid message provides a brief introduction to the website's concept, while the high resolution and vibrant colors ensure an inviting presentation to visitors.
-* The "Shop Now" button below the main image provides a clear call-to-action, inviting users to explore and shop for jewelry.
+* The "Shop Now" button below the main image provides a clear call-to-action, inviting users to explore and shop for jewellery.
 
 ![Fineshine - home](/media/docs/homepage.jpg)
 
@@ -682,225 +676,24 @@ A custom 404 error page was developed to properly handle situations where users 
 ### Future Features and Resources to be Added
 
 #### Fashion Articles and Style Tips:
-   - Create fashion articles providing inspiration and style tips with your jewelry pieces.
-   - Share ideas on how to incorporate your jewelry into different looks for various occasions.
+   - Create fashion articles providing inspiration and style tips with your jewellery pieces.
+   - Share ideas on how to incorporate your jewellery into different looks for various occasions.
 
-#### Jewelry Customization:
+#### Jewellery Customization:
    - Implement customization option, allowing customers to create their own unique pieces.
    - Offer choice of materials, gemstones, and custom engravings.
 
-#### Jewelry Blog:
-   - Start a blog section focused on jewelry trends, industry news, and behind-the-scenes stories.
+#### Jewellery Blog:
+   - Start a blog section focused on jewellery trends, industry news, and behind-the-scenes stories.
    - Share insights about the production process, new collections, and upcoming events.
 
 #### Loyalty Program:
    - Implement a loyalty program to reward frequent customers with discounts, special offers, or early access to new collections.
    - Encourage customer retention and foster long-term relationships.
 
-### Accessibility
-
-From the project's inception, the website's design has been planned with a focus on accessibility. Special attention has been given to ensuring good color contrast, an easily understandable structure, and intuitive navigation, establishing a solid foundation for the user experience.
-
-### LightHouse 
-
-The accessibility, performance, best practices, and SEO (Search Engine Optimization) of the website were analyzed using the LightHouse tool available in Google Chrome's DevTools. Additionally, I ensured that all pages achieved 100% accessibility.
-
-![Fineshine Lighthouse](/media/docs/lighthouse1.jpg)
-
 ## Testing 
 
-### User Story Test: 
-
-| User Story | Expected Result | Actual Result |
-|------------|-----------------|---------------|
-**`EPIC 1`**
-| Early deployment | The application is successfully deployed and accessible on Heroku. | Pass |
-| Setting Up Initial Django Project Structure | The Django project is properly configured with the required structure. | Pass |
-| Database Integration | Data is successfully stored in the database, and files are uploaded and accessible. | Pass |
-**`EPIC 2`**
-| Admin Login Functionality | Log in to the admin panel successfully and be able to manage its operations. | Pass |
-| Product Management Functionality | Introduce, edit, and delete new products successfully. | Pass |
-**`EPIC 3`**
-| Register Account | A new user account is successfully created. | Pass |
-| User Login | The user is successfully logged in to their account. | Pass |
-| User Logout | The user is successfully logged out of their account. | Pass |
-| Profile Update | My profile information is successfully updated. | Pass |
-| Secure Password Reset | Receive an email with the password reset link and successfully reset the password. | Pass |
-| Secure Credential Storage | User's username and password are securely saved and accessible for easy website access. | Pass |
-**`EPIC 4`**
-| SEO Configuration | As configurações de SEO são configuradas com sucesso para garantir que os usuários possam acessar facilmente o conteúdo desejado. | Pass |
-| Newsletter System | Successful utilization of MailChimp for regular communications with customers. | Pass |
-| Facebook Marketing Page | Successful creation of a Facebook marketing page. | Pass |
-**`EPIC 5`**
-| Website Accessibility | Users can navigate the website with ease and access all content, ensuring an inclusive browsing experience and effective access to information. | Pass |
-| Intuitive Navigation | Users can navigate through the website/application easily and efficiently, finding what they need without confusion. | Pass |
-| Responsive Design | The design adapts seamlessly to different devices (desktop, tablet, mobile), providing a consistent and smooth user experience. | Pass |
-| Interaction Messaging | Users receive clear feedback about their actions, helping them understand what is happening and allowing confident navigation and interaction with the product. | Pass |
-**`EPIC 6`**
-| Intuitive Category Navigation | Users can browse through different product categories intuitively and easily find products that match their preferences. | Pass |
-| Product Search by Keywords | Users can search for products by keywords and quickly find what they're looking for. | Pass |
-| Search Sorting | Users can sort the search results by price and other options to refine their selection.| Pass |
-| Product Details | Users can view a comprehensive product details page including description, price, images, and customer reviews, allowing them to make informed purchasing decisions. | Pass |
-| Product Review | Users can leave their review on products they have purchased. | Pass |
-**`EPIC 7`**
-| Bag Addition | Users can add products to the shopping bag directly from the product details page for a convenient shopping experience. | Pass |
-| Product Bag Management | Users can add products to their shopping bag to keep track of items they intend to purchase and have a preview of how their bag looks on the current page. | Pass |
-| Bag Item Management | Users can delete and adjust the quantity of items in their shopping bag before proceeding to checkout. | Pass |
-| Shopping Bag Overview | Users can view the contents of their shopping bag to review the items added and the total cost, including shipping fees. | Pass |
-| Checkout Process | Users can proceed to checkout from their shopping bag to complete their purchase, allowing them to finalize their order. | Pass |
-| Checkout Details Entry | Users can enter their personal and delivery details during checkout to ensure delivery of their order. | Pass |
-| Secure Payment Processing | Users can securely enter payment details to complete the transaction, with integration with the Stripe API. | Pass |
-| Order History | Can view order history in my profile to review past purchases. | Pass |
-| Order Confirmation Email | Receive a confirmation email after successfully completing the checkout process, providing details of my order. | Pass |
-**`EPIC 8`**
-| Contact Option Accessibility | Easily locate the contact option on the website to efficiently reach out to the company for assistance or inquiries. | Pass |
-| Contact Form Submission | Fill out a contact form with personal information and message to send an inquiry to the team. Receive a confirmation upon submitting the contact form. | Pass |
-| Contact Form Management | Website admin can check whenever a contact form is submitted, enabling prompt responses to visitor inquiries and efficient customer service. | Pass |
-**`EPIC 9`**
-| Wishlist Management | Customers can add and remove products to/from their wishlist to save items they wish to purchase in the future. | Pass |
-| Wishlist Display | Customers can view all the products they've added to their wishlist, allowing them to review their choices and make informed purchasing decisions. | Pass |
-**`EPIC 10`**
-| User Engagement - Blog | - | Future Features |
-| Content Management - Blog | - | Future Features |
-**`EPIC 11`**
-| README Documentation | The README.md file provides detailed information about the project's purpose, functionality, and usage. | Pass |
-| Testing Procedures | Testing procedures are thorough and ensure the quality and usability of the software. | Pass |
-
-
-### Tested Browsers and Devices: 
-
-* Web Browsers: 
-
-  * Google Chrome;
-
-  * Microsoft Edge; 
- 
-  * Safari; 
-
-  * Mozilla Firefox.
-
-
-* Mobile Devices: 
-
-  * iPhone Xr;
-
-  * iPhone 12 Pro; (Google Chrome Inspector) 
-
-  * Samsung Galaxy S20 Ultra. (Google Chrome Inspector) 
-
-
-* Tablet: 
-
-  * Ipad Air 4, 10.9-inch screen;
-
-  * Nest Hub. (Google Chrome Inspector) 
-
- 
-* Laptop: 
-
-  * Macbook Air, 13-inch screen;
-
-  * Asus TUF F15, 15.6-inch screen. 
-
-### Manual Testing
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| **`Navbar`** |
-| FineShine Logo | When clicked the user will be redirected to the home page. | Clicked Logo | Redirected to the home page. | Pass |
-| Navbar links | When clicked the user will be redirected to the correct page. | Clicked link | Redirected to the correct page. | Pass |
-| Smaller Screens | The navbar should be displayed in hamburger style on smaller screens to conserve space. | Resized the screen to check the navbar behavior on smaller sizes. | The navbar switched to hamburger style when the screen was resized to a smaller size. | Pass |
-| User is Logged In | Wishlist icon becomes clickable for logged-in users and disabled for non-logged-in users. | Logged in and checked navbar changes. | Pass |
-| Fixed navbar | The navbar should remain fixed at the top of the page while scrolling through the site content. | Scrolled through the site content and observed the navbar behavior. | The navbar remained fixed at the top of the page while scrolling. | Pass |
-| **`Register`** |
-| User Registration | User should be able to register by providing valid data. User receives a confirmation email after registration. | Entered valid registration data and submitted the form. Verified email confirmation process. | Registration and email confirmation process successful. | Pass |
-| Registration with Invalid Data | If the user attempts to register an account with invalid data, such as duplicate information, an incorrect password, or an existing email/username, the registration will not be completed, and an error message will be displayed in the form. | Attempted registration with duplicate data, incorrect password, or existing email/username. | Received error message in the form. | Pass |
-| **`Login`** |
-| User Login | After entering valid credentials and submitting the login form, the user should be redirected to the homepage and receive a confirmation message indicating successful login. | Entered valid credentials and submitted the login form. | Redirected to the homepage and received confirmation message indicating successful login. | Pass |
-| **`Log Out`** |
-| User Logout | After clicking on the logout, the user should be redirected to a confirmation page. | Clicked on the logout. | Redirected to the confirmation page. | Pass |
-| User Logout Redirect | After confirming the logout, the user should be redirected to the home page. | Confirmed logout. | Redirected to the home page after logout confirmation. | Pass |
-| **`Profile`** |
-| Update Shipping Details | Users can update their default shipping information using a form. | Updated the shipping details on the profile page. | Shipping information updated successfully. | Pass |
-| View Order History | Users can view their previous orders, each listed with an order number. | Checked the order history section in the profile. | Previous orders displayed with clickable order numbers for detailed view. | Pass |
-| **`Header`** |
-| Responsive Navigation Bar | Navigation bar adjusts on all devices. | Checked on different devices. | Navigation bar adjusts correctly on all devices. | Pass |
-| Logo and Company Name | Custom logo displayed, website responsive. | Verified logo and website on various devices. | Custom logo displayed correctly, website responsive on different devices. | Pass |
-| Search Bar | Search functionality for finding products. | Tested search by entering keywords. | Search functionality works as expected. | Pass |
-| Quick Access Links | Quick links visible, Wishlist for logged-in users. | Checked visibility and functionality. | Links visible and functional, Wishlist link appears only for logged-in users. | Pass |
-| Main Navigation | Navigation links functional for categories. | Verified navigation to correct categories. | Navigation links direct to correct categories. | Pass |
-| Product Categories | Additional options under each category. | Checked available options. | Additional options displayed under each category. | Pass |
-| Favicon | Custom favicon displayed in browser tab. | Verified presence in browser tab. | Custom favicon displayed in browser tab. | Pass |
-| **`Products`** |
-| Product Categories | Users can explore products by category (earrings, bracelets, etc.). | Checked category navigation. | Navigation by category functional. | Pass |
-| Product Hover Effect | Products show zoom effect and shadow on hover. | Tested hover effect on products. | Hover effect applied correctly. | Pass |
-| Product Sorting | Users can sort products by price, name, or category. | Tested sorting functionality. | Sorting works as expected. | Pass |
-| Product Information | Each product displays image, price, category, and rating. | Reviewed product display. | Product information displayed correctly. | Pass |
-| **`Products Details`** |
-| Product Details Page | Users find comprehensive product information: description, price, add to wishlist option, and product reviews. | Checked details page layout and information. | Product details page shows all expected information. | Pass |
-| Product Reviews | All users can view reviews with 5-star rating, user's name, review date, and text. | Reviewed display of reviews. | Reviews displayed with all required information. | Pass |
-| Adding Reviews | Logged-in users can add reviews for products they have purchased. | Tested adding reviews as logged-in user. | Adding reviews functional for logged-in users. | Pass |
-| Editing/Deleting Reviews | Users can edit or delete their own reviews. | Tested editing/deleting reviews. | Editing/deleting reviews functional. | Pass |
-| **`Admin`** |
-| Login to Django Panel | The admin should be able to log in to the Django panel using the provided credentials. | Logged in to the Django panel using admin credentials | Successfully accessed the Django panel | Pass |
-| Add, Edit, and Delete Products | The admin should be able to add, edit, and delete products both from the admin panel and through the website. | Added, edited, and deleted products from both admin panel and website interface | Products were successfully managed | Pass |
-| **`Bag`** |
-| View Bag | Users can view and manage products in their shopping bag, including name, image, price, quantity, and subtotal. | Added products to the bag and viewed bag contents. | All product details are correctly displayed. | Pass |
-| Update Quantity | Users can update the quantity of each item in the bag. | Updated product quantities in the bag. | Quantities updated successfully. | Pass |
-| Remove Items | Users can remove items from the bag. | Removed items from the bag. | Items removed successfully. | Pass |
-| Total Cost Display | The total cost of selected items is displayed. | Verified total cost calculation. | Total cost is displayed correctly. | Pass |
-| Free Delivery Info | Users are informed about the amount needed to qualify for free delivery. | Checked free delivery message with different total amounts. | Free delivery message displayed correctly. | Pass |
-| Proceed to Checkout | Users can proceed to checkout from the bag page. | Clicked "Proceed to Checkout" button. | Redirected to checkout page successfully. | Pass |
-| Continue Shopping | Users can continue shopping using the "Keep Shopping" button. | Clicked "Keep Shopping" button. | Redirected back to shopping page successfully. | Pass |
-| Toast Messages | Toast messages are displayed when adding, updating, or removing items from the bag. | Added, updated, and removed items to observe toast messages. | Toast messages displayed correctly for each action. | Pass |
-| **`Checkout`** |
-| Shipping Information | Users enter payment and shipping address details; form pre-filled if logged in and data saved. | Entered shipping information, logged in and verified pre-filled data. | Form correctly pre-filled and accepted shipping details. | Pass |
-| Payment Information | The payment form accepts valid card details, notifies invalid card attempts, and integrates with Stripe for secure transactions. | Tested with Stripe test card 4242 4242 4242 4242, checked for invalid card notification. | Payment processed securely, invalid card notification displayed. | Pass |
-| Order Review | Users can review and edit their cart before finalizing the purchase, with total cost and delivery charges displayed. | Reviewed and edited cart before finalizing. | Cart review and edits functioned correctly, total cost displayed accurately. | Pass |
-| Checkout Success | Users are directed to a confirmation page with order number and summary; confirmation email sent with order details. | Completed checkout, observed confirmation page, and checked email. | Confirmation page displayed correctly, email received with correct order details. | Pass |
-| **`Wishlist`** |
-| Add to Wishlist Button | When clicked, the product should be added to the user's wishlist. | Clicked "Add to Wishlist" button for a product. | Product was successfully added to the wishlist. | Pass |
-| View Wishlist | Users should be able to view all products added to their wishlist. | Navigated to the wishlist page. | All products in the wishlist were displayed correctly. | Pass |
-| Remove from Wishlist | Users should be able to remove products from their wishlist. | Clicked "Remove" button for a product in the wishlist. | Product was successfully removed from the wishlist. | Pass |
-| **`Contact`** |
-| Contact Form Submission | Users can submit their name, email, phone number (optional), and message; prompts and errors for incorrect fields. | Filled out and submitted the contact form with valid and invalid data. | Form submission successful with valid data; error messages displayed for incorrect fields. | Pass |
-| Thank You Page | After form submission, users are directed to a thank you page confirming submission. | Submitted the contact form and observed the redirection. | Thank you page displayed confirming submission. | Pass |
-| Admin Access to Messages | Messages are sent to the site admin's business email for prompt response. | Submitted a message and checked the admin email. | Message received in admin's email. | Pass |
-| **`Notification messages`** |
-| Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting bookings. | Perform registration, login, logout, adding, editing, or deleting... Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass |
-| **`Footer`** |
-| Icon-clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks.| Clicked social networks Icons | Opens the pages in a new window. | Pass |
-| **`404 Page`** |
-| Custom 404 Page | A custom 404 page appears when users access non-existent pages, offering clear navigation back to the main site. | Accessed a non-existent page to trigger the 404 error. | Custom 404 page displayed with navigation options. | Pass |
-
-
-### Validator Testing  
-
-  * Python
-
-To ensure compliance with coding best practices, I installed Flake8 in my development environment. Flake8 assisted me in identifying and rectifying style and formatting issues throughout the project's source code.
-
-Additionally, I utilized the PEP8 validator to identify and correct any remaining issues in my code. The identified errors were primarily related to improper use of whitespace and exceeding line length. All of these issues were addressed comprehensively, ensuring adherence to coding best practices.
-
-![Pep8 - Python](/static/images/docs/python-check.webp)
-
-  * CSS:  
-
-No errors were found during the validation process using the official Jigsaw validator.
-
-
-![Jigsaw validator - Css](/media/docs/css-check.jpg)  
-
-
-  * HTML:  
-
-To ensure the validity and compliance of my web pages with web standards, I used the W3C validator. This tool helped me identify and correct any errors highlighted in my pages.
-
-![W3C validator - html](/media/docs/html-check.jpg)  
-
-
-The corrections were implemented in accordance with the validator's suggestions.
-
+For detailed testing documentation, refer to the [TESTING.md](TESTING.md) file.
 
 ## Bugs
 
