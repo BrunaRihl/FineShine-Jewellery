@@ -1000,6 +1000,8 @@ Google Dev Tools: Leveraged for debugging and testing features, as well as resol
 
 [Wordtracker](https://www.wordtracker.com/): Used to conduct keyword research.
 
+[Mailchimp](https://mailchimp.com/): Used to set up Email marketing.
+
 [Pep8 online](https://pep8ci.herokuapp.com/): Used to identify issues in my Python code.
 
 [The W3C Markup Validation Service](https://validator.w3.org/): Used to validate the accuracy and validity of HTML code.
@@ -1360,6 +1362,14 @@ During the development of my Django project, there were a few times when I neede
 * [Bootstrap - Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/#margin-and-padding)
 
 * [w3schools - HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
+
+* [Stackoverflow - Date formatting in Django templates](https://stackoverflow.com/questions/3663046/date-formatting-in-django-templates)
+
+* [Stackoverflow - Adding days to a date in Python](https://stackoverflow.com/questions/6871016/adding-days-to-a-date-in-python)
+
+* [Visual Studio Code - Formatting Python in VS Code](https://code.visualstudio.com/docs/python/formatting)
+
+* [AskPython - Python pytz Module: Mastering Timezones in Python ](hhttps://www.askpython.com/python-modules/python-pytz-module)
 
 * [Fontawesome - Accessibility](https://fontawesome.com/docs/web/dig-deeper/accessibility)
 

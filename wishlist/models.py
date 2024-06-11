@@ -8,14 +8,20 @@ from django.conf import settings
 
 
 def get_default_reminder_date():
+    """
+    Returns the default date and time for a reminder.
+    The default date and time are calculated by adding 5 days to the current
+    date and time, considering the time zone set in the settings.
+    """
     timezone = pytz.timezone(settings.TIME_ZONE)
     now = datetime.datetime.now(timezone)
     return now + datetime.timedelta(days=5)
 
+
 class Wishlist(models.Model):
     """
     Represents a wishlist item linking a user to a desired product.
-    Attributes:
+    Attr:
         user (ForeignKey): A reference to the user profile associated with the wishlist.
         product (ForeignKey): A reference to the product that the user wishes for.
         is_favorite (BooleanField): Indicates whether the item is marked as a favorite by the user.
