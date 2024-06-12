@@ -180,7 +180,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Thank You Page | After form submission, users are directed to a thank you page confirming submission. | Submitted the contact form and observed the redirection. | Thank you page displayed confirming submission. | Pass |
 | Admin Access to Messages | Messages are sent to the site admin's business email for prompt response. | Submitted a message and checked the admin email. | Message received in admin's email. | Pass |
 | **`Notification messages`** |
-| Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting bookings. | Perform registration, login, logout, adding, editing, or deleting... Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass |
+| Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting wishlist items and favotites. | Perform registration, login, logout, adding, editing, or deleting... Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass |
 | **`Footer`** |
 | Newsletter Signup | Submitting the newsletter signup form with a valid email address adds the user to the mailing list. | Submitted valid email address to newsletter signup form | User is successfully added to the mailing list. | Pass |
 | Newsletter Validation | Submitting the newsletter signup form with an invalid email address displays an error message. | Submitted invalid email address to newsletter signup form | Error message is displayed. | Pass  |

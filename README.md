@@ -1,6 +1,6 @@
 # FineShine Jewellery
 
-FineShine is an online platform specializing in the sale of unique and elegant jewelry, featuring a wide collection of earrings, necklaces, bracelets, rings, and sets. All pieces are crafted in Ireland and available for shipping. This project was developed as my fifth project in the Code Institute's Full Stack Developer Course, using Django, HTML, CSS, JS, and Python for its creation.
+FineShine is an online platform specializing in the sale of unique and elegant jewellery, featuring a wide collection of earrings, necklaces, bracelets, rings, and sets. All pieces are crafted in Ireland and available for shipping. This project was developed as my fifth project in the Code Institute's Full Stack Developer Course, using Django, HTML, CSS, JS, and Python for its creation.
 
 ![FineShine website shown on a range of devices](/media/docs/responsive.jpg)  
 
@@ -67,7 +67,7 @@ The primary goal of the FineShine platform is to provide a seamless and enjoyabl
 
 **Users:**
 
-- Provide intuitive navigation to explore the wide range of jewelry offerings, including earrings, necklaces, bracelets, rings, and sets.
+- Provide intuitive navigation to explore the wide range of jewellery offerings, including earrings, necklaces, bracelets, rings, and sets.
 - Facilitate navigation and offer filtering options to find the perfect pieces based on individual preferences.
 - Present detailed product descriptions and high-quality images to assist in informed purchasing decisions.
 - Ensure a secure and convenient checkout process, with payment options and efficient shipping services for a smooth transaction experience.
@@ -499,7 +499,7 @@ The footer of the website is structured into three main sections. The first sect
 
 ![Fineshine - home](/media/docs/homepage.jpg)
 
-### Why shop whit us section:
+### Why shop with us section:
 
 Below the main image, users will find the "Why Shop for Jewellery with FineShine" section.
 
@@ -559,7 +559,7 @@ The bag page allows users to view and manage the products added to their shoppin
 
 ![Fineshine - hero image](/media/docs/bag.jpg)
 
-Users are informed of the amount needed to qualify for free delivery if they haven't met the minimum threshold. From this page, they can proceed to checkout or continue shopping using the "Keep Shopping" button. A toast message is displayed whenever a user adds, updates the quantity, or removes an item from the bag, providing instant feedback on their actions.
+Users are informed of the amount needed to qualify for free delivery if they haven't met the minimum amount. From this page, they can proceed to checkout or continue shopping using the "Keep Shopping" button. A toast message is displayed whenever a user adds, updates the quantity, or removes an item from the bag, providing instant feedback on their actions.
 
 ![Fineshine - hero image](/media/docs/bag-toast.jpg)
 
