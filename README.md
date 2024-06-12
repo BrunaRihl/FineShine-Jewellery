@@ -747,6 +747,18 @@ The newsletter signup form was displaying incorrectly, cutting off some informat
 
 ![bug - 3 solved](/media/docs/bug5-solved.jpg)
 
+### Lack of Timezone Support Causes Wishlist Reminders Issue
+
+  * Bug Description: 
+
+The bug was caused by the lack of timezone support when filtering wishlist reminders. Without timezone support, the system was not correctly considering the time differences between users, resulting in issues such as reminders not being displayed when they should.
+
+  * Action Taken:
+
+To fix the bug, it was necessary to add timezone support using the pytz library. This ensures that wishlist reminders are filtered correctly based on the timezone configured for each user.
+
+
+![bug - 4 solved](/media/docs/bug3.png)
 
 ### Missing Validation Feedback
 
@@ -759,7 +771,7 @@ There was an issue with the contact form where submitting the form without filli
 To address this issue, a forms.py file was created to handle the form logic and validation. The new form ensures that all required fields are validated, and appropriate error messages are displayed if any required fields are left empty.
 This solution ensures that users are properly informed if they miss any required fields when submitting the contact form, enhancing the overall user experience and ensuring that messages are correctly sent to the admin.
 
-![bug - 3 solved](/media/docs/bug6.jpg)
+![bug - 5 solved](/media/docs/bug6.jpg)
 
 ### Unsolved Bugs
 
