@@ -5,7 +5,8 @@ from .models import Order, OrderLineItem
 class OrderLineItemAdminInline(admin.TabularInline):
     """
     Inline admin configuration for OrderLineItem model.
-    Displays OrderLineItem instances in a tabular format within the Order admin page.
+    Displays OrderLineItem instances in a tabular format
+    within the Order admin page.
     """
 
     model = OrderLineItem
@@ -15,8 +16,9 @@ class OrderLineItemAdminInline(admin.TabularInline):
 class OrderAdmin(admin.ModelAdmin):
     """
     Admin configuration for the Order model.
-    Customizes the admin interface for Order instances, including read-only fields,
-    field layout, list display options, and ordering.
+    Customizes the admin interface for Order instances,
+    including read-only fields, field layout, list display
+    options, and ordering.
     """
 
     inlines = (OrderLineItemAdminInline,)

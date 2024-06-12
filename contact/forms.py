@@ -5,9 +5,9 @@ from .models import Contact
 class ContactForm(forms.ModelForm):
     """
     A form for creating and updating Contact instances.
-
-    This form includes fields for name, email, phone, and message. It uses the
-    Contact model to define the fields and sets custom placeholders for each field.
+    This form includes fields for name, email, phone, and message.
+    It uses the Contact model to define the fields and sets
+    custom placeholders for each field.
     """
 
     class Meta:

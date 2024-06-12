@@ -3,10 +3,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 from profiles.models import UserProfile
-
-from .models import Review
 from products.models import Product
 
+from .models import Review
 from .forms import ReviewForm
 
 

@@ -9,9 +9,6 @@ from reviews.models import Review
 from .models import Product, Category
 from .forms import ProductForm
 
-# Create your views here.
-
-
 def all_products(request):
     """A view to show all products, including sorting and search queries"""
     products = Product.objects.all()
@@ -55,7 +52,6 @@ def all_products(request):
 
     current_sorting = f"{sort}_{direction}"
 
-    # Calcula o rating para cada produto
     for product in products:
         product.rating_data = get_total_rating(product.id)
 
@@ -167,12 +163,11 @@ def delete_product(request, product_id):
 
 def get_total_rating(product_id):
     """
-    Calculate and return the total number of reviews and the average rating for a given product.
+    Calculate and return the total number of reviews and the average
+    rating for a given product.
     Args:
-        product_id (int): The ID of the product for which the total rating is to be calculated.
-    Returns:
-        dict: A dictionary containing the total number of reviews and the average rating.
-              If no reviews exist, 'rating' will be "No Rating" and 'total_reviews' will be 0.
+        product_id (int): The ID of the product for which the total
+        rating is to be calculated.
     """
     product = get_object_or_404(Product, pk=product_id)
 

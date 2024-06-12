@@ -71,6 +71,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+
 ROOT_URLCONF = "fineshine_jewellery.urls"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"

@@ -1,10 +1,7 @@
-from django.db import models
-
-# Create your models here.
 from django.core.validators import MinLengthValidator
 from django.db import models
-
 from django.contrib.auth.models import User
+
 from products.models import Product
 
 
@@ -18,7 +15,7 @@ class Review(models.Model):
         text (str): The text content of the review.
         rating (int): The rating given by the user (from 1 to 5).
         created_at (datetime): The date and time when the review was created.
-        updated_at (datetime): The date and time when the review was last updated.
+        updated_at (datetime): The date and time when the review was updated.
     """
 
     product = models.ForeignKey(

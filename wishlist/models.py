@@ -1,10 +1,11 @@
 import datetime
+import pytz
+
+from django.conf import settings
 from django.db import models
 
 from profiles.models import UserProfile
 from products.models import Product
-import pytz
-from django.conf import settings
 
 
 def get_default_reminder_date():
@@ -22,11 +23,16 @@ class Wishlist(models.Model):
     """
     Represents a wishlist item linking a user to a desired product.
     Attr:
-        user (ForeignKey): A reference to the user profile associated with the wishlist.
-        product (ForeignKey): A reference to the product that the user wishes for.
-        is_favorite (BooleanField): Indicates whether the item is marked as a favorite by the user.
-        created_at (DateTimeField): The timestamp when the wishlist item was created.
-        reminder_date (DateTimeField): The date set for reminding the user about the wishlist item.
+        user (ForeignKey): A reference to the user profile associated with
+        the wishlist.
+        product (ForeignKey): A reference to the product that the user
+        wishes for.
+        is_favorite (BooleanField): Indicates whether the item is
+        marked as a favorite by the user.
+        created_at (DateTimeField): The timestamp when the wishlist
+        item was created.
+        reminder_date (DateTimeField): The date set for reminding the
+        user about the wishlist item.
     """
 
     user = models.ForeignKey(

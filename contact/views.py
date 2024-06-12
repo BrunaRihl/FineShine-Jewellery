@@ -19,7 +19,12 @@ def index(request):
 
                 # Prepare email variables
                 subject = f"New Contact Form Submission from {contact.name}"
-                message = f"Name: {contact.name}\nEmail: {contact.email}\nPhone: {contact.phone}\n\nMessage:\n{contact.message}"
+                message = (
+                    f"Name: {contact.name}\n"
+                    f"Email: {contact.email}\n"
+                    f"Phone: {contact.phone}\n\n"
+                    f"Message:\n{contact.message}"
+                )
 
                 # Send email
                 send_mail(
@@ -30,6 +35,7 @@ def index(request):
                 )
 
                 return redirect("success")
+            
             except Exception as e:
                 # Log the error or handle it accordingly
                 print(f"Error sending email: {e}")
@@ -38,9 +44,11 @@ def index(request):
                     "contact.html",
                     {
                         "form": form,
-                        "error": "There was an error sending your message. Please try again later.",
-                    },
-                )
+                        "error": "There was an error sending your message. "
+                                "Please try again later.",
+        },
+    )
+
     else:
         form = ContactForm()
 
