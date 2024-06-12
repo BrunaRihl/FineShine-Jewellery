@@ -120,7 +120,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | FineShine Logo | When clicked the user will be redirected to the home page. | Clicked Logo | Redirected to the home page. | Pass |
 | Navbar links | When clicked the user will be redirected to the correct page. | Clicked link | Redirected to the correct page. | Pass |
 | Smaller Screens | The navbar should be displayed in hamburger style on smaller screens to conserve space. | Resized the screen to check the navbar behavior on smaller sizes. | The navbar switched to hamburger style when the screen was resized to a smaller size. | Pass |
-| User is Logged In | Wishlist icon becomes clickable for logged-in users and disabled for non-logged-in users. | Logged in and checked navbar changes. | Pass |
+| User is Logged In   | Wishlist icon becomes clickable for logged-in users and disabled for non-logged-in users. | Logged in and checked navbar changes. | Wishlist icon became clickable for logged-in users. | Pass |
 | Fixed navbar | The navbar should remain fixed at the top of the page while scrolling through the site content. | Scrolled through the site content and observed the navbar behavior. | The navbar remained fixed at the top of the page while scrolling. | Pass |
 | **`Register`** |
 | User Registration | User should be able to register by providing valid data. User receives a confirmation email after registration. | Entered valid registration data and submitted the form. Verified email confirmation process. | Registration and email confirmation process successful. | Pass |
@@ -137,8 +137,8 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Responsive Navigation Bar | Navigation bar adjusts on all devices. | Checked on different devices. | Navigation bar adjusts correctly on all devices. | Pass |
 | Logo and Company Name | Custom logo displayed, website responsive. | Verified logo and website on various devices. | Custom logo displayed correctly, website responsive on different devices. | Pass |
 | Search Bar | Search functionality for finding products. | Tested search by entering keywords. | Search functionality works as expected. | Pass |
-| Quick Access Links | Quick links visible, Wishlist for logged-in users. | Checked visibility and functionality. | Links visible and functional, Wishlist link appears only for logged-in users. | Pass |
-| Main Navigation | Navigation links functional for categories. | Verified navigation to correct categories. | Navigation links direct to correct categories. | Pass |
+| Quick Access Links  | Quick links visible, Wishlist for logged-in users.| Checked visibility and functionality. | Links visible and functional, Wishlist link is clickable only for logged-in users. | Pass |
+| Main Navigation | Navigation links functional for categories. | Verified navigation to correct categories. | Navigation links directs to correct categories. | Pass |
 | Product Categories | Additional options under each category. | Checked available options. | Additional options displayed under each category. | Pass |
 | Favicon | Custom favicon displayed in browser tab. | Verified presence in browser tab. | Custom favicon displayed in browser tab. | Pass |
 | **`Products`** |
@@ -165,7 +165,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Toast Messages | Toast messages are displayed when adding, updating, or removing items from the bag. | Added, updated, and removed items to observe toast messages. | Toast messages displayed correctly for each action. | Pass |
 | **`Checkout`** |
 | Shipping Information | Users enter payment and shipping address details; form pre-filled if logged in and data saved. | Entered shipping information, logged in and verified pre-filled data. | Form correctly pre-filled and accepted shipping details. | Pass |
-| Payment Information | The payment form accepts valid card details, notifies invalid card attempts, and integrates with Stripe for secure transactions. | Tested with Stripe test card 4242 4242 4242 4242, checked for invalid card notification. | Payment processed securely, invalid card notification displayed. | Pass |
+| Payment Information | The payment form accepts valid card details, notifies invalid card attempts, and integrates with Stripe for secure transactions. | Tested with Stripe test card, checked for invalid card notification. | Payment processed securely, invalid card notification displayed. | Pass |
 | Order Review | Users can review and edit their cart before finalizing the purchase, with total cost and delivery charges displayed. | Reviewed and edited cart before finalizing. | Cart review and edits functioned correctly, total cost displayed accurately. | Pass |
 | Checkout Success | Users are directed to a confirmation page with order number and summary; confirmation email sent with order details. | Completed checkout, observed confirmation page, and checked email. | Confirmation page displayed correctly, email received with correct order details. | Pass |
 | **`Wishlist`** |
@@ -208,7 +208,6 @@ No errors were found during the validation process using the official Jigsaw val
 
 
 ![Jigsaw validator - Css](/media/docs/css-check.jpg)  
-
 
 
   * Python

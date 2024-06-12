@@ -290,7 +290,7 @@ I made some adjustments in relation to what I had planned for positioning and ad
   <summary>Products
 </summary>
 
-![FineShine wireframe](/media/docs/wishlist-desktop.png)
+![FineShine wireframe](/media/docs/products-desktop.png)
 
 </details>
 <details>
@@ -470,7 +470,7 @@ Robots.txt: A robots.txt file has been implemented to guide search engine crawle
 
 - **Search Bar:** A search bar allows users to easily find specific products directly from the header.
 
-- **Quick Access Links:** On the right side of the header are quick access links, including "My Account," "Contact," and "Shopping Bag." The "Wishlist" link is visible only when the user is logged in.
+- **Quick Access Links:** Quick Access Links: On the right side of the header are quick access links, including "My Account," "Contact," and "Shopping Bag." The "Wishlist" link is visible but not clickable unless the user is logged in.
 
 - **Main Navigation:** Below the header, the main navigation allows users to choose products by categories such as "All Products," "Earrings," "Necklaces," among others.
 
@@ -478,7 +478,6 @@ Robots.txt: A robots.txt file has been implemented to guide search engine crawle
 
 - **Highlighting Free Delivery:** A highlighted line emphasizes free delivery for purchases over €200, using a gold glitter effect to match the website theme and draw attention.
 
-Destaque para Entrega Gratuita e Efeito Visual
 
 ### Favicon
 
@@ -591,7 +590,7 @@ Upon confirming the order, users finalize their purchase. They are directed to a
 ![Fineshine -checkout success](/media/docs/checkout-s.jpg)
 
 Simultaneously, an email confirmation with identical information is sent to the user's inbox.
-This confirmation email ensures that users have a record of their purchase and provides them with all the necessary details regarding their order, including the order number, items purchased, and billing/shipping information.
+This confirmation email ensures that users have a record of their purchase and provides them with all the necessary details regarding their order, including the order number and items purchased.
 
 ![Fineshine - hero image](/media/docs/check-email.jpg)
 
@@ -611,16 +610,18 @@ Messages sent through the contact form are directly accessible to the site admin
 
 ## Wishlist
 
-The Wishlist page allows users to view and manage the products they wish to purchase in the future. When a product is added to the wishlist, users can see a summary of each product, including the name, image, price, and the date it was added.
+The Wishlist page allows users to view and manage the products they wish to purchase in the future. When a product is added to the wishlist, users can see a summary of each product, including the name, image and the date it was added.
 
 ![Fineshine sign up](/media/docs/wishlist.jpg)
 
 ### Features and Functionalities:
 
 **Product Summary:**
+
 Name: Displays the name of the product in the wishlist.
+
 Image: Shows an image of the product.
-Price: Displays the price of the product.
+
 Date Added: Shows the date when the product was added to the wishlist.
 
 **Manage Wishlist:**
@@ -628,6 +629,7 @@ Date Added: Shows the date when the product was added to the wishlist.
 Users can remove items from the wishlist when they are no longer interested in them.
 
 **Favorite Items:**
+
 Users can mark items as favorites. Favorited items are moved to the top of the wishlist for easy access.
 
 ![Fineshine sign up](/media/docs/wishlist-fav.jpg)
@@ -743,7 +745,7 @@ The newsletter signup form was displaying incorrectly, cutting off some informat
 
   * Action Taken:
 
- Removed the width: 600px; property from the form container style (div#mc_embed_signup), allowing the form to dynamically adjust to the screen size, thereby fixing the issue of information cutoff and email input box.
+ Removed the width: 600px; property from the form container style, allowing the form to dynamically adjust to the screen size, thereby fixing the issue of information cutoff and email input box.
 
 ![bug - 3 solved](/media/docs/bug5-solved.jpg)
 
@@ -769,7 +771,6 @@ There was an issue with the contact form where submitting the form without filli
   * Action Taken:
 
 To address this issue, a forms.py file was created to handle the form logic and validation. The new form ensures that all required fields are validated, and appropriate error messages are displayed if any required fields are left empty.
-This solution ensures that users are properly informed if they miss any required fields when submitting the contact form, enhancing the overall user experience and ensuring that messages are correctly sent to the admin.
 
 ![bug - 5 solved](/media/docs/bug6.jpg)
 
