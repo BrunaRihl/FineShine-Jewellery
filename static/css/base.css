@@ -615,6 +615,12 @@ a.wishlistt-link:hover {
     }
 }
 
+@media screen and (min-width: 555px) and (max-width: 1380px) {
+    .margin-top-div {
+        margin-top: 40px !important;
+    }
+}
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
 
