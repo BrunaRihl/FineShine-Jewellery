@@ -38,7 +38,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Secure Password Reset | Receive an email with the password reset link and successfully reset the password. | Pass |
 | Secure Credential Storage | User's username and password are securely saved and accessible for easy website access. | Pass |
 **`EPIC 4`**
-| SEO Configuration | As configurações de SEO são configuradas com sucesso para garantir que os usuários possam acessar facilmente o conteúdo desejado. | Pass |
+| SEO Configuration | The SEO settings have been successfully configured to ensure that users can easily access the desired content. | Pass |
 | Newsletter System | Successful utilization of MailChimp for regular communications with customers. | Pass |
 | Facebook Marketing Page | Successful creation of a Facebook marketing page. | Pass |
 **`EPIC 5`**
