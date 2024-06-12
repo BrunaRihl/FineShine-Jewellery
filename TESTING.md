@@ -213,9 +213,13 @@ No errors were found during the validation process using the official Jigsaw val
 
   * Python
 
-To ensure compliance with coding best practices, I installed Flake8 in my development environment. Flake8 assisted me in identifying and rectifying style and formatting issues throughout the project's source code.
+To ensure compliance with the best coding practices, I integrated Black (an automatic code formatter) into my workflow. Black helped maintain consistent code style and formatting throughout the project, ensuring readability and adherence to PEP8 guidelines. Additionally, to identify and fix style and formatting issues throughout the project's source code, I installed Flake8 in my development environment.
 
-Additionally, I utilized the PEP8 validator to identify and correct any remaining issues in my code. The identified errors were primarily related to improper use of whitespace and exceeding line length. All of these issues were addressed comprehensively, ensuring adherence to coding best practices.
+![Black - Python](/media/docs/blak2.jpg) 
 
-![Pep8 - Python](/static/images/docs/python-check.webp)
+I also used the PEP8 validator to identify and correct any remaining issues in my code. The identified errors were primarily related to improper use of whitespace and exceeding the line length.
+
+![Pep8 - Python](/media/docs/pythonlinter.jpg) 
+
+
 
