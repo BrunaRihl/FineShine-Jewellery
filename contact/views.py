@@ -35,7 +35,7 @@ def index(request):
                 )
 
                 return redirect("success")
-            
+
             except Exception as e:
                 # Log the error or handle it accordingly
                 print(f"Error sending email: {e}")
@@ -45,9 +45,9 @@ def index(request):
                     {
                         "form": form,
                         "error": "There was an error sending your message. "
-                                "Please try again later.",
-        },
-    )
+                                 "Please try again later.",
+                    },
+                )
 
     else:
         form = ContactForm()
