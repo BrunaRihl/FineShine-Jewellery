@@ -148,7 +148,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Product Information | Each product displays image, price, category, and rating. | Reviewed product display. | Product information displayed correctly. | Pass |
 | **`Products Details`** |
 | Product Details Page | Users find comprehensive product information: description, price, add to wishlist option, and product reviews. | Checked details page layout and information. | Product details page shows all expected information. | Pass |
-| Product Reviews | All users can view reviews with 5-star rating, user's name, review date, and text. | Reviewed display of reviews. | Reviews displayed with all required information. | Pass |
+| Product Reviews | All users can view reviews with 5-star rating system, user's name, review date, and text. | Reviewed display of reviews. | Reviews displayed with all required information. | Pass |
 | Adding Reviews | Logged-in users can add reviews for products they have purchased. | Tested adding reviews as logged-in user. | Adding reviews functional for logged-in users. | Pass |
 | Editing/Deleting Reviews | Users can edit or delete their own reviews. | Tested editing/deleting reviews. | Editing/deleting reviews functional. | Pass |
 | **`Admin`** |
@@ -161,7 +161,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Total Cost Display | The total cost of selected items is displayed. | Verified total cost calculation. | Total cost is displayed correctly. | Pass |
 | Free Delivery Info | Users are informed about the amount needed to qualify for free delivery. | Checked free delivery message with different total amounts. | Free delivery message displayed correctly. | Pass |
 | Proceed to Checkout | Users can proceed to checkout from the bag page. | Clicked "Proceed to Checkout" button. | Redirected to checkout page successfully. | Pass |
-| Continue Shopping | Users can continue shopping using the "Keep Shopping" button. | Clicked "Keep Shopping" button. | Redirected back to shopping page successfully. | Pass |
+| Continue Shopping | Users can continue shopping using the "Keep Shopping" button. | Clicked "Keep Shopping" button. | Redirected back to products page successfully. | Pass |
 | Toast Messages | Toast messages are displayed when adding, updating, or removing items from the bag. | Added, updated, and removed items to observe toast messages. | Toast messages displayed correctly for each action. | Pass |
 | **`Checkout`** |
 | Shipping Information | Users enter payment and shipping address details; form pre-filled if logged in and data saved. | Entered shipping information, logged in and verified pre-filled data. | Form correctly pre-filled and accepted shipping details. | Pass |
@@ -186,10 +186,8 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Newsletter Validation | Submitting the newsletter signup form with an invalid email address displays an error message. | Submitted invalid email address to newsletter signup form | Error message is displayed. | Pass  |
 | Useful Links | Useful links in the footer section direct users to the respective pages. | Clicked on useful links in the footer. | User is directed to the respective pages. | Pass |
 | Icon Clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks. | Clicked social network icons | Opens the pages in a new window. | Pass |
-
 | **`404 Page`** |
 | Custom 404 Page | A custom 404 page appears when users access non-existent pages, offering clear navigation back to the main site. | Accessed a non-existent page to trigger the 404 error. | Custom 404 page displayed with navigation options. | Pass |
-
 
 ### Validator Testing  
 
