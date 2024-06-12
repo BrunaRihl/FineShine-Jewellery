@@ -172,6 +172,9 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Add to Wishlist Button | When clicked, the product should be added to the user's wishlist. | Clicked "Add to Wishlist" button for a product. | Product was successfully added to the wishlist. | Pass |
 | View Wishlist | Users should be able to view all products added to their wishlist. | Navigated to the wishlist page. | All products in the wishlist were displayed correctly. | Pass |
 | Remove from Wishlist | Users should be able to remove products from their wishlist. | Clicked "Remove" button for a product in the wishlist. | Product was successfully removed from the wishlist. | Pass |
+| View Product Details  | Users can click on a product to view more details. | Clicked on a product in the Wishlist. | Product details were displayed correctly. | Pass |
+| Wishlist Sorting | Wishlist items should be sorted by  favorites. | Viewed the Wishlist. | Items are sorted correctly. | Pass |
+| Wishlist Notifications | Users should receive a notification upon login if a product remains in the Wishlist for more than five days. | Product remained in Wishlist for more than five days. | User receives a notification upon login with link to the Wishlist. | Pass |
 | **`Contact`** |
 | Contact Form Submission | Users can submit their name, email, phone number (optional), and message; prompts and errors for incorrect fields. | Filled out and submitted the contact form with valid and invalid data. | Form submission successful with valid data; error messages displayed for incorrect fields. | Pass |
 | Thank You Page | After form submission, users are directed to a thank you page confirming submission. | Submitted the contact form and observed the redirection. | Thank you page displayed confirming submission. | Pass |
@@ -179,7 +182,11 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | **`Notification messages`** |
 | Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting bookings. | Perform registration, login, logout, adding, editing, or deleting... Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass |
 | **`Footer`** |
-| Icon-clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks.| Clicked social networks Icons | Opens the pages in a new window. | Pass |
+| Newsletter Signup | Submitting the newsletter signup form with a valid email address adds the user to the mailing list. | Submitted valid email address to newsletter signup form | User is successfully added to the mailing list. | Pass |
+| Newsletter Validation | Submitting the newsletter signup form with an invalid email address displays an error message. | Submitted invalid email address to newsletter signup form | Error message is displayed. | Pass  |
+| Useful Links | Useful links in the footer section direct users to the respective pages. | Clicked on useful links in the footer. | User is directed to the respective pages. | Pass |
+| Icon Clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks. | Clicked social network icons | Opens the pages in a new window. | Pass |
+
 | **`404 Page`** |
 | Custom 404 Page | A custom 404 page appears when users access non-existent pages, offering clear navigation back to the main site. | Accessed a non-existent page to trigger the 404 error. | Custom 404 page displayed with navigation options. | Pass |
 

@@ -13,7 +13,6 @@ The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herok
   * [Website Overview](#website-overview)
   * [User base](#user-base)
   * [Website Goals](#website-goals)
-  * [Flowchart](#flowchart)
   * [ERD](#erd)
 
 * [User Stories](#user-stories)
@@ -28,19 +27,19 @@ The live demo is available [here](https://fineshine-jewellery-07c9a5f5519c.herok
     
 * [Features](#features)
   * [General Features on Page](#features)
-  * [Features and resources to be added in the future](#features-and-resources-to-be-added-in-the-future)
+  * [Future Features](#future-features)
 
 * [Marketing and SEO](#marketing-and-seo)
   * [Business Model - Ecommerce](#business-model---ecommerce)
   * [Marketing](#marketing)
-  * [Search Engine Optimization](search-engine-optimization)
+  * [Search Engine Optimization](#search-engine-optimization)
 
 * [Testing](#testing)
   * [Bugs](#bugs)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used)
 
 * [Deployment](#deployment)
 
@@ -677,7 +676,7 @@ A custom 404 error page was developed to properly handle situations where users 
 
 ![Fineshine 404](/media/docs/404.jpg)
 
-### Future Features and Resources to be Added
+### Future Features
 
 #### Fashion Articles and Style Tips:
    - Create fashion articles providing inspiration and style tips with your jewellery pieces.
